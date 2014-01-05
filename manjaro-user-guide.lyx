@@ -167,8 +167,23 @@ d Arch User Repository (AUR).
  For example, although Ubuntu is derived from Debian - and therefore shares
  some similarities with its parent - there are still substantial differences
  between these operating systems and how they work.
- Such is the case with Manjaro, which is far from just being an "easy to
- install" or "pre-configured" Arch operating system.
+ Such is the case with Manjaro, which is far from just being an 
+\begin_inset Quotes eld
+\end_inset
+
+easy to install
+\begin_inset Quotes erd
+\end_inset
+
+ or 
+\begin_inset Quotes eld
+\end_inset
+
+pre-configured
+\begin_inset Quotes erd
+\end_inset
+
+ Arch operating system.
  Here are some of the key differences between the Manjaro and Arch operating
  systems: 
 \end_layout
@@ -242,7 +257,15 @@ Developed in Austria, France, and Germany, Manjaro provides all the benefits
  Available in both 32- and 64-bit versions, Manjaro is suitable for newcomers
  as well as experienced Linux users.
  For newcomers, a user-friendly installer is provided, and the system itself
- is designed to work fully 'straight out of the box' with features including:
+ is designed to work fully 
+\begin_inset Quotes eld
+\end_inset
+
+straight out of the box
+\begin_inset Quotes erd
+\end_inset
+
+ with features including:
 \end_layout
 
 \begin_layout Itemize
@@ -275,8 +298,16 @@ Access to the very latest cutting- and bleeding-edge software
 \end_layout
 
 \begin_layout Itemize
-A 'rolling release' development model that provides the most up-to-date
- system possible without the need to install new versions
+A 
+\begin_inset Quotes eld
+\end_inset
+
+rolling release
+\begin_inset Quotes erd
+\end_inset
+
+ development model that provides the most up-to-date system possible without
+ the need to install new versions
 \end_layout
 
 \begin_layout Itemize
@@ -367,8 +398,8 @@ Downloading Manjaro
  Rather, it is a copy of the raw data that makes up the files and folders
  of that disc.
  This is why just copying an ISO file to a disc (or USB flashdrive) to begin
- installing it won't work - you'll need to use a disc burning application
- to translate that raw data into the files and folders.
+ installing won't work: you'll need to use a disc burning application to
+ translate that raw data into the files and folders.
 \begin_inset Foot
 status collapsed
 
@@ -381,8 +412,8 @@ Note: There is an exception to this rule.
 
 \end_inset
 
- Instructions to do so for both Linux and Windows operating systems are
- provided below.
+ Instructions to do this for both Linux and Microsoft Windows operating
+ systems are provided later.
 \end_layout
 
 \begin_layout Standard
@@ -478,7 +509,7 @@ Each stable release and test-build of Manjaro has its own particular download
  Each location will also contain the relevant checksum files which can be
  used to check the integrity of your downloaded ISO file (i.e.
  to ensure that it has not been corrupted during download).
- A link to the guide on doing this has been provided below.
+ A guide to doing this included in the following section.
 \end_layout
 
 \begin_layout Description
@@ -624,7 +655,7 @@ b91b8a8d3133342f4cfdb1ba09c28ec20c8492e1 manjaro-openbox-0.8.8-x86_64.iso
 \end_layout
 
 \begin_layout Section
-MD5 and SHA-21
+MD5 and SHA-1
 \end_layout
 
 \begin_layout Standard
@@ -730,12 +761,12 @@ sha1sum
 \family default
 can automatically compare the checksum of the ISO file you downloaded against
  the value in the text file.
- The process is very straightfoward, but the end result might look a little
+ The process is very straightforward, but the end result might look a little
  worrying!
 \end_layout
 
 \begin_layout Standard
-For this example, I first open a terminal and chang to the directory where
+For this example, I first open a terminal and change to the directory where
  I downloaded the ISO file and checksum file.
  I use the command 
 \family typewriter
