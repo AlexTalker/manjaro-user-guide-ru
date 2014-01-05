@@ -1,7 +1,6 @@
-### Linux ###
 .*
 !.gitignore
 !.git*
 *~
 *#
-
+*.pdf
