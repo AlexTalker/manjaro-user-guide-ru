@@ -1,10 +1,10 @@
-== Introduction
+## Introduction
 
 The Manjaro Linux Beginner's User Guide typeset in LaTeX (using LyX).
 
 The style in use is tutfe-book (http://wiki.lyx.org/Layouts/Tufte-book). This provides a very professional layout with minimal fuss.
 
-== Installation
+## Installation
 
 To enable the tutfe-book layout within LyX on Manjaro you will need to install the following packages:
 
