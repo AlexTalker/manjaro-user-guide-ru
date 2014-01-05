@@ -1,0 +1,1072 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass tufte-book
+\use_default_options true
+\begin_modules
+fixltx2e
+\end_modules
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman palatino
+\font_sans helvet
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref true
+\pdf_bookmarks true
+\pdf_bookmarksnumbered false
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks true
+\pdf_pdfborder true
+\pdf_colorlinks false
+\pdf_backref false
+\pdf_pdfusetitle true
+\papersize default
+\use_geometry true
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 2
+\tocdepth 2
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+User Guide
+\end_layout
+
+\begin_layout Author
+Manjaro Linux 0.8.9
+\end_layout
+
+\begin_layout Section*
+The Manjaro Development Team
+\end_layout
+
+\begin_layout Subsection*
+Core Team
+\end_layout
+
+\begin_layout Description
+Roland
+\begin_inset space ~
+\end_inset
+
+Singer Project Leader, Designer, Developer, Web Developer, Packager
+\end_layout
+
+\begin_layout Description
+Philip
+\begin_inset space ~
+\end_inset
+
+Müller Project Co-leader, Project Management and Coordination, Mirrors Manager,
+ Packager, Developer, Web Developer
+\end_layout
+
+\begin_layout Description
+Guillaume
+\begin_inset space ~
+\end_inset
+
+Benoit Server Manager, Developer, Packager, Moderation
+\end_layout
+
+\begin_layout Description
+Alexandre
+\begin_inset space ~
+\end_inset
+
+A.
+\begin_inset space ~
+\end_inset
+
+Arnt Developer, Moderation
+\end_layout
+
+\begin_layout Description
+Mateusz
+\begin_inset space ~
+\end_inset
+
+Mikolajczyk Developer
+\end_layout
+
+\begin_layout Description
+Wlad
+\begin_inset space ~
+\end_inset
+
+Meixner Web Developer, Web Consultant
+\end_layout
+
+\begin_layout Subsection*
+Forum, Community and Support
+\end_layout
+
+\begin_layout Description
+Carl
+\begin_inset space ~
+\end_inset
+
+Duff Community, Documentation and Wiki Management, Scripting and Configuration
+\end_layout
+
+\begin_layout Section*
+A Note About Manjaro and Arch
+\end_layout
+
+\begin_layout Standard
+Manjaro is based on another distribution called Arch Linux.
+ As such, it is also able to draw software packages from the community-maintaine
+d Arch User Repository (AUR).
+ However, please note that Manjaro is not Arch, and any enquieries about
+ the Manjaro operating system should be directed towards the Manjaro forums
+ and Internet Relay Chat (IRC) channels alone.
+ For example, although Ubuntu is derived from Debian - and therefore shares
+ some similarities with its parent - there are still substantial differences
+ between these operating systems and how they work.
+ Such is the case with Manjaro, which is far from just being an "easy to
+ install" or "pre-configured" Arch operating system.
+ Here are some of the key differences between the Manjaro and Arch operating
+ systems: 
+\end_layout
+
+\begin_layout Itemize
+Manjaro is developed independently from Arch, and by a completely different
+ team.
+ 
+\end_layout
+
+\begin_layout Itemize
+Manjaro is designed to be accessible to newcomers, while Arch is aimed at
+ experienced users.
+\end_layout
+
+\begin_layout Itemize
+Manjaro draws software from its own independent repositories.
+ These repositories also contain software packages not provided by Arch.
+\end_layout
+
+\begin_layout Itemize
+Manjaro provides its own distribution-specific tools such as the Manjaro
+ Hardware Detection (MHWD) utility, and the Manjaro Settings Manager (MSM).
+\end_layout
+
+\begin_layout Itemize
+Manjaro has numerous subtle differences in how it works when compared to
+ Arch.
+\end_layout
+
+\begin_layout Standard
+To reiterate, although Manjaro is indeed an Arch-derivative, it is not Arch!
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+Introduction
+\end_layout
+
+\begin_layout Section
+About Manjaro
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Manjaro
+\series default
+ is a user-friendly Linux distribution based on the independently developed
+ Arch operating system.
+ Within the Linux community, Arch itself is renowned for being an exceptionally
+ fast, powerful, and lightweight distribution that provides access to the
+ very latest cutting-edge - and bleeding-edge - software.
+ However, Arch is also aimed at more experienced or technically-minded users.
+ As such, it is generally considered to be beyond the reach of those who
+ lack the technical expertise (or persistence) required to use it.
+\end_layout
+
+\begin_layout Standard
+Developed in Austria, France, and Germany, Manjaro provides all the benefits
+ of the Arch operating system combined with a focus on user-friendliness
+ and accessibility.
+ Available in both 32- and 64-bit versions, Manjaro is suitable for newcomers
+ as well as experienced Linux users.
+ For newcomers, a user-friendly installer is provided, and the system itself
+ is designed to work fully 'straight out of the box' with features including:
+\end_layout
+
+\begin_layout Itemize
+Pre-installed desktop environments
+\end_layout
+
+\begin_layout Itemize
+Pre-installed graphical applications to easily install software and update
+ your system, and
+\end_layout
+
+\begin_layout Itemize
+Pre-installed codecs to play multimedia files
+\end_layout
+
+\begin_layout Section
+Features
+\end_layout
+
+\begin_layout Standard
+Manjaro shares many of the same features as Arch, including:
+\end_layout
+
+\begin_layout Itemize
+Speed, power, and efficiency
+\end_layout
+
+\begin_layout Itemize
+Access to the very latest cutting- and bleeding-edge software
+\end_layout
+
+\begin_layout Itemize
+A 'rolling release' development model that provides the most up-to-date
+ system possible without the need to install new versions
+\end_layout
+
+\begin_layout Itemize
+Access to the Arch User Repositories, and
+\end_layout
+
+\begin_layout Itemize
+The versatility to be shaped and 
+\lang british
+moulded
+\lang english
+ in every respect to suit personal taste and preference.
+ 
+\end_layout
+
+\begin_layout Standard
+However, Manjaro boasts a few extra features of its own, including:
+\end_layout
+
+\begin_layout Itemize
+A simplified, user-friendly installation process
+\end_layout
+
+\begin_layout Itemize
+Automatic detection of your computer's hardware (e.g.
+ graphics cards)
+\end_layout
+
+\begin_layout Itemize
+Automatic installation of the necessary software (e.g.
+ graphics drivers) for your system
+\end_layout
+
+\begin_layout Itemize
+Dedicated software repositories that deliver fully tested and stable software
+ packages, and
+\end_layout
+
+\begin_layout Itemize
+Support for the easy installation and use of multiple kernels
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/01-welcome.png
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Welcome to Manjaro!
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+Downloading Manjaro
+\end_layout
+
+\begin_layout Standard
+32- and 64-bit versions of Manjaro are available for download as ISO files.
+ An ISO file is itself a literal copy of a disc image, although not in the
+ same sense as a copy-and-paste duplication.
+ Rather, it is a copy of the raw data that makes up the files and folders
+ of that disc.
+ This is why just copying an ISO file to a disc (or USB flashdrive) to begin
+ installing it won't work - you'll need to use a disc burning application
+ to translate that raw data into the files and folders.
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Note: There is an exception to this rule.
+ If you intend on installing Manjaro in a virtual machine environment using
+ Oracle's Virtualbox, then there will be no need to burn the image as Virtualbox
+ will be able to read from the ISO file directly as a virtual disc.
+\end_layout
+
+\end_inset
+
+ Instructions to do so for both Linux and Windows operating systems are
+ provided below.
+\end_layout
+
+\begin_layout Standard
+ISO images available for 32-bit systems will end in
+\series bold
+ i686.iso
+\series default
+, while images for 64-bit systems will end in 
+\series bold
+x86_64.iso
+\series default
+.
+ Please try to ensure that you download the appropriate ISO image for your
+ system as: a 64-bit ISO won't run on a 32-bit system, and a 32-bit ISO
+ will not be able use the full power or resources of a 64-bit system (though
+ it will still work).
+\end_layout
+
+\begin_layout Section
+Manjaro Editions
+\end_layout
+
+\begin_layout Standard
+There are two editions of Manjaro available for download:
+\end_layout
+
+\begin_layout Description
+The
+\begin_inset space ~
+\end_inset
+
+Full
+\begin_inset space ~
+\end_inset
+
+edition This edition of Manjaro comes complete with a pre-installed desktop
+ environment.
+ In the case of the XFCE edition, it will also come with popular software
+ applications, and codecs.
+ This would of course be the most appropriate choice for those who wish
+ to try out Manjaro on a Live-CD 
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+When you purchase retail software it generally comes on a disc, whether
+ a CD or a DVD.
+ A 'Live-CD' has a version of the operating system that will run without
+ needing to be installed.
+ This is a feature of operating systems similar to Manjaro Linux.
+\end_layout
+
+\end_inset
+
+ without having to install it first.
+ An ISO image for a full edition of Manjaro will list the pre-installed
+ desktop environment in its name.
+ For example, an ISO image beginning with
+\series bold
+ manjaro-xfce
+\series default
+ will have the XFCE desktop environment pre-installed.
+\end_layout
+
+\begin_layout Description
+The
+\begin_inset space ~
+\end_inset
+
+NET
+\begin_inset space ~
+\end_inset
+
+edition This edition of Manjaro provides only a base installation, stripped
+ of all but the most basic pre-installed software.
+ Starting from the command line, this is suitable for more experienced users
+ who may wish to build their own Manjaro systems from the ground up.
+ An ISO image for a NET edition will always begin with 
+\series bold
+manjaro-net
+\series default
+.
+\end_layout
+
+\begin_layout Section
+Downloading an ISO Image
+\end_layout
+
+\begin_layout Standard
+Each stable release and test-build of Manjaro has its own particular download
+ location which will contain all the available 32- and 64-bit versions for
+ both the full and NET editions.
+ Each location will also contain the relevant checksum files which can be
+ used to check the integrity of your downloaded ISO file (i.e.
+ to ensure that it has not been corrupted during download).
+ A link to the guide on doing this has been provided below.
+\end_layout
+
+\begin_layout Description
+Stable
+\begin_inset space ~
+\end_inset
+
+Releases of Manjaro are intended to be used by the general public.
+ As such, this will be the appropriate choice for the majority of users.
+ Each of the stable releases - starting from 0.8.0 - can be downloaded from
+ the 
+\begin_inset CommandInset href
+LatexCommand href
+name "Stable Release section of the Sourceforge website"
+target "http://sourceforge.net/projects/manjarolinux/files/release/"
+
+\end_inset
+
+.
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://sourceforge.net/projects/manjarolinux/files/release/
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+Test
+\begin_inset space ~
+\end_inset
+
+Builds of Manjaro are intended to be used only by developers and testers
+ in order to identify any bugs or issues to be addressed as development
+ continues towards the next stable release.
+ 
+\series bold
+These are not suitable - or intended - for use as a main operating system
+ by the general public.
+
+\series default
+ However, should you wish to try out a test build (preferably in a virtual
+ machine), each current release can be downloaded from the from the
+\begin_inset CommandInset href
+LatexCommand href
+name " Test Build section of the Sourceforge website"
+target "http://sourceforge.net/projects/manjarodev/files/testbuild/"
+
+\end_inset
+
+.
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://sourceforge.net/projects/manjarodev/files/testbuild/
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+Checking a Downloaded ISO File for Errors
+\end_layout
+
+\begin_layout Standard
+Prior to burning your downloaded ISO image (or using it as a virtual disc
+ in Virtualbox), it is strongly recommended that you first check that it
+ hasn't been corrupted.
+ The consequences of not doing so, especially if you intend on installing
+ Manjaro as your main operating system, should be obvious.
+ In the best case, the installation will fail.
+ In the worst case a corrupted image will result in a corrupted installation.
+\end_layout
+
+\begin_layout Standard
+To verify the integrity of the ISO image you must first download the appropriate
+ checksum file from the same Sourceforge location as your chosen ISO image.
+ The file 
+\series bold
+manjaro-0.8.9-sha1sum.txt 
+\series default
+contains checksum hashes for all the available ISO files and will have content
+ similar to this:
+\end_layout
+
+\begin_layout LyX-Code
+fd99f9328103007b3a04d4a1a826e81769288ae4 manjaro-kde-0.8.8-i686.iso
+\end_layout
+
+\begin_layout LyX-Code
+2b997a76ef23d1ef0a3a819a2ed8bef1f2e9a1b5 manjaro-kde-0.8.8-x86_64.iso
+\end_layout
+
+\begin_layout LyX-Code
+18b7df6f12c2b9d2b35b7716e89d71b91b873805 manjaro-net-0.8.8-i686.iso
+\end_layout
+
+\begin_layout LyX-Code
+80fc756226625d7b23ef909135fca32714d795d2 manjaro-net-0.8.8-x86_64.iso
+\end_layout
+
+\begin_layout LyX-Code
+b2fc1a5107e70f4cea2981ed941df5fc249a11ea manjaro-openbox-0.8.8-i686.iso
+\end_layout
+
+\begin_layout LyX-Code
+b91b8a8d3133342f4cfdb1ba09c28ec20c8492e1 manjaro-openbox-0.8.8-x86_64.iso
+\end_layout
+
+\begin_layout LyX-Code
+590750cc76d11efb47a153f1fcfcd4b6689f055e manjaro-xfce-0.8.8-i686.iso
+\end_layout
+
+\begin_layout LyX-Code
+1b8fcf0d24972f3881c2a331fd202cb0842866aa manjaro-xfce-0.8.8-x86_64.iso
+\end_layout
+
+\begin_layout Section
+MD5 and SHA-21
+\end_layout
+
+\begin_layout Standard
+You may have seen there are two checksum files.
+ One ends -sha1sum.txt, the other ends -md5sum.txt.
+ MD5 and SHA are two types of hashing algorithms; the 'sha' part of the
+ checksum file name stands for 
+\series bold
+Secure Hash Algorithm
+\series default
+.
+ These algorithms are used to generate a hash code unique to the ISO image
+ file.
+ Copies of the file can be checked to make sure they are exactly the same
+ - if the file is changed in any way, either intentionally or by corruption,
+ the code generated will be different.
+\end_layout
+
+\begin_layout Standard
+Whilst MD5 is commonly used, SHA-1 is newer and more secure and is beginning
+ to replace MD5.
+ For the purpose of checking the integrity of the downloaded file MD5 is
+ 
+\begin_inset Quotes eld
+\end_inset
+
+good enough
+\begin_inset Quotes erd
+\end_inset
+
+ but SHA-1 is a better solution.
+ The checking process is the same for both algorithms.
+ We recommend you use SHA-1.
+ For more information about hashing algorithms Wikipedia has lots of information.
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+https://en.wikipedia.org/wiki/Secure_Hash_Algorithm
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The checksum file itself is just a text document that contains hash codes
+ that should match the code generated by the MD5 or SHA-1 algorithm.
+ If the code generated from the ISO file matches that contained in the checksum
+ file, then the ISO is fine.
+ If the two codes don't match then it means that the ISO file has changed
+ in some way, most likely due to being corrupted.
+ You can think of it like someone using a password to identify who they
+ are: if they provide the wrong password, then something is obviously amiss!
+ Don't worry if this all sounds a bit much - it's actually very straightforward
+ and easy to use!
+\end_layout
+
+\begin_layout Standard
+From this point on we'll assume you are using the file 
+\series bold
+manjaro-0.8.9-sha1sum.txt
+\series default
+.
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Test builds have a slightly different arrangement.
+ Instead of a single file with all checksums, each ISO file has its own
+ associated checksum file.
+ If you're running the test build I'm sure you can work it out!
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Checking In Linux
+\end_layout
+
+\begin_layout Subsection
+Automatic verification
+\end_layout
+
+\begin_layout Standard
+The program 
+\family typewriter
+sha1sum 
+\family default
+can automatically compare the checksum of the ISO file you downloaded against
+ the value in the text file.
+ The process is very straightfoward, but the end result might look a little
+ worrying!
+\end_layout
+
+\begin_layout Standard
+For this example, I first open a terminal and chang to the directory where
+ I downloaded the ISO file and checksum file.
+ I use the command 
+\family typewriter
+ls
+\family default
+ to check which files are present:
+\end_layout
+
+\begin_layout LyX-Code
+jonathon@box:~$ cd download
+\end_layout
+
+\begin_layout LyX-Code
+jonathon@box:~/download$ ls
+\end_layout
+
+\begin_layout LyX-Code
+manjaro-0.8.9-sha1sum.txt  manjaro-xfce-0.8.9-x86_64.iso
+\end_layout
+
+\begin_layout Standard
+As you can see I have downloaded the 64-bit XFCE edition.
+ Next, I run the 
+\family typewriter
+sha1sum
+\family default
+ program to check against the values in the checksum file:
+\end_layout
+
+\begin_layout LyX-Code
+jonathon@box:~/download$ sha1sum -c manjaro-0.8.9-sha1sum.txt
+\end_layout
+
+\begin_layout Standard
+The next set of lines show the result of the checks.
+ While the first few lines look worrying this is to be expected - the program
+ can't check ISO files that aren't there! The second to last line is the
+ important one.
+ It shows that 
+\family typewriter
+sha1sum
+\family default
+ has successfully verified the ISO file I downloaded against the checksum
+ value in the file.
+\end_layout
+
+\begin_layout LyX-Code
+sha1sum: manjaro-kde-0.8.9-i686.iso: No such file or directory
+\end_layout
+
+\begin_layout LyX-Code
+manjaro-kde-0.8.9-i686.iso: FAILED open or read
+\end_layout
+
+\begin_layout LyX-Code
+sha1sum: manjaro-kde-0.8.9-x86_64.iso: No such file or directory
+\end_layout
+
+\begin_layout LyX-Code
+manjaro-kde-0.8.9-x86_64.iso: FAILED open or read
+\end_layout
+
+\begin_layout LyX-Code
+sha1sum: manjaro-net-0.8.9-i686.iso: No such file or directory
+\end_layout
+
+\begin_layout LyX-Code
+manjaro-net-0.8.9-i686.iso: FAILED open or read
+\end_layout
+
+\begin_layout LyX-Code
+sha1sum: manjaro-net-0.8.9-x86_64.iso: No such file or directory
+\end_layout
+
+\begin_layout LyX-Code
+manjaro-net-0.8.9-x86_64.iso: FAILED open or read
+\end_layout
+
+\begin_layout LyX-Code
+sha1sum: manjaro-openbox-0.8.9-i686.iso: No such file or directory
+\end_layout
+
+\begin_layout LyX-Code
+manjaro-openbox-0.8.9-i686.iso: FAILED open or read
+\end_layout
+
+\begin_layout LyX-Code
+sha1sum: manjaro-openbox-0.8.9-x86_64.iso: No such file or directory
+\end_layout
+
+\begin_layout LyX-Code
+manjaro-openbox-0.8.9-x86_64.iso: FAILED open or read
+\end_layout
+
+\begin_layout LyX-Code
+sha1sum: manjaro-xfce-0.8.9-i686.iso: No such file or directory
+\end_layout
+
+\begin_layout LyX-Code
+manjaro-xfce-0.8.9-i686.iso: FAILED open or read
+\end_layout
+
+\begin_layout LyX-Code
+sha1sum: manjaro-xfce-0.8.9-x86_64.iso: OK
+\end_layout
+
+\begin_layout LyX-Code
+sha1sum: WARNING: 7 listed files could not be read
+\end_layout
+
+\begin_layout Subsection
+Manual verification
+\end_layout
+
+\begin_layout Standard
+To manually check the integrity of your downloaded file, first open the
+ downloaded 
+\series bold
+manjaro-0.8.9-sha1sum.txt
+\series default
+ checksum file using a text editor such as Gedit.
+ Once the checksum file has been opened, and the codes are visible, open
+ up your terminal and change to the directory where your downloaded ISO
+ is stored.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/02-linux-checksum.png
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Verifying the checksum displayed in gedit against the output of sha256sum
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+For example, if your ISO file is located in the default Downloads folder,
+ you would enter the following command:
+\end_layout
+
+\begin_layout LyX-Code
+
+\family typewriter
+cd Downloads
+\end_layout
+
+\begin_layout Standard
+The command to then perform a checksum uses the following syntax:
+\end_layout
+
+\begin_layout LyX-Code
+
+\family typewriter
+sha1sum [ISO Image]
+\end_layout
+
+\begin_layout Standard
+The following command will use SHA-1 to generate a hash code for the 64-bit
+ Manjaro XFCE 0.8.9 ISO.
+ The code generated can then be manually compared to the code contained
+ in the checksum file:
+\end_layout
+
+\begin_layout LyX-Code
+
+\family typewriter
+sha1sum manjaro-xfce-0.8.9-x86_64.iso
+\end_layout
+
+\begin_layout Section
+Checking in Microsoft Windows
+\end_layout
+
+\begin_layout Standard
+Unlike Linux, Microsoft Windows does not have any suitable built-in tools
+ so you will need to download and install a checksum utility application.
+ A web search will turn up several examples of free software, or you can
+ look on the 
+\series bold
+Download.com
+\series default
+ website 
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://download.cnet.com/
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+.
+ Another free checksum utility which has positive reviews is 
+\series bold
+Raymond's MD5 & SHA Checksum Utility
+\series default
+ 
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+http://raylin.wordpress.com/downloads/md5-sha-1-checksum-utility/
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+.
+ This is the program we will use in the following example.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement h
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/03-windows-checksum.png
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Verifying the checksum in Microsoft Windows using Raymond's MD5 & SHA Checksum
+ Utility.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Once you have downloaded the checksum utility, the checking process is very
+ straightforward.
+ Simply 
+\series bold
+Browse
+\series default
+ to the downloaded ISO file, select it, and click 
+\series bold
+Open
+\series default
+.
+ The program will then calculate the checksums for the ISO file
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+To speed up the process it's probably a good idea to deselect the hashes
+ you are not verifying.
+\end_layout
+
+\end_inset
+
+.
+ To verify the checksum is correct, open the 
+\series bold
+manjaro-0.8.9-sha1sum.txt
+\series default
+ in a text editor such as Notepad, copy the checksum for the ISO file you
+ have downloaded, and paste it into the verification box.
+ Then click 
+\series bold
+Verify
+\series default
+.
+ If there are no problems with the ISO file the program will inform you
+ that the hash matched.
+\end_layout
+
+\end_body
+\end_document
