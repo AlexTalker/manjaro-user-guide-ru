@@ -3,12 +3,15 @@
 \begin_document
 \begin_header
 \textclass tufte-book
+\begin_preamble
+\publisher{The Manjaro Documentation Team}
+\end_preamble
 \use_default_options true
 \begin_modules
 fixltx2e
 \end_modules
 \maintain_unincluded_children false
-\language english
+\language british
 \language_package default
 \inputencoding auto
 \fontencoding global
@@ -30,6 +33,8 @@ fixltx2e
 \paperfontsize default
 \spacing single
 \use_hyperref true
+\pdf_title "Manjaro Linux 0.8.9 User Guide"
+\pdf_author "The Manjaro Documentation Team"
 \pdf_bookmarks true
 \pdf_bookmarksnumbered false
 \pdf_bookmarksopen false
@@ -78,6 +83,72 @@ User Guide
 
 \begin_layout Author
 Manjaro Linux 0.8.9
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+~
+\backslash
+vfill
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+thispagestyle{empty}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Full Width
+Copyright 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+copyright
+\backslash
+ 
+\backslash
+the
+\backslash
+year
+\backslash
+
+\end_layout
+
+\end_inset
+
+ the Manjaro Documentation Team
+\end_layout
+
+\begin_layout Full Width
+LICENSE TEXT: GPL? APACHE?
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section*
@@ -154,6 +225,29 @@ Duff Community, Documentation and Wiki Management, Scripting and Configuration
 \end_layout
 
 \begin_layout Section*
+The Manjaro Documentation Team
+\end_layout
+
+\begin_layout Description
+Carl
+\begin_inset space ~
+\end_inset
+
+Duff Author of the User Guide 0.8.0-0.8.8
+\end_layout
+
+\begin_layout Description
+Jonathon
+\begin_inset space ~
+\end_inset
+
+Fernyhough Editor of the User Guide 0.8.9
+\end_layout
+
+\begin_layout Section*
+\begin_inset Newpage newpage
+\end_inset
+
 A Note About Manjaro and Arch
 \end_layout
 
@@ -315,11 +409,8 @@ Access to the Arch User Repositories, and
 \end_layout
 
 \begin_layout Itemize
-The versatility to be shaped and 
-\lang british
-moulded
-\lang english
- in every respect to suit personal taste and preference.
+The versatility to be shaped and moulded in every respect to suit personal
+ taste and preference.
  
 \end_layout
 
@@ -358,7 +449,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/01-welcome.png
+	filename images/welcome.png
 	width 100text%
 
 \end_inset
@@ -400,11 +491,11 @@ Downloading Manjaro
  This is why just copying an ISO file to a disc (or USB flashdrive) to begin
  installing won't work: you'll need to use a disc burning application to
  translate that raw data into the files and folders.
-\begin_inset Foot
+\begin_inset Flex Marginnote
 status collapsed
 
 \begin_layout Plain Layout
-Note: There is an exception to this rule.
+There is an exception to this rule.
  If you intend on installing Manjaro in a virtual machine environment using
  Oracle's Virtualbox, then there will be no need to burn the image as Virtualbox
  will be able to read from the ISO file directly as a virtual disc.
@@ -455,7 +546,7 @@ edition This edition of Manjaro comes complete with a pre-installed desktop
  applications, and codecs.
  This would of course be the most appropriate choice for those who wish
  to try out Manjaro on a Live-CD 
-\begin_inset Foot
+\begin_inset Flex Marginnote
 status open
 
 \begin_layout Plain Layout
@@ -468,7 +559,7 @@ When you purchase retail software it generally comes on a disc, whether
 
 \end_inset
 
- without having to install it first.
+without having to install it first.
  An ISO image for a full edition of Manjaro will list the pre-installed
  desktop environment in its name.
  For example, an ISO image beginning with
@@ -731,8 +822,8 @@ From this point on we'll assume you are using the file
 manjaro-0.8.9-sha1sum.txt
 \series default
 .
-\begin_inset Foot
-status open
+\begin_inset Flex Marginnote
+status collapsed
 
 \begin_layout Plain Layout
 Test builds have a slightly different arrangement.
@@ -901,7 +992,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/02-linux-checksum.png
+	filename images/linux-checksum.png
 	width 100text%
 
 \end_inset
@@ -976,7 +1067,7 @@ Unlike Linux, Microsoft Windows does not have any suitable built-in tools
 \series bold
 Download.com
 \series default
- website 
+ website.
 \begin_inset Foot
 status open
 
@@ -996,12 +1087,11 @@ http://download.cnet.com/
 
 \end_inset
 
-.
  Another free checksum utility which has positive reviews is 
 \series bold
 Raymond's MD5 & SHA Checksum Utility
 \series default
- 
+.
 \begin_inset Foot
 status open
 
@@ -1021,7 +1111,6 @@ http://raylin.wordpress.com/downloads/md5-sha-1-checksum-utility/
 
 \end_inset
 
-.
  This is the program we will use in the following example.
 \end_layout
 
@@ -1030,11 +1119,12 @@ http://raylin.wordpress.com/downloads/md5-sha-1-checksum-utility/
 placement h
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/03-windows-checksum.png
+	filename images/windows-checksum.png
+	lyxscale 50
 	width 100text%
 
 \end_inset
@@ -1072,9 +1162,9 @@ Browse
 Open
 \series default
 .
- The program will then calculate the checksums for the ISO file
-\begin_inset Foot
-status open
+ The program will then calculate the checksums for the ISO file.
+\begin_inset Flex Marginnote
+status collapsed
 
 \begin_layout Plain Layout
 To speed up the process it's probably a good idea to deselect the hashes
@@ -1083,7 +1173,6 @@ To speed up the process it's probably a good idea to deselect the hashes
 
 \end_inset
 
-.
  To verify the checksum is correct, open the 
 \series bold
 manjaro-0.8.9-sha1sum.txt
@@ -1097,6 +1186,1261 @@ Verify
 .
  If there are no problems with the ISO file the program will inform you
  that the hash matched.
+\end_layout
+
+\begin_layout Chapter
+Burning an ISO File
+\end_layout
+
+\begin_layout Standard
+An ISO is not simply a 
+\begin_inset Quotes eld
+\end_inset
+
+drag and drop
+\begin_inset Quotes erd
+\end_inset
+
+ or 
+\begin_inset Quotes eld
+\end_inset
+
+copy and paste
+\begin_inset Quotes erd
+\end_inset
+
+ duplication of the Manjaro installation files.
+ It is, in fact, a copy of the raw data that makes up the files themselves.
+ This is why it is necessary to use a software application to 
+\begin_inset Quotes eld
+\end_inset
+
+burn
+\begin_inset Quotes erd
+\end_inset
+
+ an ISO file to a physical medium such as a DVD or USB flash drive in order
+ to use it (i.e.
+ convert the raw data back into files).
+\begin_inset Flex Marginnote
+status open
+
+\begin_layout Plain Layout
+You don't need to burn an ISO file if you intend to run Manjaro in a virtual
+ machine environment using software like Oracle Virtualbox.
+ This is because Virtualbox is able to read ISO files directly as virtual
+ discs.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Once converted, the files can be used to run Manjaro in Live-CD mode without
+ having to install it to your system, and/or install Manjaro on your system.
+ It's important to note Manjaro will not have full functionality when run
+ in Live-CD mode.
+ For example, you will not be able to save any changes to the system, install
+ updates or add new applications.
+\end_layout
+
+\begin_layout Standard
+Due to the amount of software included on the full edition ISO images you
+ may need to use a DVD instead of a CD.
+ Check the following table as a guide if you're not sure:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="9" columns="4">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Edition
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Filename
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Size
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Media
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+KDE
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+manjaro-kde-0.8.9-i686.iso
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.3GB
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+DVD
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+manjaro-kde-0.8.9-x86_64.iso
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.4GB
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Openbox
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+manjaro-openbox-0.8.9-i686.iso
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+690MB
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+CD
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+manjaro-openbox-0.8.9-x86_64.iso
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+660MB
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+XFCE
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+manjaro-xfce-0.8.9-i686.iso
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+735MB
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+DVD
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+manjaro-xfce-0.8.9-x86_64.iso
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+700MB
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+CD
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+NET
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+manjaro-net-0.8.9-i686.iso
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+440MB
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+CD
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+manjaro-net-0.8.9-x86_64.iso
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+590MB
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Manjaro Edition ISO file sizes
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Many people routinely use a DVD rather than a CD even for the smallest ISO
+ files.
+ Not only is a DVD faster to burn but they allow higher data access rates
+ so the Live-CD loads faster and the installation completes sooner.
+\end_layout
+
+\begin_layout Standard
+However, with the increasing capacity and decreasing cost of USB flash media
+ 
+\begin_inset Flex Marginnote
+status open
+
+\begin_layout Plain Layout
+If your system will boot from a USB device, and you have one of sufficient
+ capacity that you can erase, we recommend the use of a USB flash drive
+ over traditional CD/DVD media.
+\end_layout
+
+\end_inset
+
+this presents an even more attractive method than the traditional burning
+ process; it is far faster and more flexible than using optical media.
+ Both CD/DVD burning and USB flash media installation methods are covered
+ in this guide.
+\end_layout
+
+\begin_layout Section
+Burning to a CD/DVD in Linux
+\end_layout
+
+\begin_layout Standard
+If not already installed, several different software burning applications
+ should be available for installation from your distribution's Software
+ Center / Software Manager / Package Manager / repositories.
+ Popular burners include 
+\series bold
+XFBurn
+\series default
+, 
+\series bold
+K3b
+\series default
+, and 
+\series bold
+Brasero
+\series default
+.
+\begin_inset Flex Marginnote
+status collapsed
+
+\begin_layout Plain Layout
+XFCE environments tend to include XFBurn.
+ KDE environments tend to include K3b.
+ GNOME environments tend to include Brasero.
+\end_layout
+
+\end_inset
+
+ Which one you choose is entirely down to personal choice, though your operating
+ system will usually install one suitable for your desktop environment.
+ To simplify things a little, the following steps for burning your downloaded
+ Manjaro ISO use Brasero.
+\end_layout
+
+\begin_layout Subsection
+Burning using Brasero
+\end_layout
+
+\begin_layout Enumerate
+Insert a blank CD/DVD.
+ 
+\begin_inset Flex Marginnote
+status open
+
+\begin_layout Plain Layout
+It's a good idea to use rewriteable disc (e.g.
+ CD-RW or DVD-RW).
+ Although slightly more expensive individually than a write-once disc you
+ can reuse the disc again and again, for example when the next version of
+ Manjaro is released!
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Start the 
+\series bold
+Brasero
+\series default
+ software burner.
+\end_layout
+
+\begin_layout Enumerate
+Click the 
+\series bold
+Burn Image - Burn an existing CD/DVD image to disc
+\series default
+ button to open the 
+\series bold
+Image Burning Setup
+\series default
+ window.
+\end_layout
+
+\begin_layout Enumerate
+Click the button beneath the title 
+\series bold
+Select a disc image to write
+\series default
+ to open up your file manager.
+ Locate and double-click the downloaded ISO file to load it.
+ Upon automatically returning to the 
+\series bold
+Image Burning Setup
+\series default
+ window, note that the ISO file is now listed as the disc image to write.
+\end_layout
+
+\begin_layout Enumerate
+The blank CD/DVD you inserted should be automatically listed underneath
+ the title 
+\series bold
+Select a disc to write to
+\series default
+.
+ If not, click the button to select it manually.
+\end_layout
+
+\begin_layout Enumerate
+Click the 
+\series bold
+properties
+\series default
+ button to open the properties window, and then click the button beneath
+ the title 
+\series bold
+Burning Speed
+\series default
+.
+ We strongly recommend you select the slowest speed available.
+ Once selected, click the Close button.
+\begin_inset Flex Marginnote
+status open
+
+\begin_layout Plain Layout
+We strongly recommend you select the slowest speed available when burning
+ to disc in order minimise the possibility of corruption during the burning
+ process.
+\end_layout
+
+\begin_layout Standard
+It's also a good idea to avoid using any applications which make intensive
+ use of system resources while burning, and in particular avoid heavy disc
+ access.
+ If the burner software can't read the ISO file quickly enough the burning
+ process can be interrupted.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Click the 
+\series bold
+Burn
+\series default
+ button to start the burning process.
+ If necessary, follow any on-screen instructions provided.
+\end_layout
+
+\begin_layout Section
+Burning to a CD/DVD in Microsoft Windows
+\end_layout
+
+\begin_layout Standard
+Newer versions of Microsoft Windows (Windows 7 and later) include a ISO
+ image burner.
+ If you do not have a newer version of Microsoft Windows you will need to
+ download one of the many free disc burning software utilities.
+ 
+\end_layout
+
+\begin_layout Subsection
+Burning using Windows Disc Image Burner
+\end_layout
+
+\begin_layout Standard
+Selecting the ISO file and clicking on 
+\series bold
+Burn disc image
+\series default
+, or simply double-clicking on the file itself, will start the 
+\series bold
+Windows Disc Image Burner
+\series default
+ program.
+ This makes the process of burning to a disc very straightforward:
+\end_layout
+
+\begin_layout Enumerate
+Insert a blank CD/DVD into your disc drive.
+\end_layout
+
+\begin_layout Enumerate
+Start 
+\series bold
+Windows Disc Image Burner
+\series default
+.
+\begin_inset Flex Marginnote
+status collapsed
+
+\begin_layout Plain Layout
+For more information about this program see: 
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://windows.microsoft.com/en-gb/windows7/burn-a-cd-or-dvd-from-an-iso-file
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Click 
+\series bold
+Burn
+\series default
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/windows-disc-image-burner.png
+	lyxscale 50
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Windows Disc Image Burner in Microsoft Windows 7
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Burning using a third-party application
+\end_layout
+
+\begin_layout Standard
+For versions of Microsoft Windows earlier than Windows 7 (e.g.
+ Windows XP) you will need to download and install third-party disc burning
+ software.
+ There are many free examples available that will be found by a web search,
+ but here are some of the most popular:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide true
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="3">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Name
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Website
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Video tutorial
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Imgburn
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://imgburn.com/
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://www.youtube.com/watch?v=XihCQgmeGV4
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+CDBurnerXP
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+http://cdburnerxp.se/en/
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://www.youtube.com/watch?v=LxYkFdwn1qI
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+InfraRecorder
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://infrarecorder.org/
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Third-party disc burning software for Microsoft Windows
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The burning process for each of these applications is similar, with small
+ differences in user interface.
+ The websites listed above will provide information about features and screensho
+ts of the applications themselves.
+ For a little more information about each of these applications, an overview
+ of each is available in the 
+\series bold
+CD/DVD Burning Article
+\series default
+ on the TechSupportAlert website.
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://www.techsupportalert.com/best-free-cd-dvd-burning-software.htm
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ Alternative burning software may also be found on the Download.com website,
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://download.cnet.com/
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ although you will have to filter the search results to view only free applicati
+ons.
+ It will also be worthwhile to take the time to read any reviews provided
+ for your choice(s).
+\end_layout
+
+\begin_layout Section
+Writing to a USB flash drive in Linux
+\end_layout
+
+\begin_layout Standard
+To take advantage of the faster access times and much quieter nature of
+ a USB flash drive, there are a number of methods of writing the ISO file.
+ The easiest is to use 
+\series bold
+ImageWriter
+\series default
+.
+\begin_inset Float marginfigure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/imagewriter-linux.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+ImageWriter 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+https://en.opensuse.org/SDB:Live_USB_stick
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ImageWriter should be available for installation from your distribution's
+ Software Center / Software Manager / Package Manager / repositories.
+ Once Imagewriter has been downloaded and installed, ensure that your USB
+ flash drive is plugged in before starting the application.
+\end_layout
+
+\begin_layout Standard
+The process of using ImageWriter is very straightforward:
+\end_layout
+
+\begin_layout Enumerate
+Click on the centre icon.
+\end_layout
+
+\begin_layout Enumerate
+Navigate to where you downloaded the ISO image file, and select it.
+\end_layout
+
+\begin_layout Enumerate
+Ensure that your USB flash drive has been selected from the drop-down menu.
+\end_layout
+
+\begin_layout Enumerate
+Click on the 
+\series bold
+Write
+\series default
+ button.
+\end_layout
+
+\begin_layout Enumerate
+Once it has finished, reboot your system, making sure to select the USB
+ flash drive as the boot device.
+\end_layout
+
+\begin_layout Section
+Writing to a USB flash drive in Microsoft Windows
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float marginfigure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/win32-imagewriter.jpg
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Windows ImageWriter
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+http://sourceforge.net/projects/win32diskimager/
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+We recommend you use 
+\series bold
+ImageWriter For Windows
+\series default
+, which is a free application designed to write disc images to USB flash
+ drives as well as Compact Flash (CF) and Secure Digital (SD) cards.
+ Once Imagewriter has been downloaded and installed, ensure that your USB
+ flash drive is plugged in before starting it.
+\end_layout
+
+\begin_layout Standard
+If you find that ImageWriter is unable to start, you might have to download
+ Microsoft's .NET 2.0 Runtime Framework.
+ This is needed by some software programs though it is normally already
+ installed on your Windows PC.
+\end_layout
+
+\begin_layout Standard
+In addition, if an error message is displayed upon starting the process
+ on Windows Vista and later, you might need to open ImageWriter by first
+ right-clicking on the icon, and then selecting the 
+\series bold
+Run as Administrator
+\series default
+ option.
+\begin_inset Flex Marginnote
+status open
+
+\begin_layout Plain Layout
+Make sure that Windows Explorer is closed before attempting to write the
+ ISO image, otherwise it may block access to the USB flash drive.
+ If this happens the following error message will be displayed:
+\series bold
+ system.componentModel.Win32Exception: Access is denied.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+For more detailed information about the software it's worth reading the
+ website, though the process is very straightforward:
+\end_layout
+
+\begin_layout Enumerate
+Click the select button (folder icon).
+\end_layout
+
+\begin_layout Enumerate
+Navigate to and select the Manjaro ISO image.
+\end_layout
+
+\begin_layout Enumerate
+Select your USB flash drive from the 
+\series bold
+Device 
+\series default
+menu.
+\end_layout
+
+\begin_layout Enumerate
+Click the 
+\series bold
+Write
+\series default
+ button.
+\end_layout
+
+\begin_layout Enumerate
+Once it has finished, reboot your system, making sure to select the USB
+ flash drive as the boot device.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Marginnote
+status collapsed
+
+\begin_layout Plain Layout
+Re-partitioning your USB stick as a RAW data type will result in all data
+ present being destroyed, and will render it unusable for other purposes
+ until reformatted back to its original partition type
+\end_layout
+
+\end_inset
+
+If for some reason the writing process is unsuccessful the ImageWriter authors
+ recommend that you use a partitioning tool to reformat the USB flash drive
+ as a RAW partition type, then try again.
+ Unfortunately this process is outside the scope of this guide.
 \end_layout
 
 \end_body
