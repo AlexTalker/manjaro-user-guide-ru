@@ -116,6 +116,7 @@ thispagestyle{empty}
 \end_layout
 
 \begin_layout Full Width
+\align left
 Copyright 
 \begin_inset ERT
 status open
@@ -137,11 +138,71 @@ year
 
 \end_inset
 
- the Manjaro Documentation Team
+ the Manjaro Development Team.
+\begin_inset VSpace defskip
+\end_inset
+
+
 \end_layout
 
 \begin_layout Full Width
-LICENSE TEXT: GPL? APACHE?
+\align left
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Full Width
+\align left
+Licensed under the Attribution-ShareAlike 4.0 International Licence (the
+ “Licence”); you may not use this file except in compliance with the License.
+ You may obtain a copy of the Licence at: 
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+https://creativecommons.org/licenses/by-sa/4.0/legalcode
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Full Width
+\align left
+Unless required by applicable law or agreed to in writing, software distributed
+ under the Licence is distributed on an 
+\begin_inset Quotes eld
+\end_inset
+
+as is
+\begin_inset Quotes erd
+\end_inset
+
+ basis, without warranties or conditions of any kind, either express or
+ implied.
+ See the Licence for the specific language governing permissions and limitations
+ under the Licence.
+\end_layout
+
+\begin_layout Full Width
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Full Width
+\align left
+\begin_inset Graphics
+	filename images/cc-by-sa.png
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -205,6 +266,15 @@ Mikolajczyk Developer
 \end_layout
 
 \begin_layout Description
+Demiray
+\begin_inset space ~
+\end_inset
+
+Muhterem Manjaro KDE Edition Maintainer, Turkish irc-web support, Manjaro
+ artworks
+\end_layout
+
+\begin_layout Description
 Wlad
 \begin_inset space ~
 \end_inset
@@ -224,8 +294,20 @@ Carl
 Duff Community, Documentation and Wiki Management, Scripting and Configuration
 \end_layout
 
-\begin_layout Section*
-The Manjaro Documentation Team
+\begin_layout Description
+Ringo
+\begin_inset space ~
+\end_inset
+
+de
+\begin_inset space ~
+\end_inset
+
+Kroon Community, IRC Support
+\end_layout
+
+\begin_layout Subsection*
+Documentation
 \end_layout
 
 \begin_layout Description
@@ -241,7 +323,37 @@ Jonathon
 \begin_inset space ~
 \end_inset
 
-Fernyhough Editor of the User Guide 0.8.9
+Fernyhough Contributor to and Editor of the User Guide 0.8.9
+\end_layout
+
+\begin_layout Section*
+Acknowledgements
+\end_layout
+
+\begin_layout Standard
+The awesome community on 
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+forum.manjaro.org
+\end_layout
+
+\end_inset
+
+ and 
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+#manjaro
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section*
@@ -334,20 +446,29 @@ About Manjaro
 \series bold
 Manjaro
 \series default
- is a user-friendly Linux distribution based on the independently developed
- Arch operating system.
+ is a user-friendly 
+\series bold
+GNU/Linux
+\series default
+ distribution based on the independently developed 
+\series bold
+Arch Linux
+\series default
+.
  Within the Linux community, Arch itself is renowned for being an exceptionally
  fast, powerful, and lightweight distribution that provides access to the
- very latest cutting-edge - and bleeding-edge - software.
- However, Arch is also aimed at more experienced or technically-minded users.
- As such, it is generally considered to be beyond the reach of those who
- lack the technical expertise (or persistence) required to use it.
+ very latest cutting-edge software.
+ However, Arch is also traditionally aimed at more experienced or technically-mi
+nded users.
+ As such, it is generally considered to be beyond the reach of many, especially
+ those who lack the technical expertise (or persistence) required to use
+ it.
 \end_layout
 
 \begin_layout Standard
-Developed in Austria, France, and Germany, Manjaro provides all the benefits
- of the Arch operating system combined with a focus on user-friendliness
- and accessibility.
+Developed in Austria, France, and Germany, Manjaro aims to provide all of
+ the benefits of Arch Linux combined with a focus on user-friendliness and
+ accessibility.
  Available in both 32- and 64-bit versions, Manjaro is suitable for newcomers
  as well as experienced Linux users.
  For newcomers, a user-friendly installer is provided, and the system itself
@@ -368,11 +489,15 @@ Pre-installed desktop environments
 
 \begin_layout Itemize
 Pre-installed graphical applications to easily install software and update
- your system, and
+ your system
 \end_layout
 
 \begin_layout Itemize
-Pre-installed codecs to play multimedia files
+Pre-installed codecs to play multimedia files, and
+\end_layout
+
+\begin_layout Itemize
+Pre-installed access to the latest games
 \end_layout
 
 \begin_layout Section
@@ -401,7 +526,7 @@ rolling release
 \end_inset
 
  development model that provides the most up-to-date system possible without
- the need to install new versions
+ the need to regularly install a new operating system release
 \end_layout
 
 \begin_layout Itemize
@@ -484,10 +609,9 @@ Downloading Manjaro
 
 \begin_layout Standard
 32- and 64-bit versions of Manjaro are available for download as ISO files.
- An ISO file is itself a literal copy of a disc image, although not in the
- same sense as a copy-and-paste duplication.
- Rather, it is a copy of the raw data that makes up the files and folders
- of that disc.
+ An ISO file is itself a bit-for-bit digital copy of a disc image.
+ It is not a copy-and-paste duplication of files; rather, it is a copy of
+ the raw data that makes up the files and folders of that disc.
  This is why just copying an ISO file to a disc (or USB flashdrive) to begin
  installing won't work: you'll need to use a disc burning application to
  translate that raw data into the files and folders.
@@ -524,7 +648,7 @@ x86_64.iso
 \end_layout
 
 \begin_layout Section
-Manjaro Editions
+Manjaro editions
 \end_layout
 
 \begin_layout Standard
@@ -542,10 +666,10 @@ Full
 
 edition This edition of Manjaro comes complete with a pre-installed desktop
  environment.
- In the case of the XFCE edition, it will also come with popular software
- applications, and codecs.
- This would of course be the most appropriate choice for those who wish
- to try out Manjaro on a Live-CD 
+ In the case of the XFCE edition, it will also come with a selection of
+ popular software applications.
+ This would be the most appropriate choice for those who wish to try out
+ Manjaro on a Live-CD 
 \begin_inset Flex Marginnote
 status open
 
@@ -554,7 +678,7 @@ When you purchase retail software it generally comes on a disc, whether
  a CD or a DVD.
  A 'Live-CD' has a version of the operating system that will run without
  needing to be installed.
- This is a feature of operating systems similar to Manjaro Linux.
+ This is a feature of most GNU/Linux and BSD-based operating systems.
 \end_layout
 
 \end_inset
@@ -590,7 +714,7 @@ manjaro-net
 \end_layout
 
 \begin_layout Section
-Downloading an ISO Image
+Downloading an ISO disc image
 \end_layout
 
 \begin_layout Standard
@@ -689,7 +813,7 @@ http://sourceforge.net/projects/manjarodev/files/testbuild/
 \end_layout
 
 \begin_layout Chapter
-Checking a Downloaded ISO File for Errors
+Checking a downloaded ISO disc image for errors
 \end_layout
 
 \begin_layout Standard
@@ -838,7 +962,7 @@ Test builds have a slightly different arrangement.
 \end_layout
 
 \begin_layout Section
-Checking In Linux
+Checking in Linux
 \end_layout
 
 \begin_layout Subsection
@@ -1189,7 +1313,7 @@ Verify
 \end_layout
 
 \begin_layout Chapter
-Burning an ISO File
+Burning an ISO disc image
 \end_layout
 
 \begin_layout Standard
@@ -1798,7 +1922,7 @@ We strongly recommend you select the slowest speed available when burning
  process.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 It's also a good idea to avoid using any applications which make intensive
  use of system resources while burning, and in particular avoid heavy disc
  access.
@@ -1825,7 +1949,7 @@ Burning to a CD/DVD in Microsoft Windows
 \end_layout
 
 \begin_layout Standard
-Newer versions of Microsoft Windows (Windows 7 and later) include a ISO
+Newer versions of Microsoft Windows (Windows 7 and later) include an ISO
  image burner.
  If you do not have a newer version of Microsoft Windows you will need to
  download one of the many free disc burning software utilities.
@@ -2441,6 +2565,379 @@ If for some reason the writing process is unsuccessful the ImageWriter authors
  recommend that you use a partitioning tool to reformat the USB flash drive
  as a RAW partition type, then try again.
  Unfortunately this process is outside the scope of this guide.
+\end_layout
+
+\begin_layout Chapter
+Booting the Live environment
+\end_layout
+
+\begin_layout Standard
+Booting the Live environment, whether from CD/DVD or USB flash drive, will
+ give you an overview of the Manjaro Linux environment and let you test
+ how well it will run on your machine.
+ This is very useful to check before committing to install a new operating
+ system!
+\end_layout
+
+\begin_layout Standard
+For best results you should be connected to the Internet.
+ If you have a wired Ethernet connection, and plug in before booting the
+ Live environment, Manjaro will automatically set up a connection.
+ If you have a wireless (Wi-Fi) connection you can set up the wireless network
+ once you have reached the Manjaro desktop.
+\end_layout
+
+\begin_layout Standard
+The method of selecting the boot device varies considerably across machines.
+ You may need to hold one key, for example <
+\series bold
+Esc
+\series default
+>, <
+\series bold
+Del
+\series default
+>, or <
+\series bold
+F10
+\series default
+>, to select the boot device.
+ Or, you may need to set the option in your BIOS.
+ If you're not sure, your machine's user guide will have detail of the method
+ you need, alternatively a web search will also quickly turn up the answer.
+\end_layout
+
+\begin_layout Section
+The boot menu
+\end_layout
+
+\begin_layout Standard
+When you boot from your installation media (CD/DVD or USB flash drive) you
+ should be presented with the Manjaro boot screen.
+ This screen provides several options to help get the best experience from
+ the Live environment.
+ 
+\begin_inset Float marginfigure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/media-boot-screen.png
+	width 100text%
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Boot menu
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+It is possible at this stage to set your preferred language and keyboard
+ layout before using Manjaro.
+ This means that you will be able to use and install Manjaro in your native
+ language straight away.
+\end_layout
+
+\begin_layout Section
+Setting your language and keyboard layout
+\end_layout
+
+\begin_layout Standard
+First, set your preferred language by pressing the 
+\series bold
+<F2>
+\series default
+ key.
+ The options available can be highlighted for selection by using the arrow
+ keys on your keyboard.
+ In this instance, English (UK) has been highlighted for the user.
+\begin_inset Float marginfigure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/media-choose-language.png
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Language selection
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Once selected, press <
+\series bold
+Enter
+\series default
+> to confirm and to be taken back to the boot menu.
+ 
+\end_layout
+
+\begin_layout Standard
+Selecting the language will also set a keyboard layout appropriate to that
+ language, for example it will select QWERTY for English and AZERTY for
+ French.
+ If this doesn't match your layout, or perhaps you have a US layout but
+ speak German, press <
+\series bold
+F2
+\series default
+> again, but this time select 
+\series bold
+Keyboard
+\series default
+.
+ Pick the language that matches your keyboard layout, and press <
+\series bold
+Enter
+\series default
+> to confirm and return to the boot menu.
+\end_layout
+
+\begin_layout Section
+Choosing the drivers
+\end_layout
+
+\begin_layout Standard
+There are two main sets of drivers that can be used by Manjaro: 
+\series bold
+Free
+\series default
+ and 
+\series bold
+non-Free
+\series default
+.
+ The differences are not minor, and your choice can depend on your computer
+ hardware.
+\begin_inset Flex Marginnote
+status open
+
+\begin_layout Plain Layout
+If in doubt, choose 
+\series bold
+Free 
+\series default
+drivers.
+ If you want to play games, choose 
+\series bold
+non-Free
+\series default
+ drivers.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+
+\series bold
+Free
+\series default
+ drivers are open-source, like Manjaro itself, written and updated by a
+ large community.
+ For older hardware and that with Intel-based integrated graphics, this
+ is the best choice.
+\end_layout
+
+\begin_layout Description
+
+\series bold
+Non-Free
+\series default
+ drivers are closed-source, written and updated only by the hardware manufacture
+rs.
+ This is generally the best choice for newer hardware with AMD or Nvidia
+ dedicated graphics.
+ At the time of writing, 
+\series bold
+non-Free
+\series default
+ drivers are the best choice for Nvidia graphics and AMD graphics newer
+ than the 8000-series.
+ For older AMD and Nvidia hardware the 
+\series bold
+Free
+\series default
+ drivers work very well.
+ For AMD graphics older than the HD5000-series 
+\series bold
+Free
+\series default
+ drivers are the best choice.
+\begin_inset Float marginfigure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/media-boot-screen.png
+	width 100text%
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Start Manjaro Linux
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+To start Manjaro with 
+\series bold
+Free
+\series default
+ drivers, choose 
+\series bold
+Start Manjaro Linux
+\series default
+ from the boot menu.
+\end_layout
+
+\begin_layout Standard
+To start Manjaro with
+\series bold
+ non-Free
+\series default
+ drivers, choose 
+\series bold
+Start (non-free drivers)
+\series default
+ from the boot menu.
+\end_layout
+
+\begin_layout Section
+Welcome to Manjaro
+\end_layout
+
+\begin_layout Standard
+Once you select Start, Manjaro will boot up.
+ You may see scrolling text - do not worry, this shows the system is working!
+ After a little while, assuming your hardware is compatible, you will be
+ presented with a Live desktop environment and a nice friendly welcome screen.
+\begin_inset Float marginfigure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/media-live-environment.png
+	width 100text%
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Welcome to Manjaro!
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The welcome screen gives some links to common tasks, such as documentation
+ (like the thing you're reading now!) and the support channels.
+ There are also links to the installation programs.
+ Don't worry if you close the welcome screen - you can load it again, and
+ all the links are also present elsewhere in the menus.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+~
+\backslash
+vfill
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+thispagestyle{empty}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align right
+\begin_inset Graphics
+	filename images/manjaro-logo.png
+
+\end_inset
+
+
 \end_layout
 
 \end_body
