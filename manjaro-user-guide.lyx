@@ -5,6 +5,10 @@
 \textclass tufte-book
 \begin_preamble
 \publisher{The Manjaro Documentation Team}
+
+\makeatletter
+\renewcommand{\fnum@figure}{\thefigure}
+\makeatother
 \end_preamble
 \use_default_options true
 \begin_modules
@@ -26,7 +30,7 @@ fixltx2e
 \font_tt_scale 100
 
 \graphics default
-\default_output_format default
+\default_output_format pdf5
 \output_sync 0
 \bibtex_command default
 \index_command default
@@ -307,7 +311,7 @@ Carl
 \begin_inset space ~
 \end_inset
 
-Duff Author of the User Guide 0.8.0-0.8.8
+Duff Editor of User Guide 0.8.0-0.8.8
 \end_layout
 
 \begin_layout Description
@@ -315,7 +319,19 @@ Jonathon
 \begin_inset space ~
 \end_inset
 
-Fernyhough Contributor to and Editor of the User Guide 0.8.9
+Fernyhough Editor of User Guide 0.8.9
+\end_layout
+
+\begin_layout Description
+VerityProductions Wiki
+\end_layout
+
+\begin_layout Description
+Handy Wiki
+\end_layout
+
+\begin_layout Description
+Sabras Wiki
 \end_layout
 
 \begin_layout Section*
@@ -784,6 +800,22 @@ http://sourceforge.net/projects/manjarodev/files/testbuild/
 
 \begin_layout Chapter
 Checking a downloaded ISO disc image for errors
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+setcounter{figure}{0}
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -1276,6 +1308,22 @@ Verify
 
 \begin_layout Chapter
 Burning an ISO disc image
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+setcounter{figure}{0}
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -2510,6 +2558,22 @@ Booting the Live environment
 \end_layout
 
 \begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+setcounter{figure}{0}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 Booting the Live environment, whether from CD/DVD or USB flash drive, will
  give you an overview of the Manjaro Linux environment and let you test
  how well it will run on your machine.
@@ -2798,9 +2862,10 @@ Welcome to Manjaro
 
 \begin_layout Standard
 Once you select Start, Manjaro will boot up.
- You may see scrolling text - do not worry, this shows the system is working!
- After a little while, assuming your hardware is compatible, you will be
- presented with a Live desktop environment and a nice friendly welcome screen.
+ You may see a lot of scrolling text - don't worry, this shows the system
+ is working! After a little while, assuming your hardware is compatible,
+ you will be presented with a Live desktop environment and a nice friendly
+ welcome screen.
 \begin_inset Float marginfigure
 wide false
 sideways false
@@ -2831,11 +2896,748 @@ Welcome to Manjaro!
 \end_layout
 
 \begin_layout Standard
-The welcome screen gives some links to common tasks, such as documentation
- (like the thing you're reading now!) and the support channels.
+The welcome screen gives some links to common tasks, documentation (like
+ the thing you're reading now!) and the support channels.
  There are also links to the installation programs.
- Don't worry if you close the welcome screen - you can load it again, and
+ Don't worry if you close the welcome screen: you can load it again, and
  all the links are also present elsewhere in the menus.
+\end_layout
+
+\begin_layout Chapter
+Using the graphical automatic installer
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+setcounter{figure}{0}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+This guide is intended for those with limited technical knowledge and experience.
+ With these steps it won't be necessary to manually partition your computer's
+ hard disc or to manually edit any configuration files.
+ However, the overall flexibility of the process is not as great as the
+ advanced installation process.
+\end_layout
+
+\begin_layout Standard
+Where possible, make sure you are connected to the internet before booting
+ from your installation media into the Live environment.
+ If you have a hard-wired connection via an ethernet cable, then Manjaro
+ will automatically connect to the internet without you having to do anything.
+ Otherwise, once you have booted into Manjaro's desktop, you will need to
+ select and then connect to your wireless network.
+\end_layout
+
+\begin_layout Standard
+For a constantly-updated version, check out the wiki: 
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+http://wiki.manjaro.org/index.php?title=Graphical_Installation_Guide_for_Beginners_
+0.8.9
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Choose your language
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/beginner-installer/language-selection.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+If you selected your preferred language before booting then it should already
+ be selected for you.
+\end_layout
+
+\begin_layout Plain Layout
+Once selected, click 
+\series bold
+Forward
+\series default
+ to proceed to the next step.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Choose your location
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/beginner-installer/location-selection.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+The locations available to choose will depend upon the language you selected
+ in the previous step.
+\end_layout
+
+\begin_layout Plain Layout
+Once selected, click 
+\series bold
+Forward
+\series default
+ to proceed to the next step.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Check the minimum requirements
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/beginner-installer/check-status.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Your computer will automatically be checked to make sure that Manjaro can
+ safely be installed.
+ This will include checking that enough storage space is available.
+\begin_inset Newline newline
+\end_inset
+
+Once satisfied that your system meets the minimum requirements necessary,
+ click 
+\series bold
+Forward
+\series default
+ to proceed to the next step.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Marginnote
+status collapsed
+
+\begin_layout Plain Layout
+Although the absolute minimum allowed is 6 Gigabytes, at least 15 Gigabytes
+ of free space is recommended.
+\end_layout
+
+\end_inset
+
+
+\begin_inset Flex Marginnote
+status collapsed
+
+\begin_layout Plain Layout
+While it's not necessary to have an active internet connection to install
+ Manjaro it's highly recommended.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Set your timezone
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/beginner-installer/set-timezone.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+To set your timezone, either click on the map or pick from the menus.
+ 
+\series bold
+Zone 
+\series default
+is the continent you live on.
+ 
+\series bold
+Region 
+\series default
+is the city closest to where you live.
+ We recommend keeping 
+\series bold
+Network Time Protocol
+\series default
+ synchronisation enabled so your clock will never be wrong! This relies
+ on an active internet connection, however.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Choose your keyboard layout
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/beginner-installer/keyboard-layout.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Just because you live in a certain location that doesn't mean you have to
+ use the keyboard layout native to it.
+ This screen allows you to choose your keyboard layout and variant such
+ as 'Dvorak' or one with 'dead keys' for extended punctuation.
+\end_layout
+
+\begin_layout Plain Layout
+To choose your desired layout simply click first on a 
+\series bold
+Layout
+\series default
+, then on a 
+\series bold
+Variant
+\series default
+.
+ Variants shown will depend on the layout chosen.
+\end_layout
+
+\begin_layout Plain Layout
+Once satisfied that these details are correct, click 
+\series bold
+Forward
+\series default
+ to proceed to the next step.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Set the installation type
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/beginner-installer/set-installation-type.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+To proceed with the 'automatic' (and very easy) installation method make
+ sure that the 
+\series bold
+Erase disc and install Manjaro (automatic)
+\series default
+ option has been selected.
+ 
+\series bold
+Be aware that this will wipe the disc you choose in the next step and erase
+ all its data.
+\end_layout
+
+\begin_layout Plain Layout
+Once complete, click 
+\series bold
+Forward
+\series default
+ to proceed to the next step.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Marginnote
+status open
+
+\begin_layout Plain Layout
+It is generally recommended that you 
+\series bold
+Set your Home in a different partition/volume
+\series default
+.
+ This keeps your documents separate from the operating system files.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Choose your disk
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/beginner-installer/set-install-disk.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+If you have more than one hard drive on your computer, then you will need
+ to decide which one to wipe so you can install Manjaro.
+\end_layout
+
+\begin_layout Plain Layout
+Once selected, click 
+\series bold
+Install Now!
+\series default
+ to proceed to the next step.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Add your user account
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/beginner-installer/add-user-account.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Now it's time to personalise your installation! Enter your real name, a
+ name for your computer (just enter 'manjaro' if you can't think of one),
+ and your username.
+ Your username will be the name of your personal account in Manjaro.
+\end_layout
+
+\begin_layout Plain Layout
+You will also need to enter your intended password twice.
+ Remember that the use of upper and lower case letters matters (e.g.
+ 'abc123' is not the same as 'ABC123').
+\end_layout
+
+\begin_layout Plain Layout
+All done! Once satisfied that these details are correct, click 
+\series bold
+Forward
+\series default
+ to view the installation process.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Installation...
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/beginner-installer/installation-in-progress.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+The automatic installation process is well underway.
+ While you wait for it to complete, useful information about Manjaro and
+ its community will be displayed.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+...complete!
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/beginner-installer/installation-finished.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Once the installation has finished you will be asked if you want to restart
+ your system.
+ Select 
+\series bold
+Yes
+\series default
+ to reboot immediately, or 
+\series bold
+No
+\series default
+ to close the installer and continue using the Manjaro Live environment.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Boot your new operating system
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/beginner-installer/boot-from-hdd.png
+	lyxscale 50
+	width 95col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+When you reboot, if you accidentally boot from the Live CD or USB drive
+ you used to install Manjaro, you can choose 
+\series bold
+Boot from Hard Disk
+\series default
+ and press 
+\series bold
+<Enter>
+\series default
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Log in
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/beginner-installer/login.png
+	lyxscale 50
+	width 95col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Once Manjaro has booted enter your username and password and enjoy your
+ fresh Manjaro system!
+\begin_inset Newline newline
+\end_inset
+
+If you like it, you might consider joining the Manjaro community on its
+ forums or IRC channel.
+ We look forward to meeting you!
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
