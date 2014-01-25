@@ -2806,7 +2806,7 @@ Free
 \begin_inset Float marginfigure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -2874,6 +2874,7 @@ status collapsed
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename images/media-live-environment.png
+	lyxscale 50
 	width 100text%
 
 \end_inset
@@ -2941,7 +2942,15 @@ Where possible, make sure you are connected to the internet before booting
 \end_layout
 
 \begin_layout Standard
-For a constantly-updated version, check out the wiki: 
+For a constantly-updated version, check out the wiki:
+\end_layout
+
+\begin_layout Description
+User
+\begin_inset space ~
+\end_inset
+
+guide: 
 \begin_inset Flex URL
 status open
 
@@ -2951,6 +2960,13 @@ http://wiki.manjaro.org/index.php?title=Graphical_Installation_Guide_for_Beginne
 0.8.9
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace vfill
 \end_inset
 
 
@@ -3351,7 +3367,7 @@ Choose your disk
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -3398,7 +3414,7 @@ Add your user account
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -3460,7 +3476,7 @@ Installation...
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -3556,7 +3572,7 @@ Boot your new operating system
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -3603,7 +3619,7 @@ Log in
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -3628,6 +3644,629 @@ Once Manjaro has booted enter your username and password and enjoy your
 If you like it, you might consider joining the Manjaro community on its
  forums or IRC channel.
  We look forward to meeting you!
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+Using the graphical installer - experienced users
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+setcounter{figure}{0}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+This guide is intended for those with sufficient technical knowledge to
+ manually create their own partitions.
+ As such, this guide focuses on providing an example of how to use the 'Advanced
+' installation method in general, rather than outlining the entire installation
+ process, or listing all the popular partition schemes that may be used.
+\end_layout
+
+\begin_layout Standard
+This guide also assumes you have read the Automatic installation guide steps
+ 1-5 as these are exactly the same.
+\end_layout
+
+\begin_layout Standard
+Where possible, make sure you are connected to the internet before booting
+ from your installation media into the Live environment.
+ If you have a hard-wired connection via an ethernet cable, then Manjaro
+ will automatically connect to the internet without you having to do anything.
+ Otherwise, once you have booted into Manjaro's desktop, you will need to
+ select and then connect to your wireless network.
+\end_layout
+
+\begin_layout Standard
+For a constantly-updated version of this guide, check out the wiki page:
+\end_layout
+
+\begin_layout Description
+User
+\begin_inset space ~
+\end_inset
+
+guide: 
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+http://wiki.manjaro.org/index.php?title=Graphical_Installation_Guide_for_Experience
+d_Users_0.8.9
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+For a refresher on partitioning your disk, check out the wiki pages on partition
+ing and partitioning scenarios:
+\end_layout
+
+\begin_layout Description
+Partitioning: 
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://wiki.manjaro.org/index.php?title=Partitioning_Overview_and_Existing_Partitio
+n_Tables
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+Partitioning
+\begin_inset space ~
+\end_inset
+
+scenarios: 
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+http://wiki.manjaro.org/index.php?title=Cfdisk_Basic_Partitioning_Scenarios
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace vfill
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Start the advanced installation method
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/advanced-installer/choose-advanced-install.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+When you reach the sixth step of the installation process, select 
+\series bold
+Manage your partitions and where to install Manjaro (advanced)
+\series default
+ and then click 
+\series bold
+Forward
+\series default
+ to proceed.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Choose your disk
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/advanced-installer/choose-disk.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+If you have more than one hard drive on your computer select the one you
+ want to partition.
+ This example already has a partition layout, but we're going to start fresh
+ by clicking 
+\series bold
+New partition table
+\series default
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Create a partition table
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/advanced-installer/choose-partition-layout.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+The partition table type you chose will normally depend on your system.
+ Non-EFI systems are normally best with MBR, whereas EFI systems should
+ use GPT.
+ Once you're happy, click 
+\series bold
+OK 
+\series default
+to create the partition table.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+GPT on a non-EFI system
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/advanced-installer/gpt-bios-warning.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+You will get a warning if you create a GPT partition table on a non-EFI
+ system.
+ You can still proceed if you want, but be aware of the extra partition.
+ Don't delete it!
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+A two-partition scenario
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/advanced-installer/empty-disk.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+In this scenario we will cover the most common partition layout.
+ Root and Boot files will be in a single partition and Home in a second
+ partition to keep documents separate from system files.
+ We'll add an optional swap partition in the remaining space.
+ As there are only three partitions total, each can be Primary partitions.
+\begin_inset Newline newline
+\end_inset
+
+With the free space highlighted, we'll click 
+\series bold
++Add
+\series default
+ to create the first partition.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Partition 1: Root and Boot
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/advanced-installer/partition-1-root.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+The first partition will contain the system and boot files (
+\series bold
+/
+\series default
+ and 
+\series bold
+/boot
+\series default
+).
+ As such, we must allocate enough space for all system programs.
+ 20GB is generally sufficient, but with the 40GB disc in this machine we've
+ reduced this to 15GB.
+ We have selected EXT4 as the filesystem and made sure to set the mountpoint
+ to 
+\series bold
+/
+\series default
+ (root).
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Partition 2: Home
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/advanced-installer/partition-2-home.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+We've added a second partition to hold our user documents.
+ It's set to be 25GB in size, with the EXT4 filesystem, and the mountpoint
+ is set to 
+\series bold
+/home
+\series default
+ (Home).
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Swap partition
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/advanced-installer/partition-3-swap.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Finally, we've added a swap partition.
+ This will act as extra (very, very slow) RAM if we run out.
+ It's not really suitable as anything other than a last resort but can sometimes
+ make the difference between losing work and quitting cleanly.
+ This is set to take the remainder of the free space, about 2GB.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Finalising the partitions
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/advanced-installer/partitions-ready.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+The partition layout is ready, but before continuing it's worth checking
+ over.
+ You can change and adapt the layout freely at this point as nothing has
+ been written to disc.
+\begin_inset Newline newline
+\end_inset
+
+Once you are happy, click 
+\series bold
+Install now!
+\series default
+ to proceed.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Verify partitioning actions
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/advanced-installer/check-partition-actions.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+As a final check, the installer will ask you to verify that you want to
+ write the partition layout to disc.
+ If you want to go back and make a change, click 
+\series bold
+Cancel
+\series default
+.
+ Otherwise to continue to install Manjaro, click 
+\series bold
+OK
+\series default
+.
+ The rest of the process is the same as for the Automatic installer, so
+ we're done here!
 \end_layout
 
 \end_inset
