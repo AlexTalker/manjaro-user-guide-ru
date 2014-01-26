@@ -5328,7 +5328,7 @@ status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/welcome-to-manjaro/update-manager.png
+	filename images/maintaining-your-system/update-manager.png
 	lyxscale 50
 	width 95col%
 
@@ -5369,7 +5369,7 @@ status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/welcome-to-manjaro/pamac-updater.png
+	filename images/maintaining-your-system/pamac-updater.png
 	lyxscale 50
 	width 95col%
 
@@ -5388,6 +5388,108 @@ Alternatively, you can load Pamac's full interface.
  To install the updates, just click 
 \series bold
 OK
+\series default
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Octopi
+\end_layout
+
+\begin_layout Standard
+Octopi is an alternative software manager for Manjaro.
+ It is installed with the Openbox and KDE editions as it is based on the
+ QT toolset.
+ It also has a very funky icon!
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/maintaining-your-system/octopi-upgrade-system.png
+	lyxscale 50
+	width 95col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Octopi's update notifier is available from the system tray.
+ In this screenshot it has a red icon, indicating there are software updates.
+ An update check is performed automatically; all you have to do is click
+ 
+\series bold
+Run in terminal
+\series default
+ and any updates will proceed automatically!
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/maintaining-your-system/octopi-updates.png
+	lyxscale 50
+	width 95col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Alternatively, you can load Octopi's full interface.
+ The red star indicated there are updated available, and the number shows
+ how many.
+ To show what is available, click on the red icon.
+ To install the updates, click on the arrow next to the red icon and then
+ click on 
+\series bold
+Install
 \series default
 .
 \end_layout
@@ -5465,7 +5567,7 @@ status collapsed
 Pamac allows easy access to the available software.
  All software applications in the repositories are free; no need to worry
  about purchase or licensing costs.
- Once you've found the package I want to install, right-click and select
+ Once you've found the package you want to install, right-click and select
  
 \series bold
 Install
@@ -5649,6 +5751,172 @@ status collapsed
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename images/maintaining-your-system/new-software-installed.png
+	lyxscale 50
+	width 95col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+The new software is available in the application menu ready for you to use.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Octopi
+\end_layout
+
+\begin_layout Standard
+The process of installing new software using Octopi is very similar to Pamac.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/maintaining-your-system/octopi-search.png
+	lyxscale 50
+	width 95col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Octopi allows easy access to the available software.
+ Do note that the search process is slightly different to Pamac as you can
+ select whether to search by package name or package description.
+ Once you've found the package you want to install, right-click and select
+ 
+\series bold
+Install
+\series default
+, then click the tick in the top-left corner to confirm.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/maintaining-your-system/octopi-install-confirm.png
+	lyxscale 50
+	width 95col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+The packages to be installed are listed so you can check this is what you
+ want to do.
+ When you are happy with the selection, click 
+\series bold
+Yes 
+\series default
+and the software will be downloaded and installed.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/maintaining-your-system/octopi-installed.png
+	lyxscale 50
+	width 95col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Octopi will show a confirmation that it installed the new software.
+ You can close Octopi now if you want.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/maintaining-your-system/octopi-new-software-installed.png
 	lyxscale 50
 	width 95col%
 
