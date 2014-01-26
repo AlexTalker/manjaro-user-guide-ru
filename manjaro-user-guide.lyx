@@ -4,7 +4,7 @@
 \begin_header
 \textclass tufte-book
 \begin_preamble
-\publisher{The Manjaro Documentation Team}
+\publisher{The Manjaro Development Team}
 
 \makeatletter
 \renewcommand{\fnum@figure}{\thefigure}
@@ -294,7 +294,6 @@ Joshua
 Strot Developer, Graphics Developer
 \end_layout
 
-
 \begin_layout Subsection*
 Maintainers
 \end_layout
@@ -304,7 +303,8 @@ Dan
 \begin_inset space ~
 \end_inset
 
-S. Openbox Editions Maintainer 
+S.
+ Openbox Editions Maintainer 
 \end_layout
 
 \begin_layout Description
@@ -358,7 +358,6 @@ Fernyhough Editor of User Guide 0.8.9
 \begin_layout Description
 Handy Global Moderator, Wiki Contributor, Community Support
 \end_layout
-
 
 \begin_layout Description
 Sabras Wiki
@@ -4217,7 +4216,7 @@ Finalising the partitions
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -4266,7 +4265,7 @@ Verify partitioning actions
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -4297,6 +4296,353 @@ OK
 .
  The rest of the process is the same as for the Automatic installer, so
  we're done here!
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+Advanced installation methods
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+setcounter{figure}{0}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The Manjaro Live environment provides two installation tools: along with
+ the graphical installer a text-based CLI installer is available.
+ This is suitable for advanced users who need extra control over the installatio
+n process, for example if they want to set up RAID or alter system configuration
+ options.
+ It's also useful for very old machines and is the only installation method
+ available for NET editions.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+The text-based installer is only recommended for advanced users.
+\end_layout
+
+\begin_layout Section
+The text-based installer
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/text-installer/text-menu.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+The installation process steps are very similar to the graphical installer.
+ However, much more control is available.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace vfill
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Set date and time
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/text-installer/date-time.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+The first menu item allows you to manually set your timezone and check the
+ date and time set for your system.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Hard disk(s) preparation
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/text-installer/disk-preparation.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+The second menu item allows full control over the partition layout.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Install system
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/text-installer/install.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+The third menu item starts the installation process.
+ You will get no confirmation before the installation begins: make certain
+ that your partition layout is correct otherwise the process will fail.
+ The installation can take a little bit of time, so make a cup of tea!
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Configure system
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/text-installer/configuration.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+The fourth item allows full control of your new system's configuration.
+ The options are quite extensive!
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Install bootloader
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/text-installer/install-bootloader.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Before rebooting you must make sure to install the bootloader to the correct
+ drive.
+ Without this, you won't be able to load Manjaro!
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Quit
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/text-installer/quit.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+The final step exits the installer.
+ You can continue using the Live environment or reboot now to use your freshly
+ installed Manjaro.
 \end_layout
 
 \end_inset
