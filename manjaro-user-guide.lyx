@@ -612,6 +612,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename images/welcome.png
+	lyxscale 50
 	width 100text%
 
 \end_inset
@@ -638,6 +639,10 @@ Welcome to Manjaro!
 \end_inset
 
 
+\end_layout
+
+\begin_layout Part
+Installing Manjaro
 \end_layout
 
 \begin_layout Chapter
@@ -2995,14 +3000,7 @@ http://wiki.manjaro.org/index.php?title=Graphical_Installation_Guide_for_Beginne
 \end_layout
 
 \begin_layout Standard
-\begin_inset VSpace vfill
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Newpage pagebreak
+\begin_inset Newpage newpage
 \end_inset
 
 
@@ -3799,14 +3797,7 @@ http://wiki.manjaro.org/index.php?title=Cfdisk_Basic_Partitioning_Scenarios
 \end_layout
 
 \begin_layout Standard
-\begin_inset VSpace vfill
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Newpage pagebreak
+\begin_inset Newpage newpage
 \end_inset
 
 
@@ -4391,14 +4382,7 @@ The installation process steps are very similar to the graphical installer.
 \end_layout
 
 \begin_layout Standard
-\begin_inset VSpace vfill
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Newpage pagebreak
+\begin_inset Newpage newpage
 \end_inset
 
 
@@ -4537,7 +4521,7 @@ Configure system
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -4583,7 +4567,7 @@ Install bootloader
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -4623,7 +4607,7 @@ Quit
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -4643,6 +4627,513 @@ status open
 The final step exits the installer.
  You can continue using the Live environment or reboot now to use your freshly
  installed Manjaro.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part
+Welcome to Manjaro
+\end_layout
+
+\begin_layout Chapter
+The Manjaro desktop
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+setcounter{figure}{0}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Congratulations on installing Manjaro Linux!
+\end_layout
+
+\begin_layout Standard
+Once you have logged in you will be presented with the Manjaro desktop.
+ The Welcome Screen will load automatically and this gives you some useful
+ links to documentation, ways to get help and support from the Manjaro community
+, and some ways you can get involved with the project.
+ Remember that Manjaro is free and open-source software: it relies on contributi
+ons from its user and developer community!
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/welcome-to-manjaro/welcome.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+The Manjaro XFCE Desktop with Welcome Screen.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+If you don't want the welcome screen to load each time you log in, just
+ untick the box 
+\series bold
+Show this dialog on startup
+\series default
+.
+ Don't worry: you can always find it again in the applications menu.
+\end_layout
+
+\begin_layout Standard
+The applications menu is the easiest way of starting the software programs
+ that are installed on your Manjaro system.
+ The icon for this is in the corner of the screen.
+ Go ahead and click on it now!
+\begin_inset Flex Marginnote
+status collapsed
+
+\begin_layout Plain Layout
+You can also press the 
+\begin_inset Quotes eld
+\end_inset
+
+Windows
+\begin_inset Quotes erd
+\end_inset
+
+ or 
+\begin_inset Quotes eld
+\end_inset
+
+Super
+\begin_inset Quotes erd
+\end_inset
+
+ key on your keyboard.
+ Handy!
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/welcome-to-manjaro/software-menu.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Software applications that are installed will be displayed in the applications
+ menu.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+You can see that the five main software applications have an item in the
+ 
+\begin_inset Quotes eld
+\end_inset
+
+Favourites
+\begin_inset Quotes erd
+\end_inset
+
+ menu.
+ This allows rapid access to software you most often use.
+ To add or remove an item from the Favourites menu, just right-click on
+ it and select the option you want.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float marginfigure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/welcome-to-manjaro/remove-from-favourites.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Remove from Favourites
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float marginfigure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/welcome-to-manjaro/add-to-favourites.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Add to Favourites
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+For now, let's look in turn at these five applications to give an idea of
+ what awaits you!
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Terminal Emulator
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/welcome-to-manjaro/terminal.png
+	lyxscale 50
+	width 95col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\series bold
+Terminal Emulator
+\series default
+, or terminal, allows you to perform text-based commands.
+ Although it initially seems unfriendly it is incredibly powerful and allows
+ access to commands that are difficult to accomplish with a graphical interface.
+ In this example, I have listed (
+\family typewriter
+ls
+\family default
+) the files in my home directory.
+\begin_inset Newline newline
+\end_inset
+
+Learning how to use the terminal is not needed for running Manjaro.
+ It's highly recommended, however!
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+File Manager
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/welcome-to-manjaro/file-manager.png
+	lyxscale 50
+	width 95col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\series bold
+File Manager
+\series default
+ is a graphical interface for managing your documents and directories.
+ Most file managers work in a similar way; if you've used another, you can
+ probably use this one! Hint: you can find this user guide in the Manjaro
+ directory!
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Web Browser
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/welcome-to-manjaro/web-browser.png
+	lyxscale 50
+	width 95col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\series bold
+Web Browser
+\series default
+ allows you to visit and view web pages so you can read news stories, check
+ the weather forecast, and all the rest.
+ The software application that is installed will depend on the Edition of
+ Manjaro you installed, but they all work in a similar way.
+ If you have a particular preference you can easily add or remove software.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Mail Reader
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/welcome-to-manjaro/mail-reader.png
+	lyxscale 50
+	width 95col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\series bold
+Mail Reader
+\series default
+ allows you to read and send email.
+ You will have to add your email account when you first run the application
+ (in a similar way to all mail readers) but once that is set up you should
+ be good to go! As with the web browser, there are a range of choices for
+ mail reader.
+ For example, if you prefer Thunderbird you can install it!
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Add/Remove Software
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/welcome-to-manjaro/pamac.png
+	lyxscale 50
+	width 95col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+The 
+\series bold
+Package Manager
+\series default
+ allows you to search for, install, and remove software applications.
+ In this example I have searched for the Firefox web browser, and am about
+ to install it.
+ Once I'm happy with my selections I can click on the tick to continue.
+\begin_inset Newline newline
+\end_inset
+
+There are two main software managers in Manjaro: 
+\series bold
+Pamac
+\series default
+ (installed with the XFCE edition) and 
+\series bold
+Octopi
+\series default
+ (installed with the Openbox edition).
 \end_layout
 
 \end_inset
