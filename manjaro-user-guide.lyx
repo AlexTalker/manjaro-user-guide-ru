@@ -5949,6 +5949,445 @@ The new software is available in the application menu ready for you to use.
 
 \end_layout
 
+\begin_layout Section
+Using Pacman
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+setcounter{figure}{0}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Pacman is the Arch Linux 
+\series bold
+pac
+\series default
+kage 
+\series bold
+man
+\series default
+ager.
+ This underpins Pamac and Octopi but doesn't have a graphical interface.
+ Instead, it is used by typing commands on the terminal.
+ The commands allow you to install, upgrade, configure, and remove software.
+\end_layout
+
+\begin_layout Subsection
+Synchronising with the Manjaro repositories
+\end_layout
+
+\begin_layout Standard
+As new packages are added to the repositories you will need to regularly
+ synchronise the package lists.
+ This is normally taken care of automatically on a regular basis by the
+ software managers, but to perform this manually type the following into
+ the terminal:
+\end_layout
+
+\begin_layout Quote
+
+\family typewriter
+sudo pacman -Sy
+\end_layout
+
+\begin_layout Standard
+This will only download the package lists if there has been a change.
+ Occasionally you may want to force the package lists to be downloaded.
+ To do this, type:
+\end_layout
+
+\begin_layout Quote
+
+\family typewriter
+sudo pacman -Syy
+\end_layout
+
+\begin_layout Subsection
+Updating software
+\end_layout
+
+\begin_layout Standard
+Pacman will allow you to perform an update of software already installed:
+\end_layout
+
+\begin_layout Quote
+
+\family typewriter
+sudo pacman -Su
+\end_layout
+
+\begin_layout Standard
+It's a good idea to check whether the package lists are up-to-date at the
+ same time:
+\end_layout
+
+\begin_layout Quote
+
+\family typewriter
+sudo pacman -Syu
+\end_layout
+
+\begin_layout Standard
+You can also force a package list synchronisation before performing an update:
+\begin_inset Float marginfigure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/maintaining-your-system/pacman-syyu.png
+	lyxscale 50
+	width 95col%
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\family typewriter
+sudo pacman -Syyu
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Quote
+
+\family typewriter
+sudo pacman -Syyu
+\end_layout
+
+\begin_layout Subsection
+Searching for software
+\end_layout
+
+\begin_layout Standard
+Finding a package by name is really straightforward.
+ For example, to search for a text editor called Leafpad:
+\end_layout
+
+\begin_layout Quote
+
+\family typewriter
+sudo pacman -Ss leafpad
+\end_layout
+
+\begin_layout Subsection
+Installing software
+\end_layout
+
+\begin_layout Standard
+Installing a package is equally straightforward.
+ For example, to install Leafpad:
+\begin_inset Flex Marginnote
+status collapsed
+
+\begin_layout Plain Layout
+Many software applications depend on other software packages.
+ Thankfully, pacman will automatically detect and install these!
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Quote
+
+\family typewriter
+sudo pacman -S leafpad
+\end_layout
+
+\begin_layout Subsection
+Removing software
+\end_layout
+
+\begin_layout Standard
+To remove a software package you need to know its name, but the command
+ is straightforward.
+ To remove Leafpad:
+\end_layout
+
+\begin_layout Quote
+
+\family typewriter
+sudo pacman -R leafpad
+\end_layout
+
+\begin_layout Standard
+It's also possible to remove a package and any dependencies it required
+ when it was installed.
+ Assuming those other packages are not being used by another piece of software,
+ they will become 
+\series bold
+orphan
+\series default
+ packages.
+ These serve no function other than taking up space! To remove a software
+ package with its dependencies:
+\end_layout
+
+\begin_layout Quote
+
+\family typewriter
+sudo pacman -Rs leafpad
+\end_layout
+
+\begin_layout Standard
+A package may also create configuration files.
+ Normally these are left in place so your configuration is not lost, and
+ can be reused if you install the package again.
+ However, if you want to remove these configuration files too, the command
+ is:
+\end_layout
+
+\begin_layout Quote
+
+\family typewriter
+sudo pacman -Rns leafpad
+\end_layout
+
+\begin_layout Standard
+If at a later date you want to remove all orphan packages and configuration
+ files for packages that you removed some time ago, the following command
+ will do it:
+\end_layout
+
+\begin_layout Quote
+
+\family typewriter
+sudo pacman -Rns $(pacman -Qtdq)
+\end_layout
+
+\begin_layout Standard
+Be warned, though: this is an advanced command!
+\end_layout
+
+\begin_layout Subsection
+Other pacman commands
+\end_layout
+
+\begin_layout Standard
+It's a good idea to become familiar with the pacman commands.
+ It can be a very useful tool in case the other software managers refuse
+ to complete an installation, for example if an installation process is
+ interrupted.
+ The pacman man 
+\begin_inset Flex Marginnote
+status collapsed
+
+\begin_layout Plain Layout
+
+\series bold
+man 
+\series default
+is short for 
+\series bold
+man
+\series default
+ual
+\end_layout
+
+\end_inset
+
+page is very informational:
+\end_layout
+
+\begin_layout Quote
+
+\family typewriter
+man pacman
+\end_layout
+
+\begin_layout Standard
+To exit, press 
+\series bold
+q
+\series default
+.
+\end_layout
+
+\begin_layout Section
+Updating the mirror list
+\end_layout
+
+\begin_layout Standard
+Manjaro Linux packages are hosted on a number of servers across the world;
+ these servers 
+\series bold
+mirror
+\series default
+ the official Manjaro software repository.
+ When you first install Manjaro it will try to work out which server is
+ closest to you so that software downloads complete as quickly as possible.
+\end_layout
+
+\begin_layout Standard
+Sometimes, though, the list of mirrors can get old.
+ New mirrors can become available, and some mirrors are removed.
+ Updates to Manjaro will regularly trigger an update of the mirror list,
+ but sometimes it's useful to do this manually.
+\end_layout
+
+\begin_layout Standard
+To update the mirror list use the following command:
+\begin_inset Float marginfigure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/maintaining-your-system/pacman-mirrors.png
+	lyxscale 50
+	width 95col%
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\family typewriter
+sudo pacman-mirrors -g
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Quote
+
+\family typewriter
+sudo pacman-mirrors -g
+\end_layout
+
+\begin_layout Standard
+This will test the speed of all currently available mirrors and set your
+ machine to use the best for you.
+ Once this command has completed, you should force a download of the package
+ lists:
+\end_layout
+
+\begin_layout Quote
+
+\family typewriter
+sudo pacman -Syyu
+\end_layout
+
+\begin_layout Subsection
+Switching branches
+\end_layout
+
+\begin_layout Standard
+When you install Manjaro you will be using the stable branch.
+ This set of packages has the most testing and so is the best for most users.
+ However, you may want to help test packages before they move to the stable
+ repository:
+\end_layout
+
+\begin_layout Quote
+
+\family typewriter
+sudo pacman-mirrors -g -b testing
+\end_layout
+
+\begin_layout Standard
+The testing repository has packages that have been checked by the Manjaro
+ development team to make sure they work correctly.
+ However, the amount of testing done is much smaller than for the stable
+ branch - but this is how they get tested!
+\end_layout
+
+\begin_layout Standard
+If you want to live on the bleeding edge, you can switch to the unstable
+ branch.
+ This is normally used by the Manjaro developers.
+ Packages from the unstable branch can cause problems, so this is not something
+ to do lightly:
+\end_layout
+
+\begin_layout Quote
+
+\family typewriter
+sudo pacman-mirrors -g -b unstable
+\end_layout
+
+\begin_layout Standard
+After switching branches you will need to force an update of the package
+ lists:
+\end_layout
+
+\begin_layout Quote
+
+\family typewriter
+sudo pacman -Syyu
+\end_layout
+
+\begin_layout Standard
+If you switch away from the stable branch, but want to move back, it's actually
+ pretty easy:
+\end_layout
+
+\begin_layout Quote
+
+\family typewriter
+sudo pacman-mirrors -g -b stable
+\end_layout
+
+\begin_layout Standard
+This will leave the newer packages on your system and these will be replaced
+ as the stable branch catches up.
+ However, if you want to force a downgrade of packages back to the stable
+ version, use:
+\end_layout
+
+\begin_layout Quote
+
+\family typewriter
+sudo pacman -Syyuu
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
 \begin_layout Standard
 \begin_inset ERT
 status open
