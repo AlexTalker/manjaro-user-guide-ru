@@ -642,7 +642,7 @@ Welcome to Manjaro!
 \end_layout
 
 \begin_layout Part
-Installing Manjaro
+Getting Manjaro
 \end_layout
 
 \begin_layout Chapter
@@ -2590,6 +2590,10 @@ If for some reason the writing process is unsuccessful the ImageWriter authors
  recommend that you use a partitioning tool to reformat the USB flash drive
  as a RAW partition type, then try again.
  Unfortunately this process is outside the scope of this guide.
+\end_layout
+
+\begin_layout Part
+Installing Manjaro
 \end_layout
 
 \begin_layout Chapter
