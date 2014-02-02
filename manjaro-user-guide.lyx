@@ -38,7 +38,7 @@ fixltx2e
 \spacing single
 \use_hyperref true
 \pdf_title "Manjaro Linux 0.8.9 User Guide"
-\pdf_author "The Manjaro Documentation Team"
+\pdf_author "The Manjaro Development Team"
 \pdf_bookmarks true
 \pdf_bookmarksnumbered false
 \pdf_bookmarksopen false
@@ -2458,7 +2458,7 @@ Writing to a USB flash drive in Microsoft Windows
 \begin_inset Float marginfigure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -4466,7 +4466,7 @@ In automatic mode, Thus creates a conservative partition layout that will
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -5134,7 +5134,7 @@ do not
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -6053,6 +6053,441 @@ Octopi
 
 \begin_layout Standard
 \begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+Getting help
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+setcounter{figure}{0}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+There are a variety of ways of getting help and support about Manjaro, as
+ well as finding out more about the project.
+ You can just browse, or register if you want to get involved!
+\end_layout
+
+\begin_layout Standard
+Remember that Manjaro is run by its community.
+ Without a community there would be no Manjaro!
+\end_layout
+
+\begin_layout Section
+Whichever method you use, we look forward to meeting you!
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/getting-help/welcome.png
+	lyxscale 50
+	width 95col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+The welcome screen has links to some excellent resources.
+ It's well worth taking the time to have a look at each of them.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Discussion forum
+\end_layout
+
+\begin_layout Standard
+
+\family typewriter
+\size larger
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://forum.manjaro.org/
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/getting-help/forums.png
+	lyxscale 50
+	width 95col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+The Manjaro discussion forum is a great place to find out more about the
+ project.
+ You can connect at any time, leave questions or replies, and come back
+ to them later.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/getting-help/forum-languages.png
+	lyxscale 50
+	width 95col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+If English isn't your preferred language you can try one of the other forums.
+ There's an up-to-date list on the Manjaro homepage
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+IRC channels
+\end_layout
+
+\begin_layout Standard
+
+\family typewriter
+\size larger
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://manjaro.org/irc-channel/
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/getting-help/irc-connect.png
+	lyxscale 50
+	width 95col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+To talk on the IRC channel you will have to connect first.
+ To make sure you're human you'll have to fill in a CAPTCHA form.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/getting-help/irc-channel.png
+	lyxscale 50
+	width 95col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Once connected you'll be able to talk in real-time with people who can help.
+ They are a really friendly bunch!
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/getting-help/irc-languages.png
+	lyxscale 50
+	width 95col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+If English isn't your preferred language, don't worry.
+ There are four IRC channels dedicated to English, German, French, and Russian
+ language discussion.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Mailing list
+\end_layout
+
+\begin_layout Standard
+
+\family typewriter
+\size larger
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://lists.manjaro.org/listinfo/manjaro-general
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/getting-help/mailing-lists.png
+	lyxscale 50
+	width 95col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+If you prefer to use email there are several mailing lists that you can
+ use to stay up-to-date with announcements and development, as well as ask
+ questions.
+ At the moment, though, most people use either the forums or IRC.
+ Maybe it will be you who gets people using the mailing lists!
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Wiki
+\end_layout
+
+\begin_layout Standard
+
+\family typewriter
+\size larger
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://wiki.manjaro.org/index.php?title=Main_Page
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/getting-help/wiki.png
+	lyxscale 50
+	width 95col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+The wiki is essentially an online user manual.
+ It has a huge range of information, hints, tips, and instructions on getting
+ the most out of your Manjaro system.
+ If you need to know how to do something, chances are it's on the wiki!
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \end_inset
 
 
