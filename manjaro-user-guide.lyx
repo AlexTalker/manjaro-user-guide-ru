@@ -1165,7 +1165,7 @@ status open
 \begin_inset Caption
 
 \begin_layout Plain Layout
-Verifying the checksum displayed in gedit against the output of sha256sum
+Verifying the checksum displayed in gedit against the output of sha1sum
 \end_layout
 
 \end_inset
@@ -1195,7 +1195,7 @@ jonathon@box:~$ cd download
 \end_layout
 
 \begin_layout Standard
-Then you can generate an SHA-1 hash code for the ISO image using:
+Then you can generate an SHA-1 hash code for the disc image using:
 \end_layout
 
 \begin_layout LyX-Code
@@ -1312,7 +1312,7 @@ Once you have downloaded the checksum utility, the checking process is very
 \series bold
 Browse
 \series default
- to the downloaded ISO file, select it, and click 
+ to the downloaded disc image, select it, and click 
 \series bold
 Open
 \series default
@@ -1376,7 +1376,7 @@ status collapsed
 There is an exception to this rule.
  If you intend on installing Manjaro in a virtual machine environment using
  Oracle's Virtualbox, then there will be no need to burn the image as Virtualbox
- will be able to read from the ISO file directly as a virtual disc.
+ will be able to read from the disc image file directly as a virtual disc.
 \end_layout
 
 \end_inset
@@ -1774,7 +1774,7 @@ manjaro-net-0.8.9-x86_64.iso
 \begin_inset Caption
 
 \begin_layout Plain Layout
-Manjaro Edition ISO file sizes
+Manjaro Edition disc image file sizes
 \end_layout
 
 \end_inset
@@ -1792,8 +1792,8 @@ Manjaro Edition ISO file sizes
 \end_layout
 
 \begin_layout Standard
-Many people routinely use a DVD rather than a CD even for the smallest ISO
- files.
+Many people routinely use a DVD rather than a CD even for the smallest disc
+ image files.
  Not only is a DVD faster to burn but they allow higher data access rates
  so the Live-CD loads faster and the installation completes sooner.
 \end_layout
@@ -1905,7 +1905,7 @@ Click the button beneath the title
 Select a disc image to write
 \series default
  to open up your file manager.
- Locate and double-click the downloaded ISO file to load it.
+ Locate and double-click the downloaded disc image file to load it.
  Upon automatically returning to the 
 \series bold
 Image Burning Setup
@@ -1985,7 +1985,7 @@ Burning using Windows Disc Image Burner
 \end_layout
 
 \begin_layout Standard
-Selecting the ISO file and clicking on 
+Selecting the disc image file and clicking on 
 \series bold
 Burn disc image
 \series default
@@ -2529,7 +2529,7 @@ status open
 
 \begin_layout Plain Layout
 Make sure that Windows Explorer is closed before attempting to write the
- ISO image, otherwise it may block access to the USB flash drive.
+ disc image, otherwise it may block access to the USB flash drive.
  If this happens the following error message will be displayed:
 \series bold
  system.componentModel.Win32Exception: Access is denied.
