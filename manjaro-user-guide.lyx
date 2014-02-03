@@ -7994,6 +7994,73 @@ sudo pacman -Syyu
 \end_layout
 
 \begin_layout Subsection
+Choosing mirrors
+\end_layout
+
+\begin_layout Standard
+If you would like more control over which mirrors to use, run the command:
+\begin_inset Float marginfigure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/maintaining-your-system/pacman-mirrors-i.png
+	lyxscale 50
+	width 95col%
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\family typewriter
+sudo pacman-mirrors -i
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Quote
+
+\family typewriter
+sudo pacman-mirrors -i
+\end_layout
+
+\begin_layout Standard
+This will allow you to select which mirror, or mirrors, to try when checking
+ for software updates and downloading new packages.
+ It's normally best to choose mirrors that are geographically close to you,
+ so if you're in Canada then Canadian and US servers are generally a good
+ bet.
+ Of course, you're free to choose whichever you want!
+\end_layout
+
+\begin_layout Standard
+To reset back to an automatic choice, run this command:
+\end_layout
+
+\begin_layout Quote
+
+\family typewriter
+sudo pacman-mirrors -g -c all
+\end_layout
+
+\begin_layout Standard
+Remember to force a download of the package lists to use the new mirrors!
+\end_layout
+
+\begin_layout Subsection
 Switching branches
 \end_layout
 
