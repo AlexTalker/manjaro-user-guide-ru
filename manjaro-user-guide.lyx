@@ -202,6 +202,32 @@ as is
 \end_layout
 
 \begin_layout Full Width
+The source code for this documentation can be downloaded from:
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://git.manjaro.org/documentation/manjaro-user-guide/
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Full Width
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Full Width
 \align left
 \begin_inset Graphics
 	filename images/cc-by-sa.png
@@ -372,7 +398,7 @@ Jonathon
 \begin_inset space ~
 \end_inset
 
-Fernyhough Editor of User Guide 0.8.9
+Fernyhough Editor of the User Guide 0.8.9
 \end_layout
 
 \begin_layout Description
