@@ -1032,8 +1032,8 @@ To verify the integrity of the disc image you have to download the appropriate
 \series bold
 manjaro-0.8.9-sha1sum.txt 
 \series default
-contains checksum hashes for all the available ISO files and will have content
- similar to this:
+contains checksum hashes for all the available disc image files and will
+ have content similar to this:
 \end_layout
 
 \begin_layout LyX-Code
@@ -1148,8 +1148,8 @@ status collapsed
 
 \begin_layout Plain Layout
 Test builds have a slightly different arrangement.
- Instead of a single file with all checksums, each ISO file has its own
- associated checksum file.
+ Instead of a single file with all checksums, each disc image file has its
+ own associated checksum file.
  If you're running the test build I'm sure you can work it out!
 \end_layout
 
@@ -1343,7 +1343,7 @@ Verifying the checksum displayed in gedit against the output of sha1sum
 \end_layout
 
 \begin_layout Standard
-For example, if your ISO image file is located in a directory named 
+For example, if your disc image file is located in a directory named 
 \family typewriter
 download
 \family default
