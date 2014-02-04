@@ -143,6 +143,16 @@ year
 \end_inset
 
  the Manjaro Development Team.
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Licence, documentation
+\end_layout
+
+\end_inset
+
+
 \begin_inset VSpace defskip
 \end_inset
 
@@ -210,6 +220,16 @@ as is
 
 \begin_layout Section*
 The Manjaro Development Team
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Manjaro Development Team, The
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection*
@@ -472,6 +492,16 @@ LatexCommand tableofcontents
 
 \begin_layout Chapter
 Introduction
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Introduction
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
@@ -539,6 +569,16 @@ Pre-installed access to the latest games
 
 \begin_layout Section
 Features
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Features
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -646,11 +686,31 @@ Getting Manjaro
 \end_layout
 
 \begin_layout Chapter
-Downloading Manjaro
+Downloading
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Downloading
+\end_layout
+
+\end_inset
+
+ Manjaro
 \end_layout
 
 \begin_layout Section
 Manjaro editions
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+editions
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -899,6 +959,16 @@ http://sourceforge.net/projects/manjarodev/files/testbuild/
 
 \begin_layout Chapter
 Checking a downloaded disc image for errors
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+errors, checking for
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -1408,7 +1478,17 @@ Verify
 \end_layout
 
 \begin_layout Chapter
-Burning a disc image
+Writing a disc image
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Writing a disc image
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -1745,7 +1825,7 @@ manjaro-xfce-0.8.9-x86_64.iso
 \begin_inset Text
 
 \begin_layout Plain Layout
-CD
+
 \end_layout
 
 \end_inset
@@ -1883,7 +1963,17 @@ this presents an even more attractive method than the traditional burning
 \end_layout
 
 \begin_layout Section
-Burning to a CD/DVD in Linux
+Burning to a CD/DVD
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Burning to a CD/DVD
+\end_layout
+
+\end_inset
+
+ in Linux
 \end_layout
 
 \begin_layout Standard
@@ -2418,7 +2508,17 @@ ons.
 \end_layout
 
 \begin_layout Section
-Writing to a USB flash drive in Linux
+Writing to a USB flash drive
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+USB flash drive
+\end_layout
+
+\end_inset
+
+ in Linux
 \end_layout
 
 \begin_layout Standard
@@ -2662,6 +2762,16 @@ Installing Manjaro
 
 \begin_layout Chapter
 Booting the Live environment
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Live environment
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -3013,6 +3123,16 @@ The welcome screen gives some links to common tasks, documentation (like
 
 \begin_layout Chapter
 Using the graphical automatic installer
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Automatic installation
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -3787,8 +3907,18 @@ setcounter{figure}{0}
 This guide is intended for those with sufficient technical knowledge to
  manually create their own partitions.
  As such, this guide focuses on providing an example of how to use the 'Advanced
-' installation method in general, rather than outlining the entire installation
- process, or listing all the popular partition schemes that may be used.
+' installation
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Advanced installation
+\end_layout
+
+\end_inset
+
+ method in general, rather than outlining the entire installation process,
+ or listing all the popular partition schemes that may be used.
 \end_layout
 
 \begin_layout Standard
@@ -4380,7 +4510,17 @@ OK
 \end_layout
 
 \begin_layout Chapter
-Installing on a UEFI system
+Installing on a UEFI
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+UEFI
+\end_layout
+
+\end_inset
+
+ system
 \end_layout
 
 \begin_layout Standard
@@ -4608,7 +4748,17 @@ A manual partition layout.
 \end_layout
 
 \begin_layout Section
-Installing alongside Microsoft Windows 8 or later
+Installing alongside Microsoft Windows 8
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Microsoft Windows 8
+\end_layout
+
+\end_inset
+
+ or later
 \end_layout
 
 \begin_layout Standard
@@ -5280,6 +5430,16 @@ in a terminal after booting into Manjaro and it will detect Windows and
 
 \begin_layout Chapter
 Advanced installation methods
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Advanced installation methods
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
@@ -5618,6 +5778,16 @@ Welcome to Manjaro
 
 \begin_layout Chapter
 The Manjaro desktop
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+desktop
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -5769,6 +5939,16 @@ You can see that the five main software applications have an item in the
 \end_inset
 
 Favourites
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Favourites
+\end_layout
+
+\end_inset
+
+
 \begin_inset Quotes erd
 \end_inset
 
@@ -5858,6 +6038,16 @@ For now, let's look in turn at these five applications to give an idea of
 
 \begin_layout Section
 Terminal Emulator
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Terminal Emulator
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -5912,6 +6102,16 @@ Learning how to use the terminal is not needed for running Manjaro.
 
 \begin_layout Section
 File Manager
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+File Manager
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -5964,6 +6164,16 @@ File Manager
 
 \begin_layout Section
 Web Browser
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Web Browser
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -6010,6 +6220,16 @@ Web Browser
 
 \begin_layout Section
 Mail Reader
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Mail Reader
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -6064,6 +6284,16 @@ Mail Reader
 
 \begin_layout Section
 Add/Remove Software
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Add/Remove Software
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -6128,6 +6358,16 @@ Octopi
 
 \begin_layout Chapter
 Getting help
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+help
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -6205,6 +6445,16 @@ The welcome screen has links to some excellent resources.
 
 \begin_layout Section
 Discussion forum
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+forum
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -6283,7 +6533,7 @@ status collapsed
 
 \begin_layout Plain Layout
 If English isn't your preferred language you can try one of the other forums.
- There's an up-to-date list on the Manjaro homepage
+ There's an up-to-date list on the Manjaro homepage.
 \end_layout
 
 \end_inset
@@ -6304,7 +6554,17 @@ If English isn't your preferred language you can try one of the other forums.
 \end_layout
 
 \begin_layout Section
-IRC channels
+IRC
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+IRC
+\end_layout
+
+\end_inset
+
+ channels
 \end_layout
 
 \begin_layout Standard
@@ -6445,6 +6705,15 @@ If English isn't your preferred language, don't worry.
 \end_layout
 
 \begin_layout Section
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Mailing list
+\end_layout
+
+\end_inset
+
 Mailing list
 \end_layout
 
@@ -6505,6 +6774,16 @@ If you prefer to use email there are several mailing lists that you can
 
 \begin_layout Section
 Wiki
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Wiki
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -6563,6 +6842,16 @@ The wiki is essentially an online user manual.
 
 \begin_layout Chapter
 Maintaining your system
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Maintaining your system
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -6583,6 +6872,16 @@ setcounter{figure}{0}
 
 \begin_layout Section
 Changing settings
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+settings
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -6699,6 +6998,26 @@ Settings
 
 \begin_layout Section
 Adding a printer
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Adding a printer
+\end_layout
+
+\end_inset
+
+
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+printer
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -7038,6 +7357,16 @@ Printer Settings
 
 \begin_layout Section
 Updating software
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Updating software
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -7065,6 +7394,16 @@ After logging in you may notice a couple of pop-ups informing you of software
 
 \begin_layout Subsection
 Pamac
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Pamac
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -7158,6 +7497,16 @@ OK
 
 \begin_layout Subsection
 Octopi
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Octopi
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -7260,6 +7609,16 @@ Install
 
 \begin_layout Section
 Installing new software
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Installing new software
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -7698,6 +8057,16 @@ The new software is available in the application menu ready for you to use.
 
 \begin_layout Section
 Using Pacman
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+pacman
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -7983,7 +8352,17 @@ q
 \end_layout
 
 \begin_layout Section
-Updating the mirror list
+Updating the mirror
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+mirror
+\end_layout
+
+\end_inset
+
+ list
 \end_layout
 
 \begin_layout Standard
@@ -8041,7 +8420,17 @@ sudo pacman-mirrors -g
 \begin_layout Quote
 
 \family typewriter
-sudo pacman-mirrors -g
+sudo pacman-mirrors
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+pacman-mirrors
+\end_layout
+
+\end_inset
+
+ -g
 \end_layout
 
 \begin_layout Standard
@@ -8126,6 +8515,26 @@ Remember to force a download of the package lists to use the new mirrors!
 
 \begin_layout Subsection
 Switching branches
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Switching branches
+\end_layout
+
+\end_inset
+
+
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+branches
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -8195,6 +8604,54 @@ This will leave the newer packages on your system and these will be replaced
 
 \family typewriter
 sudo pacman -Syyuu
+\end_layout
+
+\begin_layout Section
+More information
+\end_layout
+
+\begin_layout Standard
+Remember - there is plenty of information on the wiki 
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://wiki.manjaro.org/
+\end_layout
+
+\end_inset
+
+ and discussion forum 
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://forum.manjaro.org/
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\start_of_appendix
+\begin_inset CommandInset index_print
+LatexCommand printindex
+type "idx"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
