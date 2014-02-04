@@ -649,9 +649,113 @@ Getting Manjaro
 Downloading Manjaro
 \end_layout
 
+\begin_layout Section
+Manjaro editions
+\end_layout
+
 \begin_layout Standard
-32- and 64-bit versions of Manjaro are available for download as a disc
- image.
+There are four editions of Manjaro available for download.
+\begin_inset Flex Marginnote
+status collapsed
+
+\begin_layout Plain Layout
+To download Manjaro go to this web address: 
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://manjaro.org/get-manjaro/
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ Three editions of Manjaro come complete with a pre-installed desktop environmen
+t and a selection of popular software applications.
+ Any of these would be a great choice for anyone who wants to try out Manjaro
+ on a Live-CD 
+\begin_inset Flex Marginnote
+status collapsed
+
+\begin_layout Plain Layout
+When you purchase retail software it generally comes on a disc, whether
+ a CD or a DVD.
+ A 'Live-CD' has a version of the operating system that will run without
+ needing to be installed.
+ This is a feature of most GNU/Linux and BSD-based operating systems.
+\end_layout
+
+\end_inset
+
+without having to install it first.
+ If you have the time it's worth taking each for a test run to see which
+ you like best!
+\end_layout
+
+\begin_layout Description
+Xfce The Xfce desktop environment is designed to be lightweight while retaining
+ a familiar desktop interface.
+ If you're not sure which edition to choose, this one is a good bet.
+ Xfce edition disc image files start with 
+\series bold
+manjaro-xfce
+\series default
+.
+\end_layout
+
+\begin_layout Description
+Openbox Openbox is a small, light desktop environment, and this version
+ is designed to use as few resources as possible while still providing a
+ full desktop experience.
+ If you like a minimal environment, or need to squeeze every last drop of
+ performance from your system, this version is well worth a look.
+ Openbox edition disc image files start with 
+\series bold
+manjaro
+\series default
+-
+\series bold
+openbox
+\series default
+.
+\end_layout
+
+\begin_layout Description
+KDE This version includes the K Desktop Environment.
+ It offers a highly integrated environment with plenty of functionality
+ and options.
+ It is also highly customisable and offers a slightly different feel than
+ the other editions.
+ KDE edition disc image files start with 
+\series bold
+manjaro
+\series default
+-
+\series bold
+kde
+\series default
+.
+\end_layout
+
+\begin_layout Description
+Net This edition of Manjaro provides only a base installation, stripped
+ of all but the most basic pre-installed software.
+ Starting from the command line, this is suitable for more experienced users
+ who may want to build their own Manjaro system from the ground up.
+ A disc image for a NET edition will always begin with 
+\series bold
+manjaro-net
+\series default
+.
+\end_layout
+
+\begin_layout Standard
+Each edition of Manjaro is available as 32- and 64-bit versions.
  Disc images available for 32-bit systems will end in
 \series bold
  i686.iso
@@ -669,69 +773,29 @@ x86_64.iso
 \end_layout
 
 \begin_layout Section
-Manjaro editions
+Manjaro community editions
 \end_layout
 
 \begin_layout Standard
-There are two editions of Manjaro available for download:
+In addition to the four main Manjaro editions, there are a number of editions
+ that have certain software or desktop environments preinstalled.
+ This user manual assumes you are using the Xfce version, and all screenshots
+ will be from this.
+ However, the installation process and other software works in exactly the
+ same way!
 \end_layout
 
-\begin_layout Description
-The
-\begin_inset space ~
-\end_inset
-
-Full
-\begin_inset space ~
-\end_inset
-
-edition This edition of Manjaro comes complete with a pre-installed desktop
- environment.
- In the case of the XFCE edition, it will also come with a selection of
- popular software applications.
- This would be the most appropriate choice for those who wish to try out
- Manjaro on a Live-CD 
-\begin_inset Flex Marginnote
-status open
-
-\begin_layout Plain Layout
-When you purchase retail software it generally comes on a disc, whether
- a CD or a DVD.
- A 'Live-CD' has a version of the operating system that will run without
- needing to be installed.
- This is a feature of most GNU/Linux and BSD-based operating systems.
+\begin_layout Standard
+The edition names should give a clear indication of the desktop environment
+ they install.
+ Unless you have a strong preference, we suggest you stick with the Xfce
+ version.
+ You can of course change later, or install other desktop environments too!
 \end_layout
 
-\end_inset
-
-without having to install it first.
- An ISO image for a full edition of Manjaro will list the pre-installed
- desktop environment in its name.
- For example, a disc image beginning with
-\series bold
- manjaro-xfce
-\series default
- will have the XFCE desktop environment pre-installed.
-\end_layout
-
-\begin_layout Description
-The
-\begin_inset space ~
-\end_inset
-
-NET
-\begin_inset space ~
-\end_inset
-
-edition This edition of Manjaro provides only a base installation, stripped
- of all but the most basic pre-installed software.
- Starting from the command line, this is suitable for more experienced users
- who may wish to build their own Manjaro systems from the ground up.
- A disc image for a NET edition will always begin with 
-\series bold
-manjaro-net
-\series default
-.
+\begin_layout Standard
+There are currently four main community editions: Cinnamon, GNOME, MATE,
+ and Netbook.
 \end_layout
 
 \begin_layout Section
@@ -1040,7 +1104,7 @@ manjaro-0.8.9-sha1sum.txt  manjaro-xfce-0.8.9-x86_64.iso
 \end_layout
 
 \begin_layout Standard
-As you can see I have downloaded the 64-bit XFCE edition.
+As you can see I have downloaded the 64-bit Xfce edition.
  Next, I run the 
 \family typewriter
 sha1sum
@@ -1205,7 +1269,7 @@ jonathon@box:~/download$
 \end_layout
 
 \begin_layout Standard
-This command generates a hash code for the 64-bit Manjaro XFCE 0.8.9 disc
+This command generates a hash code for the 64-bit Manjaro Xfce 0.8.9 disc
  image which can then be manually compared to the code contained in the
  checksum file.
 \end_layout
@@ -1558,7 +1622,7 @@ manjaro-openbox-0.8.9-i686.iso
 \begin_inset Text
 
 \begin_layout Plain Layout
-690MB
+653MB
 \end_layout
 
 \end_inset
@@ -1596,7 +1660,7 @@ manjaro-openbox-0.8.9-x86_64.iso
 \begin_inset Text
 
 \begin_layout Plain Layout
-660MB
+695MB
 \end_layout
 
 \end_inset
@@ -1616,7 +1680,7 @@ manjaro-openbox-0.8.9-x86_64.iso
 \begin_inset Text
 
 \begin_layout Plain Layout
-XFCE
+Xfce
 \end_layout
 
 \end_inset
@@ -1634,7 +1698,7 @@ manjaro-xfce-0.8.9-i686.iso
 \begin_inset Text
 
 \begin_layout Plain Layout
-735MB
+1.1GB
 \end_layout
 
 \end_inset
@@ -1672,7 +1736,7 @@ manjaro-xfce-0.8.9-x86_64.iso
 \begin_inset Text
 
 \begin_layout Plain Layout
-700MB
+1.3GB
 \end_layout
 
 \end_inset
@@ -1843,7 +1907,7 @@ Brasero
 status collapsed
 
 \begin_layout Plain Layout
-XFCE environments tend to include XFBurn.
+Xfce environments tend to include XFBurn.
  KDE environments tend to include K3b.
  GNOME environments tend to include Brasero.
 \end_layout
@@ -5606,7 +5670,7 @@ status collapsed
 \begin_inset Caption
 
 \begin_layout Plain Layout
-The Manjaro XFCE Desktop with Welcome Screen.
+The Manjaro Xfce Desktop with Welcome Screen.
 \end_layout
 
 \end_inset
@@ -6038,7 +6102,7 @@ There are two main software managers in Manjaro:
 \series bold
 Pamac
 \series default
- (installed with the XFCE edition) and 
+ (installed with the Xfce edition) and 
 \series bold
 Octopi
 \series default
@@ -6528,7 +6592,7 @@ While the Manjaro desktop comes with a set of defaults that should work
 \end_layout
 
 \begin_layout Subsection
-XFCE settings manager
+Xfce settings manager
 \end_layout
 
 \begin_layout Standard
@@ -6552,9 +6616,9 @@ status collapsed
 \begin_inset Caption
 
 \begin_layout Plain Layout
-The XFCE desktop is highly customisable.
+The Xfce desktop is highly customisable.
  The settings for your user account can be accessed both via the applications
- menu and the XFCE settings manager.
+ menu and the Xfce settings manager.
  Either way, there's a lot of tweaking you can do! Don't worry: the changes
  will only affect your user account, not any others you might have added.
 \end_layout
