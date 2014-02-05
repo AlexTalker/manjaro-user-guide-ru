@@ -6080,7 +6080,7 @@ Terminal Emulator
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -6113,7 +6113,18 @@ ls
 \end_inset
 
 Learning how to use the terminal is not needed for running Manjaro.
- It's highly recommended, however!
+ It's highly recommended, however; check out sites like 
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://linuxcommand.org/
+\end_layout
+
+\end_inset
+
+ !
 \end_layout
 
 \end_inset
