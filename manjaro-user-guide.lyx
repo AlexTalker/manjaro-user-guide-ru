@@ -450,7 +450,7 @@ A note about Manjaro and Arch
 Manjaro is based on another distribution called Arch Linux.
  As such, it is also able to draw software packages from the community-maintaine
 d Arch User Repository (AUR).
- However, please note that Manjaro is not Arch, and any enquieries about
+ However, please note that Manjaro is not Arch, and any enquiries about
  the Manjaro operating system should be directed towards the Manjaro forums
  and Internet Relay Chat (IRC) channels alone.
  For example, although Ubuntu is derived from Debian - and therefore shares
@@ -3336,7 +3336,7 @@ This guide is intended for those with limited technical knowledge and experience
 \begin_layout Standard
 Where possible, make sure you are connected to the internet before booting
  from your installation media into the Live environment.
- If you have a hard-wired connection via an ethernet cable, then Manjaro
+ If you have a hard-wired connection via an Ethernet cable, then Manjaro
  will automatically connect to the internet without you having to do anything.
  Otherwise, once you have booted into Manjaro's desktop, you will need to
  select and then connect to your wireless network.
@@ -4103,7 +4103,7 @@ This guide also assumes you have read the Automatic installation guide steps
 \begin_layout Standard
 Where possible, make sure you are connected to the internet before booting
  from your installation media into the Live environment.
- If you have a hard-wired connection via an ethernet cable, then Manjaro
+ If you have a hard-wired connection via an Ethernet cable, then Manjaro
  will automatically connect to the internet without you having to do anything.
  Otherwise, once you have booted into Manjaro's desktop, you will need to
  select and then connect to your wireless network.
@@ -4458,7 +4458,7 @@ The first partition will contain the system and boot files (
  As such, we must allocate enough space for all system programs.
  20GB is generally sufficient, but with the 40GB disc in this machine we've
  reduced this to 15GB.
- We have selected EXT4 as the filesystem and made sure to set the mountpoint
+ We have selected EXT4 as the file system and made sure to set the mountpoint
  to 
 \series bold
 /
@@ -4509,7 +4509,7 @@ status collapsed
 
 \begin_layout Plain Layout
 We've added a second partition to hold our user documents.
- It's set to be 25GB in size, with the EXT4 filesystem, and the mountpoint
+ It's set to be 25GB in size, with the EXT4 file system, and the mountpoint
  is set to 
 \series bold
 /home
@@ -6228,7 +6228,7 @@ Terminal Emulator
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -8203,7 +8203,7 @@ Octopi will show a confirmation that it installed the new software.
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
