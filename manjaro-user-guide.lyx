@@ -81,6 +81,17 @@ fixltx2e
 
 \begin_body
 
+\begin_layout Standard
+\begin_inset External
+	template PDFPages
+	filename cover.pdf
+	lyxscale 50
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Title
 User Guide
 \end_layout
@@ -202,6 +213,7 @@ as is
 \end_layout
 
 \begin_layout Full Width
+\align left
 The source code for this documentation can be downloaded from:
 \begin_inset Newline newline
 \end_inset
@@ -213,6 +225,22 @@ status collapsed
 \begin_layout Plain Layout
 
 http://git.manjaro.org/documentation/manjaro-user-guide/
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Full Width
+\align left
+Cover image credit: 
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://commons.wikimedia.org/wiki/File:Mt._Kilimanjaro_12.2006.JPG
 \end_layout
 
 \end_inset
@@ -8873,6 +8901,8 @@ thispagestyle{empty}
 \align right
 \begin_inset Graphics
 	filename images/manjaro-logo.png
+	lyxscale 50
+	width 75page%
 
 \end_inset
 
