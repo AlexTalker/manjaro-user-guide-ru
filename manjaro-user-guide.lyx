@@ -1082,7 +1082,27 @@ Stable
 
 releases of Manjaro are intended to be used by the general public, so this
  will be the appropriate choice for the majority of users.
- The current Manjaro release can always be downloaded from 
+ The current Manjaro release can always be downloaded from the
+\series bold
+ 
+\series default
+
+\begin_inset CommandInset href
+LatexCommand href
+name "Get Manjaro"
+target "http://manjaro.org/get-manjaro/"
+
+\end_inset
+
+
+\series bold
+ 
+\series default
+page.
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
 \begin_inset Flex URL
 status collapsed
 
@@ -1093,7 +1113,16 @@ http://manjaro.org/get-manjaro/
 
 \end_inset
 
- Each of the stable releases, starting from 0.8.0, can be downloaded from
+
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Newline newline
+\end_inset
+
+Each of the stable releases, starting from 0.8.0, can also be downloaded from
  the 
 \begin_inset CommandInset href
 LatexCommand href
@@ -1222,8 +1251,8 @@ https://www.virtualbox.org/
 
 \end_inset
 
-), we strongly recommend that you first check that it hasn't been corrupted.
- The potential result of not doing so, especially if you want to install
+) we strongly recommend that you first check that it hasn't been corrupted.
+ The potential result of not checking first, especially if you want to install
  Manjaro as your main operating system, should be obvious.
  In the best case, the installation will fail.
  In the worst case a corrupted image will result in a corrupted installation.
