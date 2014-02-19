@@ -340,8 +340,8 @@ Demiray
 \begin_inset space ~
 \end_inset
 
-Muhterem Manjaro KDE Edition Maintainer, Turkish irc-web support, Manjaro
- artworks
+Muhterem Manjaro KDE Edition Maintainer, Turkish IRC and web support, Manjaro
+ artwork
 \end_layout
 
 \begin_layout Description
@@ -1065,13 +1065,14 @@ Downloading a disc image
 \end_layout
 
 \begin_layout Standard
-Each stable release and test-build of Manjaro has its own particular download
- location which will contain all the available 32- and 64-bit versions for
- both the full and NET editions.
- Each location will also contain the relevant checksum files which can be
- used to check the integrity of your downloaded disc image file (i.e.
- to ensure that it has not been corrupted during download).
- A guide to doing this included in the following section.
+Every release of Manjaro is available for download, whether the current
+ stable release, upcoming test builds, or previous versions for historical
+ interest.
+ When you visit the download page you will find a link to each of the four
+ main editions in both 32- and 64-bit versions, as well as a checksum file
+ for each.
+ A checksum can be used to check the integrity of the disc image file you
+ download to make sure it hasn't been corrupted during the download.
 \end_layout
 
 \begin_layout Description
@@ -1079,9 +1080,20 @@ Stable
 \begin_inset space ~
 \end_inset
 
-Releases of Manjaro are intended to be used by the general public.
- As such, this will be the appropriate choice for the majority of users.
- Each of the stable releases - starting from 0.8.0 - can be downloaded from
+releases of Manjaro are intended to be used by the general public, so this
+ will be the appropriate choice for the majority of users.
+ The current Manjaro release can always be downloaded from 
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://manjaro.org/get-manjaro/
+\end_layout
+
+\end_inset
+
+ Each of the stable releases, starting from 0.8.0, can be downloaded from
  the 
 \begin_inset CommandInset href
 LatexCommand href
@@ -1118,13 +1130,12 @@ Test
 \begin_inset space ~
 \end_inset
 
-Builds of Manjaro are intended to be used only by developers and testers
- in order to identify any bugs or issues to be addressed as development
- continues towards the next stable release.
+builds of Manjaro are intended to be used by developers and testers to identify
+ any bugs or issues during the development process.
  
 \series bold
-These are not suitable - or intended - for use as a main operating system
- by the general public.
+These are not suitable for use as a main operating system by the general
+ public.
 
 \series default
  However, should you wish to try out a test build (preferably in a virtual
@@ -1191,8 +1202,27 @@ setcounter{figure}{0}
 
 \begin_layout Standard
 Before burning your downloaded disc image (or using it as a virtual disc
- in Virtualbox), we strongly recommend that you first check that it hasn't
- been corrupted.
+ in VirtualBox
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+https://www.virtualbox.org/
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+), we strongly recommend that you first check that it hasn't been corrupted.
  The potential result of not doing so, especially if you want to install
  Manjaro as your main operating system, should be obvious.
  In the best case, the installation will fail.
@@ -1204,7 +1234,7 @@ To verify the integrity of the disc image you have to download the appropriate
  checksum file.
  This will be available at the same place where you downloaded the disc
  image file.
- The file 
+ For example, the file 
 \series bold
 manjaro-0.8.9-sha1sum.txt 
 \series default
@@ -1721,7 +1751,7 @@ status collapsed
 \begin_layout Plain Layout
 There is an exception to this rule.
  If you intend on installing Manjaro in a virtual machine environment using
- Oracle's Virtualbox, then there will be no need to burn the image as Virtualbox
+ Oracle's VirtualBox, then there will be no need to burn the image as VirtualBox
  will be able to read from the disc image file directly as a virtual disc.
 \end_layout
 
