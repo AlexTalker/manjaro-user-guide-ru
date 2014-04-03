@@ -97,7 +97,7 @@ User Guide
 \end_layout
 
 \begin_layout Author
-Manjaro Linux 0.8.9
+Manjaro Linux 0.8.10
 \end_layout
 
 \begin_layout Standard
@@ -426,7 +426,7 @@ Jonathon
 \begin_inset space ~
 \end_inset
 
-Fernyhough Editor of the User Guide 0.8.9
+Fernyhough Editor of the User Guide 0.8.9-0.8.10
 \end_layout
 
 \begin_layout Description
@@ -1375,7 +1375,7 @@ If the code generated from the disc image matches that contained in the
 \begin_layout Standard
 From this point on we'll assume you are using the file 
 \series bold
-manjaro-0.8.9-sha1sum.txt
+manjaro-0.8.10-sha1sum.txt
 \series default
 .
 \begin_inset Flex Marginnote
@@ -1431,7 +1431,7 @@ jonathon@box:~/download$ ls
 \end_layout
 
 \begin_layout LyX-Code
-manjaro-0.8.9-sha1sum.txt  manjaro-xfce-0.8.9-x86_64.iso
+manjaro-0.8.10-sha1sum.txt  manjaro-xfce-0.8.10-x86_64.iso
 \end_layout
 
 \begin_layout Standard
@@ -1444,7 +1444,7 @@ sha1sum
 \end_layout
 
 \begin_layout LyX-Code
-jonathon@box:~/download$ sha1sum -c manjaro-0.8.9-sha1sum.txt
+jonathon@box:~/download$ sha1sum -c manjaro-0.8.10-sha1sum.txt
 \end_layout
 
 \begin_layout Standard
@@ -1461,63 +1461,63 @@ sha1sum
 \end_layout
 
 \begin_layout LyX-Code
-sha1sum: manjaro-kde-0.8.9-i686.iso: No such file or directory
+sha1sum: manjaro-kde-0.8.10-i686.iso: No such file or directory
 \end_layout
 
 \begin_layout LyX-Code
-manjaro-kde-0.8.9-i686.iso: FAILED open or read
+manjaro-kde-0.8.10-i686.iso: FAILED open or read
 \end_layout
 
 \begin_layout LyX-Code
-sha1sum: manjaro-kde-0.8.9-x86_64.iso: No such file or directory
+sha1sum: manjaro-kde-0.8.10-x86_64.iso: No such file or directory
 \end_layout
 
 \begin_layout LyX-Code
-manjaro-kde-0.8.9-x86_64.iso: FAILED open or read
+manjaro-kde-0.8.10-x86_64.iso: FAILED open or read
 \end_layout
 
 \begin_layout LyX-Code
-sha1sum: manjaro-net-0.8.9-i686.iso: No such file or directory
+sha1sum: manjaro-net-0.8.10-i686.iso: No such file or directory
 \end_layout
 
 \begin_layout LyX-Code
-manjaro-net-0.8.9-i686.iso: FAILED open or read
+manjaro-net-0.8.10-i686.iso: FAILED open or read
 \end_layout
 
 \begin_layout LyX-Code
-sha1sum: manjaro-net-0.8.9-x86_64.iso: No such file or directory
+sha1sum: manjaro-net-0.8.10-x86_64.iso: No such file or directory
 \end_layout
 
 \begin_layout LyX-Code
-manjaro-net-0.8.9-x86_64.iso: FAILED open or read
+manjaro-net-0.8.10-x86_64.iso: FAILED open or read
 \end_layout
 
 \begin_layout LyX-Code
-sha1sum: manjaro-openbox-0.8.9-i686.iso: No such file or directory
+sha1sum: manjaro-openbox-0.8.10-i686.iso: No such file or directory
 \end_layout
 
 \begin_layout LyX-Code
-manjaro-openbox-0.8.9-i686.iso: FAILED open or read
+manjaro-openbox-0.8.10-i686.iso: FAILED open or read
 \end_layout
 
 \begin_layout LyX-Code
-sha1sum: manjaro-openbox-0.8.9-x86_64.iso: No such file or directory
+sha1sum: manjaro-openbox-0.8.10-x86_64.iso: No such file or directory
 \end_layout
 
 \begin_layout LyX-Code
-manjaro-openbox-0.8.9-x86_64.iso: FAILED open or read
+manjaro-openbox-0.8.10-x86_64.iso: FAILED open or read
 \end_layout
 
 \begin_layout LyX-Code
-sha1sum: manjaro-xfce-0.8.9-i686.iso: No such file or directory
+sha1sum: manjaro-xfce-0.8.10-i686.iso: No such file or directory
 \end_layout
 
 \begin_layout LyX-Code
-manjaro-xfce-0.8.9-i686.iso: FAILED open or read
+manjaro-xfce-0.8.10-i686.iso: FAILED open or read
 \end_layout
 
 \begin_layout LyX-Code
-sha1sum: manjaro-xfce-0.8.9-x86_64.iso: OK
+sha1sum: manjaro-xfce-0.8.10-x86_64.iso: OK
 \end_layout
 
 \begin_layout LyX-Code
@@ -1532,7 +1532,7 @@ Manual verification
 To manually check the integrity of your downloaded file, first open the
  downloaded 
 \series bold
-manjaro-0.8.9-sha1sum.txt
+manjaro-0.8.10-sha1sum.txt
 \series default
  checksum file using a text editor such as Gedit.
  Once the checksum file has been opened, and the codes are visible, open
@@ -1596,11 +1596,11 @@ Then you can generate an SHA-1 hash code for the disc image using:
 \begin_layout LyX-Code
 jonathon@box:~/download$
 \family typewriter
- sha1sum manjaro-xfce-0.8.9-x86_64.iso
+ sha1sum manjaro-xfce-0.8.10-x86_64.iso
 \end_layout
 
 \begin_layout Standard
-This command generates a hash code for the 64-bit Manjaro Xfce 0.8.9 disc
+This command generates a hash code for the 64-bit Manjaro Xfce 0.8.10 disc
  image which can then be manually compared to the code contained in the
  checksum file.
 \end_layout
@@ -1725,7 +1725,7 @@ To speed up the process it's probably a good idea to deselect the hashes
 
  To verify the checksum is correct, open the 
 \series bold
-manjaro-0.8.9-sha1sum.txt
+manjaro-0.8.10-sha1sum.txt
 \series default
  in a text editor such as Notepad, copy the checksum for the disc image
  file you have downloaded, and paste it into the verification box.
@@ -1878,7 +1878,7 @@ KDE
 \begin_inset Text
 
 \begin_layout Plain Layout
-manjaro-kde-0.8.9-i686.iso
+manjaro-kde-0.8.10-i686.iso
 \end_layout
 
 \end_inset
@@ -1916,7 +1916,7 @@ DVD
 \begin_inset Text
 
 \begin_layout Plain Layout
-manjaro-kde-0.8.9-x86_64.iso
+manjaro-kde-0.8.10-x86_64.iso
 \end_layout
 
 \end_inset
@@ -1954,7 +1954,7 @@ Openbox
 \begin_inset Text
 
 \begin_layout Plain Layout
-manjaro-openbox-0.8.9-i686.iso
+manjaro-openbox-0.8.10-i686.iso
 \end_layout
 
 \end_inset
@@ -1992,7 +1992,7 @@ CD
 \begin_inset Text
 
 \begin_layout Plain Layout
-manjaro-openbox-0.8.9-x86_64.iso
+manjaro-openbox-0.8.10-x86_64.iso
 \end_layout
 
 \end_inset
@@ -2030,7 +2030,7 @@ Xfce
 \begin_inset Text
 
 \begin_layout Plain Layout
-manjaro-xfce-0.8.9-i686.iso
+manjaro-xfce-0.8.10-i686.iso
 \end_layout
 
 \end_inset
@@ -2068,7 +2068,7 @@ DVD
 \begin_inset Text
 
 \begin_layout Plain Layout
-manjaro-xfce-0.8.9-x86_64.iso
+manjaro-xfce-0.8.10-x86_64.iso
 \end_layout
 
 \end_inset
@@ -2106,7 +2106,7 @@ NET
 \begin_inset Text
 
 \begin_layout Plain Layout
-manjaro-net-0.8.9-i686.iso
+manjaro-net-0.8.10-i686.iso
 \end_layout
 
 \end_inset
@@ -2144,7 +2144,7 @@ CD
 \begin_inset Text
 
 \begin_layout Plain Layout
-manjaro-net-0.8.9-x86_64.iso
+manjaro-net-0.8.10-x86_64.iso
 \end_layout
 
 \end_inset
@@ -3445,7 +3445,7 @@ status open
 \begin_layout Plain Layout
 
 http://wiki.manjaro.org/index.php?title=Graphical_Installation_Guide_for_Beginners_
-0.8.9
+0.8.10
 \end_layout
 
 \end_inset
@@ -4212,7 +4212,7 @@ status open
 \begin_layout Plain Layout
 
 http://wiki.manjaro.org/index.php?title=Graphical_Installation_Guide_for_Experience
-d_Users_0.8.9
+d_Users_0.8.10
 \end_layout
 
 \end_inset
@@ -4913,7 +4913,7 @@ setcounter{figure}{0}
 \end_layout
 
 \begin_layout Standard
-With Manjaro 0.8.9, Thus does an excellent job setting up your system.
+With Manjaro 0.8.10, Thus does an excellent job setting up your system.
  Once you have loaded the Live environment the installation steps are exactly
  the same as for a non-UEFI installation.
  The main difference is in the partition layout: this is important if you
