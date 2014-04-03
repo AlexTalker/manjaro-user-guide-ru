@@ -20,4 +20,4 @@ Current cover art is created in Inkscape. You will also need comfortaa from AUR 
 
 LyX will neatly insert/append PDF files; to make things easy cover art should therefore be exported as a PDF document.
 
-![Manjaro User Guide cover](raw/master/cover.jpg)
+![Manjaro User Guide cover](https://raw.githubusercontent.com/manjaro/manjaro-user-guide/master/cover.jpg)
