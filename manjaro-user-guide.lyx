@@ -1,0 +1,8972 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass tufte-book
+\begin_preamble
+\publisher{The Manjaro Development Team}
+
+\makeatletter
+\renewcommand{\fnum@figure}{\thefigure}
+\makeatother
+\end_preamble
+\use_default_options true
+\begin_modules
+fixltx2e
+\end_modules
+\maintain_unincluded_children false
+\language british
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman palatino
+\font_sans helvet
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format pdf5
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref true
+\pdf_title "Manjaro Linux 0.8.9 User Guide"
+\pdf_author "The Manjaro Development Team"
+\pdf_bookmarks true
+\pdf_bookmarksnumbered false
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks true
+\pdf_pdfborder true
+\pdf_colorlinks false
+\pdf_backref false
+\pdf_pdfusetitle true
+\papersize default
+\use_geometry true
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 2
+\tocdepth 2
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\begin_inset External
+	template PDFPages
+	filename cover.pdf
+	lyxscale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Title
+User Guide
+\end_layout
+
+\begin_layout Author
+Manjaro Linux 0.8.10
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+~
+\backslash
+vfill
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+thispagestyle{empty}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Full Width
+\align left
+Copyright 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+copyright
+\backslash
+ 
+\backslash
+the
+\backslash
+year
+\backslash
+
+\end_layout
+
+\end_inset
+
+ the Manjaro Development Team.
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Licence, documentation
+\end_layout
+
+\end_inset
+
+
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Full Width
+\align left
+Licensed under the Attribution-ShareAlike 4.0 International Licence (the
+ “Licence”); you may not use this file except in compliance with the License.
+ You may obtain a copy of the Licence at: 
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+https://creativecommons.org/licenses/by-sa/4.0/legalcode
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Full Width
+\align left
+Unless required by applicable law or agreed to in writing, software distributed
+ under the Licence is distributed on an 
+\begin_inset Quotes eld
+\end_inset
+
+as is
+\begin_inset Quotes erd
+\end_inset
+
+ basis, without warranties or conditions of any kind, either express or
+ implied.
+ See the Licence for the specific language governing permissions and limitations
+ under the Licence.
+\end_layout
+
+\begin_layout Full Width
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Full Width
+\align left
+The source code for this documentation can be downloaded from:
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://git.manjaro.org/documentation/manjaro-user-guide/
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Full Width
+\align left
+Cover image credit: 
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://commons.wikimedia.org/wiki/File:Mt._Kilimanjaro_12.2006.JPG
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Full Width
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Full Width
+\align left
+\begin_inset Graphics
+	filename images/cc-by-sa.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+The Manjaro Development Team
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Manjaro Development Team, The
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Core Team
+\end_layout
+
+\begin_layout Description
+Philip
+\begin_inset space ~
+\end_inset
+
+Müller Project Leader, Project Management and Coordination, Mirrors Manager,
+ Packager, Developer, Web Developer
+\end_layout
+
+\begin_layout Description
+Roland
+\begin_inset space ~
+\end_inset
+
+Singer Founder, Designer, Developer, Web Developer, Packager
+\end_layout
+
+\begin_layout Description
+Guillaume
+\begin_inset space ~
+\end_inset
+
+Benoit Server Manager, Developer, Packager, Moderation
+\end_layout
+
+\begin_layout Description
+Alexandre
+\begin_inset space ~
+\end_inset
+
+A.
+\begin_inset space ~
+\end_inset
+
+Arnt Developer, Moderation
+\end_layout
+
+\begin_layout Description
+Mateusz
+\begin_inset space ~
+\end_inset
+
+Mikolajczyk Developer
+\end_layout
+
+\begin_layout Description
+Demiray
+\begin_inset space ~
+\end_inset
+
+Muhterem Manjaro KDE Edition Maintainer, Turkish IRC and web support, Manjaro
+ artwork
+\end_layout
+
+\begin_layout Description
+Wlad
+\begin_inset space ~
+\end_inset
+
+Meixner Web Developer, Web Consultant
+\end_layout
+
+\begin_layout Description
+Ramon
+\begin_inset space ~
+\end_inset
+
+Buldó Developer
+\end_layout
+
+\begin_layout Description
+Joshua
+\begin_inset space ~
+\end_inset
+
+Strot Developer, Graphics Developer
+\end_layout
+
+\begin_layout Subsection*
+Maintainers
+\end_layout
+
+\begin_layout Description
+Dan
+\begin_inset space ~
+\end_inset
+
+S.
+ Openbox Editions Maintainer 
+\end_layout
+
+\begin_layout Description
+Rob
+\begin_inset space ~
+\end_inset
+
+McCathie Package Maintainer, Netbook Edition Maintainer
+\end_layout
+
+\begin_layout Description
+Cumali Cinnamon and Gnome Community Editions Maintainer
+\end_layout
+
+\begin_layout Subsection*
+Forum, Community and Support
+\end_layout
+
+\begin_layout Description
+Carl
+\begin_inset space ~
+\end_inset
+
+Duff Community, Documentation and Wiki Management, Scripting and Configuration
+\end_layout
+
+\begin_layout Description
+Ringo
+\begin_inset space ~
+\end_inset
+
+de
+\begin_inset space ~
+\end_inset
+
+Kroon Community, IRC Support
+\end_layout
+
+\begin_layout Subsection*
+Documentation
+\end_layout
+
+\begin_layout Description
+Jonathon
+\begin_inset space ~
+\end_inset
+
+Fernyhough Editor of the User Guide 0.8.9-0.8.10
+\end_layout
+
+\begin_layout Description
+Handy Global Moderator, Wiki Contributor, Community Support
+\end_layout
+
+\begin_layout Description
+Sabras Wiki
+\end_layout
+
+\begin_layout Section*
+Acknowledgements
+\end_layout
+
+\begin_layout Standard
+The awesome community on 
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+forum.manjaro.org
+\end_layout
+
+\end_inset
+
+ and 
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+#manjaro
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+\begin_inset Newpage newpage
+\end_inset
+
+A note about Manjaro and Arch
+\end_layout
+
+\begin_layout Standard
+Manjaro is based on another distribution called Arch Linux.
+ As such, it is also able to draw software packages from the community-maintaine
+d Arch User Repository (AUR).
+ However, please note that Manjaro is not Arch, and any enquiries about
+ the Manjaro operating system should be directed towards the Manjaro forums
+ and Internet Relay Chat (IRC) channels alone.
+ For example, although Ubuntu is derived from Debian - and therefore shares
+ some similarities with its parent - there are still substantial differences
+ between these operating systems and how they work.
+ Such is the case with Manjaro, which is far from just being an 
+\begin_inset Quotes eld
+\end_inset
+
+easy to install
+\begin_inset Quotes erd
+\end_inset
+
+ or 
+\begin_inset Quotes eld
+\end_inset
+
+pre-configured
+\begin_inset Quotes erd
+\end_inset
+
+ Arch operating system.
+ Here are some of the key differences between the Manjaro and Arch operating
+ systems: 
+\end_layout
+
+\begin_layout Itemize
+Manjaro is developed independently from Arch, and by a completely different
+ team.
+ 
+\end_layout
+
+\begin_layout Itemize
+Manjaro is designed to be accessible to newcomers, while Arch is aimed at
+ experienced users.
+\end_layout
+
+\begin_layout Itemize
+Manjaro draws software from its own independent repositories.
+ These repositories also contain software packages not provided by Arch.
+\end_layout
+
+\begin_layout Itemize
+Manjaro provides its own distribution-specific tools such as the Manjaro
+ Hardware Detection (MHWD) utility, and the Manjaro Settings Manager (MSM).
+\end_layout
+
+\begin_layout Itemize
+Manjaro has numerous subtle differences in how it works when compared to
+ Arch.
+\end_layout
+
+\begin_layout Standard
+To reiterate, although Manjaro is indeed an Arch-derivative, it is not Arch!
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+Introduction
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Introduction
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+About Manjaro
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Manjaro
+\series default
+ is a user-friendly 
+\series bold
+GNU/Linux
+\series default
+ distribution based on the independently developed 
+\series bold
+Arch Linux
+\series default
+.
+ Within the Linux community, Arch itself is renowned for being an exceptionally
+ fast, powerful, and lightweight distribution that provides access to the
+ very latest cutting-edge software.
+ However, Arch is also traditionally aimed at more experienced or technically-mi
+nded users.
+ As such, it is generally considered to be beyond the reach of many, especially
+ those who lack the technical expertise (or persistence) required to use
+ it.
+\end_layout
+
+\begin_layout Standard
+Developed in Austria, France, and Germany, Manjaro aims to provide all of
+ the benefits of Arch Linux combined with a focus on user-friendliness and
+ accessibility.
+ Available in both 32- and 64-bit versions, Manjaro is suitable for newcomers
+ as well as experienced Linux users.
+ For newcomers, a user-friendly installer is provided, and the system itself
+ is designed to work fully 
+\begin_inset Quotes eld
+\end_inset
+
+straight out of the box
+\begin_inset Quotes erd
+\end_inset
+
+ with features including:
+\end_layout
+
+\begin_layout Itemize
+Pre-installed desktop environments
+\end_layout
+
+\begin_layout Itemize
+Pre-installed graphical applications to easily install software and update
+ your system
+\end_layout
+
+\begin_layout Itemize
+Pre-installed codecs to play multimedia files, and
+\end_layout
+
+\begin_layout Itemize
+Pre-installed access to the latest games
+\end_layout
+
+\begin_layout Section
+Features
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Features
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Manjaro shares many of the same features as Arch, including:
+\end_layout
+
+\begin_layout Itemize
+Speed, power, and efficiency
+\end_layout
+
+\begin_layout Itemize
+Access to the very latest cutting- and bleeding-edge software
+\end_layout
+
+\begin_layout Itemize
+A 
+\begin_inset Quotes eld
+\end_inset
+
+rolling release
+\begin_inset Quotes erd
+\end_inset
+
+ development model that provides the most up-to-date system possible without
+ the need to regularly install a new operating system release
+\end_layout
+
+\begin_layout Itemize
+Access to the Arch User Repositories, and
+\end_layout
+
+\begin_layout Itemize
+The versatility to be shaped and moulded in every respect to suit personal
+ taste and preference.
+ 
+\end_layout
+
+\begin_layout Standard
+However, Manjaro boasts a few extra features of its own, including:
+\end_layout
+
+\begin_layout Itemize
+A simplified, user-friendly installation process
+\end_layout
+
+\begin_layout Itemize
+Automatic detection of your computer's hardware (e.g.
+ graphics cards)
+\end_layout
+
+\begin_layout Itemize
+Automatic installation of the necessary software (e.g.
+ graphics drivers) for your system
+\end_layout
+
+\begin_layout Itemize
+Dedicated software repositories that deliver fully tested and stable software
+ packages, and
+\end_layout
+
+\begin_layout Itemize
+Support for the easy installation and use of multiple kernels
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/welcome.png
+	lyxscale 50
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Welcome to Manjaro!
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part
+Getting Manjaro
+\end_layout
+
+\begin_layout Chapter
+Downloading
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Downloading
+\end_layout
+
+\end_inset
+
+ Manjaro
+\end_layout
+
+\begin_layout Section
+Manjaro editions
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+editions
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+setcounter{figure}{0}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+There are four editions of Manjaro available for download.
+\begin_inset Flex Marginnote
+status collapsed
+
+\begin_layout Plain Layout
+To download Manjaro go to this web address: 
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://manjaro.org/get-manjaro/
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ Three editions of Manjaro come complete with a pre-installed desktop environmen
+t and a selection of popular software applications.
+ Any of these would be a great choice for anyone who wants to try out Manjaro
+ on a Live-CD 
+\begin_inset Flex Marginnote
+status collapsed
+
+\begin_layout Plain Layout
+When you purchase retail software it generally comes on a disc, whether
+ a CD or a DVD.
+ A 'Live-CD' has a version of the operating system that will run without
+ needing to be installed.
+ This is a feature of most GNU/Linux and BSD-based operating systems.
+\end_layout
+
+\end_inset
+
+without having to install it first.
+ If you have the time it's worth taking each for a test run to see which
+ you like best!
+\end_layout
+
+\begin_layout Description
+Xfce The Xfce desktop environment is designed to be lightweight while retaining
+ a familiar desktop interface.
+ If you're not sure which edition to choose, this one is a good bet.
+ Xfce edition disc image files start with 
+\series bold
+manjaro-xfce
+\series default
+.
+\end_layout
+
+\begin_layout Description
+Openbox Openbox is a small, light desktop environment, and this version
+ is designed to use as few resources as possible while still providing a
+ full desktop experience.
+ If you like a minimal environment, or need to squeeze every last drop of
+ performance from your system, this version is well worth a look.
+ Openbox edition disc image files start with 
+\series bold
+manjaro
+\series default
+-
+\series bold
+openbox
+\series default
+.
+\end_layout
+
+\begin_layout Description
+KDE This version includes the K Desktop Environment.
+ It offers a highly integrated environment with plenty of functionality
+ and options.
+ It is also highly customisable and offers a slightly different feel than
+ the other editions.
+ KDE edition disc image files start with 
+\series bold
+manjaro
+\series default
+-
+\series bold
+kde
+\series default
+.
+\end_layout
+
+\begin_layout Description
+Net This edition of Manjaro provides only a base installation, stripped
+ of all but the most basic pre-installed software.
+ Starting from the command line, this is suitable for more experienced users
+ who may want to build their own Manjaro system from the ground up.
+ A disc image for a NET edition will always begin with 
+\series bold
+manjaro-net
+\series default
+.
+\end_layout
+
+\begin_layout Standard
+Each edition of Manjaro is available as 32- and 64-bit versions.
+ Disc images available for 32-bit systems will end in
+\series bold
+ i686.iso
+\series default
+ and images for 64-bit systems will end in 
+\series bold
+x86_64.iso
+\series default
+.
+ A 64-bit operating system won't run on a 32-bit system, and although a
+ 32-bit operating system will run on a 64-bit system it won't be able to
+ make full use of its resources.
+ Try to make sure that you download the appropriate disc image for your
+ system!
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide true
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/welcome.png
+	lyxscale 33
+	width 50text%
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/editions/openbox.png
+	lyxscale 33
+	width 50text%
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Xfce edition
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Openbox edition
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/editions/kde.png
+	lyxscale 33
+	width 50text%
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/editions/net.png
+	lyxscale 33
+	width 50text%
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+KDE edition
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Net edition
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Manjaro community editions
+\end_layout
+
+\begin_layout Standard
+In addition to the four main Manjaro editions, there are a number of editions
+ that have certain software or desktop environments preinstalled.
+ This user manual assumes you are using the Xfce version, and all screenshots
+ will be from this.
+ However, the installation process and other software works in exactly the
+ same way!
+\end_layout
+
+\begin_layout Standard
+The edition names should give a clear indication of the desktop environment
+ they install.
+ Unless you have a strong preference, we suggest you stick with the Xfce
+ version.
+ You can of course change later, or install other desktop environments too!
+\end_layout
+
+\begin_layout Standard
+There are currently four main community editions: Cinnamon, GNOME, MATE,
+ and Netbook.
+\end_layout
+
+\begin_layout Section
+Downloading a disc image
+\end_layout
+
+\begin_layout Standard
+Every release of Manjaro is available for download, whether the current
+ stable release, upcoming test builds, or previous versions for historical
+ interest.
+ When you visit the download page you will find a link to each of the four
+ main editions in both 32- and 64-bit versions, as well as a checksum file
+ for each.
+ A checksum can be used to check the integrity of the disc image file you
+ download to make sure it hasn't been corrupted during the download.
+\end_layout
+
+\begin_layout Description
+Stable
+\begin_inset space ~
+\end_inset
+
+releases of Manjaro are intended to be used by the general public, so this
+ will be the appropriate choice for the majority of users.
+ The current Manjaro release can always be downloaded from the
+\series bold
+ 
+\series default
+
+\begin_inset CommandInset href
+LatexCommand href
+name "Get Manjaro"
+target "http://manjaro.org/get-manjaro/"
+
+\end_inset
+
+
+\series bold
+ 
+\series default
+page.
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://manjaro.org/get-manjaro/
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Newline newline
+\end_inset
+
+Each of the stable releases, starting from 0.8.0, can also be downloaded from
+ the 
+\begin_inset CommandInset href
+LatexCommand href
+name "Stable Release section of the Sourceforge website"
+target "http://sourceforge.net/projects/manjarolinux/files/release/"
+
+\end_inset
+
+.
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://sourceforge.net/projects/manjarolinux/files/release/
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+Test
+\begin_inset space ~
+\end_inset
+
+builds of Manjaro are intended to be used by developers and testers to identify
+ any bugs or issues during the development process.
+ 
+\series bold
+These are not suitable for use as a main operating system by the general
+ public.
+
+\series default
+ However, should you wish to try out a test build (preferably in a virtual
+ machine), each current release can be downloaded from the from the
+\begin_inset CommandInset href
+LatexCommand href
+name " Test Build section of the Sourceforge website"
+target "http://sourceforge.net/projects/manjarodev/files/testbuild/"
+
+\end_inset
+
+.
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://sourceforge.net/projects/manjarodev/files/testbuild/
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+Checking a downloaded disc image for errors
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+errors, checking for
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+setcounter{figure}{0}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Before burning your downloaded disc image (or using it as a virtual disc
+ in VirtualBox
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+https://www.virtualbox.org/
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+) we strongly recommend that you first check that it hasn't been corrupted.
+ The potential result of not checking first, especially if you want to install
+ Manjaro as your main operating system, should be obvious.
+ In the best case, the installation will fail.
+ In the worst case a corrupted image will result in a corrupted installation.
+\end_layout
+
+\begin_layout Standard
+To verify the integrity of the disc image you have to download the appropriate
+ checksum file.
+ This will be available at the same place where you downloaded the disc
+ image file.
+ For example, the file 
+\series bold
+manjaro-0.8.9-sha1sum.txt 
+\series default
+contains checksum hashes for all the available disc image files and will
+ have content similar to this:
+\end_layout
+
+\begin_layout LyX-Code
+fd99f9328103007b3a04d4a1a826e81769288ae4 manjaro-kde-0.8.8-i686.iso
+\end_layout
+
+\begin_layout LyX-Code
+2b997a76ef23d1ef0a3a819a2ed8bef1f2e9a1b5 manjaro-kde-0.8.8-x86_64.iso
+\end_layout
+
+\begin_layout LyX-Code
+18b7df6f12c2b9d2b35b7716e89d71b91b873805 manjaro-net-0.8.8-i686.iso
+\end_layout
+
+\begin_layout LyX-Code
+80fc756226625d7b23ef909135fca32714d795d2 manjaro-net-0.8.8-x86_64.iso
+\end_layout
+
+\begin_layout LyX-Code
+b2fc1a5107e70f4cea2981ed941df5fc249a11ea manjaro-openbox-0.8.8-i686.iso
+\end_layout
+
+\begin_layout LyX-Code
+b91b8a8d3133342f4cfdb1ba09c28ec20c8492e1 manjaro-openbox-0.8.8-x86_64.iso
+\end_layout
+
+\begin_layout LyX-Code
+590750cc76d11efb47a153f1fcfcd4b6689f055e manjaro-xfce-0.8.8-i686.iso
+\end_layout
+
+\begin_layout LyX-Code
+1b8fcf0d24972f3881c2a331fd202cb0842866aa manjaro-xfce-0.8.8-x86_64.iso
+\end_layout
+
+\begin_layout Section
+MD5 and SHA-1
+\end_layout
+
+\begin_layout Standard
+You may have seen there are two checksum files.
+ One ends -sha1sum.txt, the other ends -md5sum.txt.
+ MD5 and SHA are two types of hashing algorithms; the 'sha' part of the
+ checksum file name stands for 
+\series bold
+Secure Hash Algorithm
+\series default
+.
+ These algorithms are used to generate a hash code unique to the disc image
+ file.
+ The checksum file itself is just a text document that contains hash codes
+ that should match the code generated by the MD5 or SHA-1 algorithm.
+ Copies of the file can be checked to make sure they are exactly the same
+ - if the file is changed in any way, either intentionally or by corruption,
+ the code generated will be different.
+\end_layout
+
+\begin_layout Standard
+Whilst MD5 is commonly used, SHA-1 is newer and more secure and is beginning
+ to replace MD5.
+ For the purpose of checking the integrity of the downloaded file MD5 is
+ 
+\begin_inset Quotes eld
+\end_inset
+
+good enough
+\begin_inset Quotes erd
+\end_inset
+
+ but SHA-1 is a better solution.
+ The checking process is the same for both algorithms.
+ We recommend you use SHA-1.
+ For more about hashing algorithms Wikipedia has lots of information.
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+https://en.wikipedia.org/wiki/Secure_Hash_Algorithm
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+If the code generated from the disc image matches that contained in the
+ checksum file, then the disc image file is fine.
+ If the two codes don't match then it means that the disc image file has
+ changed in some way, most likely due to being corrupted.
+ You can think of it like someone using a password to identify who they
+ are: if they provide the wrong password, then something is probably wrong.
+\end_layout
+
+\begin_layout Standard
+From this point on we'll assume you are using the file 
+\series bold
+manjaro-0.8.10-sha1sum.txt
+\series default
+.
+\begin_inset Flex Marginnote
+status collapsed
+
+\begin_layout Plain Layout
+Test builds have a slightly different arrangement.
+ Instead of a single file with all checksums, each disc image file has its
+ own associated checksum file.
+ If you're running the test build I'm sure you can work it out!
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Checking in Linux
+\end_layout
+
+\begin_layout Subsection
+Automatic verification
+\end_layout
+
+\begin_layout Standard
+The program 
+\family typewriter
+sha1sum 
+\family default
+can automatically compare the checksum of the disc image you downloaded
+ against the value in the text file.
+ The process is very straightforward, but the end result might look a little
+ worrying!
+\end_layout
+
+\begin_layout Standard
+For this example, I first open a terminal and change to the directory where
+ I downloaded the disc image file and checksum file.
+ I use the command 
+\family typewriter
+ls
+\family default
+ to check which files are present:
+\end_layout
+
+\begin_layout LyX-Code
+jonathon@box:~$ cd download
+\end_layout
+
+\begin_layout LyX-Code
+jonathon@box:~/download$ ls
+\end_layout
+
+\begin_layout LyX-Code
+manjaro-0.8.10-sha1sum.txt  manjaro-xfce-0.8.10-x86_64.iso
+\end_layout
+
+\begin_layout Standard
+As you can see I have downloaded the 64-bit Xfce edition.
+ Next, I run the 
+\family typewriter
+sha1sum
+\family default
+ program to check against the values in the checksum file:
+\end_layout
+
+\begin_layout LyX-Code
+jonathon@box:~/download$ sha1sum -c manjaro-0.8.10-sha1sum.txt
+\end_layout
+
+\begin_layout Standard
+The next set of lines show the result of the checks.
+ While the first few lines look worrying this is to be expected - the program
+ can't check disc image files that aren't there! The second to last line
+ is the important one.
+ It shows that 
+\family typewriter
+sha1sum
+\family default
+ has successfully verified the disc image I downloaded against the checksum
+ value in the file.
+\end_layout
+
+\begin_layout LyX-Code
+sha1sum: manjaro-kde-0.8.10-i686.iso: No such file or directory
+\end_layout
+
+\begin_layout LyX-Code
+manjaro-kde-0.8.10-i686.iso: FAILED open or read
+\end_layout
+
+\begin_layout LyX-Code
+sha1sum: manjaro-kde-0.8.10-x86_64.iso: No such file or directory
+\end_layout
+
+\begin_layout LyX-Code
+manjaro-kde-0.8.10-x86_64.iso: FAILED open or read
+\end_layout
+
+\begin_layout LyX-Code
+sha1sum: manjaro-net-0.8.10-i686.iso: No such file or directory
+\end_layout
+
+\begin_layout LyX-Code
+manjaro-net-0.8.10-i686.iso: FAILED open or read
+\end_layout
+
+\begin_layout LyX-Code
+sha1sum: manjaro-net-0.8.10-x86_64.iso: No such file or directory
+\end_layout
+
+\begin_layout LyX-Code
+manjaro-net-0.8.10-x86_64.iso: FAILED open or read
+\end_layout
+
+\begin_layout LyX-Code
+sha1sum: manjaro-openbox-0.8.10-i686.iso: No such file or directory
+\end_layout
+
+\begin_layout LyX-Code
+manjaro-openbox-0.8.10-i686.iso: FAILED open or read
+\end_layout
+
+\begin_layout LyX-Code
+sha1sum: manjaro-openbox-0.8.10-x86_64.iso: No such file or directory
+\end_layout
+
+\begin_layout LyX-Code
+manjaro-openbox-0.8.10-x86_64.iso: FAILED open or read
+\end_layout
+
+\begin_layout LyX-Code
+sha1sum: manjaro-xfce-0.8.10-i686.iso: No such file or directory
+\end_layout
+
+\begin_layout LyX-Code
+manjaro-xfce-0.8.10-i686.iso: FAILED open or read
+\end_layout
+
+\begin_layout LyX-Code
+sha1sum: manjaro-xfce-0.8.10-x86_64.iso: OK
+\end_layout
+
+\begin_layout LyX-Code
+sha1sum: WARNING: 7 listed files could not be read
+\end_layout
+
+\begin_layout Subsection
+Manual verification
+\end_layout
+
+\begin_layout Standard
+To manually check the integrity of your downloaded file, first open the
+ downloaded 
+\series bold
+manjaro-0.8.10-sha1sum.txt
+\series default
+ checksum file using a text editor such as Gedit.
+ Once the checksum file has been opened, and the codes are visible, open
+ up your terminal and change to the directory where your downloaded disc
+ image is stored.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/linux-checksum.png
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Verifying the checksum displayed in gedit against the output of sha1sum
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+For example, if your disc image file is located in a directory named 
+\family typewriter
+download
+\family default
+, you would first change to that directory:
+\end_layout
+
+\begin_layout LyX-Code
+jonathon@box:~$ cd download
+\end_layout
+
+\begin_layout Standard
+Then you can generate an SHA-1 hash code for the disc image using:
+\end_layout
+
+\begin_layout LyX-Code
+jonathon@box:~/download$
+\family typewriter
+ sha1sum manjaro-xfce-0.8.10-x86_64.iso
+\end_layout
+
+\begin_layout Standard
+This command generates a hash code for the 64-bit Manjaro Xfce 0.8.10 disc
+ image which can then be manually compared to the code contained in the
+ checksum file.
+\end_layout
+
+\begin_layout Section
+Checking in Microsoft Windows
+\end_layout
+
+\begin_layout Standard
+Unlike Linux, Microsoft Windows does not have any suitable built-in tools
+ so you will need to download and install a checksum utility application.
+ A web search will turn up several examples of free software, or you can
+ look on the 
+\series bold
+Download.com
+\series default
+ website.
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://download.cnet.com/
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ Another free checksum utility which has positive reviews is 
+\series bold
+Raymond's MD5 & SHA Checksum Utility
+\series default
+.
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+http://raylin.wordpress.com/downloads/md5-sha-1-checksum-utility/
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ This is the program we will use in the following example.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement h
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/windows-checksum.png
+	lyxscale 50
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Verifying the checksum in Microsoft Windows using Raymond's MD5 & SHA Checksum
+ Utility.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Once you have downloaded the checksum utility, the checking process is very
+ straightforward.
+ Simply 
+\series bold
+Browse
+\series default
+ to the downloaded disc image, select it, and click 
+\series bold
+Open
+\series default
+.
+ The program will then calculate the checksums for the disc image file.
+\begin_inset Flex Marginnote
+status collapsed
+
+\begin_layout Plain Layout
+To speed up the process it's probably a good idea to deselect the hashes
+ you are not verifying.
+\end_layout
+
+\end_inset
+
+ To verify the checksum is correct, open the 
+\series bold
+manjaro-0.8.10-sha1sum.txt
+\series default
+ in a text editor such as Notepad, copy the checksum for the disc image
+ file you have downloaded, and paste it into the verification box.
+ Then click 
+\series bold
+Verify
+\series default
+.
+ If there are no problems with the disc image file the program will inform
+ you that the hash matched.
+\end_layout
+
+\begin_layout Chapter
+Writing a disc image
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Writing a disc image
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+setcounter{figure}{0}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+A disc image is not a copy-and-paste duplication of files: it's a bit-for-bit
+ copy of the raw data that makes up the files and folders of that disc.
+ This is why just copying a disc image file to a disc (or USB flashdrive)
+ to begin installing won't work: you'll need to use a disc burning or image
+ writing application to translate that raw data into the files and folders.
+\begin_inset Flex Marginnote
+status collapsed
+
+\begin_layout Plain Layout
+There is an exception to this rule.
+ If you intend on installing Manjaro in a virtual machine environment using
+ Oracle's VirtualBox, then there will be no need to burn the image as VirtualBox
+ will be able to read from the disc image file directly as a virtual disc.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Once converted, the files can be used to run Manjaro in Live-CD mode without
+ having to install it to your system, and/or install Manjaro on your system.
+ It's important to note Manjaro will not have full functionality when run
+ in Live-CD mode.
+ For example, you will not be able to save any changes to the system, install
+ updates or add new applications.
+\end_layout
+
+\begin_layout Standard
+Due to the amount of software included on the full edition disc images you
+ may need to use a DVD instead of a CD.
+ Check the following table as a guide if you're not sure:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="9" columns="4">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Edition
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Filename
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Size
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Media
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+KDE
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+manjaro-kde-0.8.10-i686.iso
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.3GB
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+DVD
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+manjaro-kde-0.8.10-x86_64.iso
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.4GB
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Openbox
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+manjaro-openbox-0.8.10-i686.iso
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+653MB
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+CD
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+manjaro-openbox-0.8.10-x86_64.iso
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+695MB
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Xfce
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+manjaro-xfce-0.8.10-i686.iso
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.1GB
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+DVD
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+manjaro-xfce-0.8.10-x86_64.iso
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.3GB
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+NET
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+manjaro-net-0.8.10-i686.iso
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+440MB
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+CD
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+manjaro-net-0.8.10-x86_64.iso
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+590MB
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Manjaro Edition disc image file sizes
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Many people routinely use a DVD rather than a CD even for the smallest disc
+ image files.
+ Not only is a DVD faster to burn but they allow higher data access rates
+ so the Live-CD loads faster and the installation completes sooner.
+\end_layout
+
+\begin_layout Standard
+However, with the increasing capacity and decreasing cost of USB flash media
+ 
+\begin_inset Flex Marginnote
+status open
+
+\begin_layout Plain Layout
+If your system will boot from a USB device, and you have one of sufficient
+ capacity that you can erase, we recommend the use of a USB flash drive
+ over traditional CD/DVD media.
+\end_layout
+
+\end_inset
+
+this presents an even more attractive method than the traditional burning
+ process; it is far faster and more flexible than using optical media.
+ Both CD/DVD burning and USB flash media installation methods are covered
+ in this guide.
+\end_layout
+
+\begin_layout Section
+Burning to a CD/DVD
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Burning to a CD/DVD
+\end_layout
+
+\end_inset
+
+ in Linux
+\end_layout
+
+\begin_layout Standard
+If not already installed, several different software burning applications
+ should be available for installation from your distribution's Software
+ Center / Software Manager / Package Manager / repositories.
+ Popular burners include 
+\series bold
+XFBurn
+\series default
+, 
+\series bold
+K3b
+\series default
+, and 
+\series bold
+Brasero
+\series default
+.
+\begin_inset Flex Marginnote
+status collapsed
+
+\begin_layout Plain Layout
+Xfce environments tend to include XFBurn.
+ KDE environments tend to include K3b.
+ GNOME environments tend to include Brasero.
+\end_layout
+
+\end_inset
+
+ Which one you choose is entirely down to personal choice, though your operating
+ system will usually install one suitable for your desktop environment.
+ To simplify things a little, the following steps for burning your downloaded
+ Manjaro disc image use Brasero.
+\end_layout
+
+\begin_layout Subsection
+Burning using Brasero
+\end_layout
+
+\begin_layout Enumerate
+Insert a blank CD/DVD.
+ 
+\begin_inset Flex Marginnote
+status open
+
+\begin_layout Plain Layout
+It's a good idea to use rewriteable disc (e.g.
+ CD-RW or DVD-RW).
+ Although slightly more expensive individually than a write-once disc you
+ can reuse the disc again and again, for example when the next version of
+ Manjaro is released!
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Start the 
+\series bold
+Brasero
+\series default
+ software burner.
+\end_layout
+
+\begin_layout Enumerate
+Click the 
+\series bold
+Burn Image - Burn an existing CD/DVD image to disc
+\series default
+ button to open the 
+\series bold
+Image Burning Setup
+\series default
+ window.
+\end_layout
+
+\begin_layout Enumerate
+Click the button beneath the title 
+\series bold
+Select a disc image to write
+\series default
+ to open up your file manager.
+ Locate and double-click the downloaded disc image file to load it.
+ Upon automatically returning to the 
+\series bold
+Image Burning Setup
+\series default
+ window, note that the disc image file is now listed as the disc image to
+ write.
+\end_layout
+
+\begin_layout Enumerate
+The blank CD/DVD you inserted should be automatically listed underneath
+ the title 
+\series bold
+Select a disc to write to
+\series default
+.
+ If not, click the button to select it manually.
+\end_layout
+
+\begin_layout Enumerate
+Click the 
+\series bold
+properties
+\series default
+ button to open the properties window, and then click the button beneath
+ the title 
+\series bold
+Burning Speed
+\series default
+.
+ We strongly recommend you select the slowest speed available.
+ Once selected, click the Close button.
+\begin_inset Flex Marginnote
+status open
+
+\begin_layout Plain Layout
+We strongly recommend you select the slowest speed available when burning
+ to disc in order minimise the possibility of corruption during the burning
+ process.
+\end_layout
+
+\begin_layout Plain Layout
+It's also a good idea to avoid using any applications which make intensive
+ use of system resources while burning, and in particular avoid heavy disc
+ access.
+ If the burner software can't read the disc image file quickly enough the
+ burning process can be interrupted.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Click the 
+\series bold
+Burn
+\series default
+ button to start the burning process.
+ If necessary, follow any on-screen instructions provided.
+\end_layout
+
+\begin_layout Section
+Burning to a CD/DVD in Microsoft Windows
+\end_layout
+
+\begin_layout Standard
+Newer versions of Microsoft Windows (Windows 7 and later) include a disc
+ image burner.
+ If you do not have a newer version of Microsoft Windows you will need to
+ download one of the many free disc burning software utilities.
+ 
+\end_layout
+
+\begin_layout Subsection
+Burning using Windows Disc Image Burner
+\end_layout
+
+\begin_layout Standard
+Selecting the disc image file and clicking on 
+\series bold
+Burn disc image
+\series default
+, or simply double-clicking on the file itself, will start the 
+\series bold
+Windows Disc Image Burner
+\series default
+ program.
+ This makes the process of burning to a disc very straightforward:
+\end_layout
+
+\begin_layout Enumerate
+Insert a blank CD/DVD into your disc drive.
+\end_layout
+
+\begin_layout Enumerate
+Start 
+\series bold
+Windows Disc Image Burner
+\series default
+.
+\begin_inset Flex Marginnote
+status collapsed
+
+\begin_layout Plain Layout
+For more information about this program see: 
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://windows.microsoft.com/en-gb/windows7/burn-a-cd-or-dvd-from-an-iso-file
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Click 
+\series bold
+Burn
+\series default
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/windows-disc-image-burner.png
+	lyxscale 50
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Windows Disc Image Burner in Microsoft Windows 7
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Burning using a third-party application
+\end_layout
+
+\begin_layout Standard
+For versions of Microsoft Windows earlier than Windows 7 (e.g.
+ Windows XP) you will need to download and install third-party disc burning
+ software.
+ There are many free examples available that will be found by a web search,
+ but here are some of the most popular:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide true
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="3">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Name
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Website
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Video tutorial
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Imgburn
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://imgburn.com/
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://www.youtube.com/watch?v=XihCQgmeGV4
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+CDBurnerXP
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+http://cdburnerxp.se/en/
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://www.youtube.com/watch?v=LxYkFdwn1qI
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+InfraRecorder
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://infrarecorder.org/
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Third-party disc burning software for Microsoft Windows
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The burning process for each of these applications is similar, with small
+ differences in user interface.
+ The websites listed above will provide information about features and screensho
+ts of the applications themselves.
+ For a little more information about each of these applications, an overview
+ of each is available in the 
+\series bold
+CD/DVD Burning Article
+\series default
+ on the TechSupportAlert website.
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://www.techsupportalert.com/best-free-cd-dvd-burning-software.htm
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ Alternative burning software may also be found on the Download.com website,
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://download.cnet.com/
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ although you will have to filter the search results to view only free applicati
+ons.
+ It will also be worthwhile to take the time to read any reviews provided
+ for your choice(s).
+\end_layout
+
+\begin_layout Section
+Writing to a USB flash drive
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+USB flash drive
+\end_layout
+
+\end_inset
+
+ in Linux
+\end_layout
+
+\begin_layout Standard
+To take advantage of the faster access times and much quieter nature of
+ a USB flash drive, there are a number of methods of writing the disc image
+ file.
+ One of the easiest is to use 
+\series bold
+ImageWriter
+\series default
+.
+\begin_inset Float marginfigure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/imagewriter-linux.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+ImageWriter 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+https://en.opensuse.org/SDB:Live_USB_stick
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ImageWriter should be available for installation from your distribution's
+ Software Center / Software Manager / Package Manager / repositories.
+ Once Imagewriter has been downloaded and installed, ensure that your USB
+ flash drive is plugged in before starting the application.
+\end_layout
+
+\begin_layout Standard
+The process of using ImageWriter is very straightforward:
+\end_layout
+
+\begin_layout Enumerate
+Click on the centre icon.
+\end_layout
+
+\begin_layout Enumerate
+Navigate to where you downloaded the disc image file, and select it.
+\end_layout
+
+\begin_layout Enumerate
+Ensure that your USB flash drive has been selected from the drop-down menu.
+\end_layout
+
+\begin_layout Enumerate
+Click on the 
+\series bold
+Write
+\series default
+ button.
+\end_layout
+
+\begin_layout Enumerate
+Once it has finished, reboot your system, making sure to select the USB
+ flash drive as the boot device.
+\end_layout
+
+\begin_layout Section
+Writing to a USB flash drive in Microsoft Windows
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float marginfigure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/win32-imagewriter.png
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Windows ImageWriter
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+http://sourceforge.net/projects/win32diskimager/
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+We recommend you use 
+\series bold
+ImageWriter For Windows
+\series default
+, which is a free application designed to write disc images to USB flash
+ drives as well as Compact Flash (CF) and Secure Digital (SD) cards.
+ Once Imagewriter has been downloaded and installed, ensure that your USB
+ flash drive is plugged in before starting it.
+\end_layout
+
+\begin_layout Standard
+If you find that ImageWriter is unable to start, you might have to download
+ Microsoft's .NET 2.0 Runtime Framework.
+ This is needed by some software programs though it is normally already
+ installed on your Windows PC.
+\end_layout
+
+\begin_layout Standard
+In addition, if an error message is displayed upon starting the process
+ on Windows Vista and later, you might need to open ImageWriter by first
+ right-clicking on the icon, and then selecting the 
+\series bold
+Run as Administrator
+\series default
+ option.
+\begin_inset Flex Marginnote
+status open
+
+\begin_layout Plain Layout
+Make sure that Windows Explorer is closed before attempting to write the
+ disc image, otherwise it may block access to the USB flash drive.
+ If this happens the following error message will be displayed:
+\series bold
+ system.componentModel.Win32Exception: Access is denied.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+For more detailed information about the software it's worth reading the
+ website, though the process is very straightforward:
+\end_layout
+
+\begin_layout Enumerate
+Click the select button (folder icon).
+\end_layout
+
+\begin_layout Enumerate
+Navigate to and select the Manjaro disc image.
+\end_layout
+
+\begin_layout Enumerate
+Select your USB flash drive from the 
+\series bold
+Device 
+\series default
+menu.
+\end_layout
+
+\begin_layout Enumerate
+Click the 
+\series bold
+Write
+\series default
+ button.
+\end_layout
+
+\begin_layout Enumerate
+Once it has finished, reboot your system, making sure to select the USB
+ flash drive as the boot device.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Marginnote
+status collapsed
+
+\begin_layout Plain Layout
+Re-partitioning your USB stick as a RAW data type will result in all data
+ present being destroyed, and will render it unusable for other purposes
+ until reformatted back to its original partition type
+\end_layout
+
+\end_inset
+
+If for some reason the writing process is unsuccessful the ImageWriter authors
+ recommend that you use a partitioning tool to reformat the USB flash drive
+ as a RAW partition type, then try again.
+ Unfortunately this process is outside the scope of this guide.
+\end_layout
+
+\begin_layout Part
+Installing Manjaro
+\end_layout
+
+\begin_layout Chapter
+Booting the Live environment
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Live environment
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+setcounter{figure}{0}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Booting the Live environment, whether from CD/DVD or USB flash drive, will
+ give you an overview of the Manjaro Linux environment and let you test
+ how well it will run on your machine.
+ This is very useful to check before committing to install a new operating
+ system!
+\end_layout
+
+\begin_layout Standard
+For best results you should be connected to the Internet.
+ If you have a wired Ethernet connection, and plug in before booting the
+ Live environment, Manjaro will automatically set up a connection.
+ If you have a wireless (Wi-Fi) connection you can set up the wireless network
+ once you have reached the Manjaro desktop.
+\end_layout
+
+\begin_layout Standard
+The method of selecting the boot device varies considerably across machines.
+ You may need to hold one key, for example <
+\series bold
+Esc
+\series default
+>, <
+\series bold
+Del
+\series default
+>, or <
+\series bold
+F10
+\series default
+>, to select the boot device.
+ Or, you may need to set the option in your BIOS.
+ If you're not sure, your machine's user guide will have detail of the method
+ you need, alternatively a web search will also quickly turn up the answer.
+\end_layout
+
+\begin_layout Section
+The boot menu
+\end_layout
+
+\begin_layout Standard
+When you boot from your installation media (CD/DVD or USB flash drive) you
+ should be presented with the Manjaro boot screen.
+ This screen provides several options to help get the best experience from
+ the Live environment.
+ 
+\begin_inset Float marginfigure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/media-boot-screen.png
+	width 100text%
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Boot menu
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+It is possible at this stage to set your preferred language and keyboard
+ layout before using Manjaro.
+ This means that you will be able to use and install Manjaro in your native
+ language straight away.
+\end_layout
+
+\begin_layout Section
+Setting your language and keyboard layout
+\end_layout
+
+\begin_layout Standard
+First, set your preferred language by pressing the 
+\series bold
+<F2>
+\series default
+ key.
+ The options available can be highlighted for selection by using the arrow
+ keys on your keyboard.
+ In this instance, English (UK) has been highlighted for the user.
+\begin_inset Float marginfigure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/media-choose-language.png
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Language selection
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Once selected, press <
+\series bold
+Enter
+\series default
+> to confirm and to be taken back to the boot menu.
+ 
+\end_layout
+
+\begin_layout Standard
+Selecting the language will also set a keyboard layout appropriate to that
+ language, for example it will select QWERTY for English and AZERTY for
+ French.
+ If this doesn't match your layout, or perhaps you have a US layout but
+ speak German, press <
+\series bold
+F2
+\series default
+> again, but this time select 
+\series bold
+Keyboard
+\series default
+.
+ Pick the language that matches your keyboard layout, and press <
+\series bold
+Enter
+\series default
+> to confirm and return to the boot menu.
+\end_layout
+
+\begin_layout Section
+Choosing the drivers
+\end_layout
+
+\begin_layout Standard
+There are two main sets of drivers that can be used by Manjaro: 
+\series bold
+Free
+\series default
+ and 
+\series bold
+non-Free
+\series default
+.
+ The differences are not minor, and your choice can depend on your computer
+ hardware.
+\begin_inset Flex Marginnote
+status open
+
+\begin_layout Plain Layout
+If in doubt, choose 
+\series bold
+Free 
+\series default
+drivers.
+ If you want to play games, choose 
+\series bold
+non-Free
+\series default
+ drivers.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+
+\series bold
+Free
+\series default
+ drivers are open-source, like Manjaro itself, written and updated by a
+ large community.
+ For older hardware and that with Intel-based integrated graphics, this
+ is the best choice.
+\end_layout
+
+\begin_layout Description
+
+\series bold
+Non-Free
+\series default
+ drivers are closed-source, written and updated only by the hardware manufacture
+rs.
+ This is generally the best choice for newer hardware with AMD or Nvidia
+ dedicated graphics.
+ At the time of writing, 
+\series bold
+non-Free
+\series default
+ drivers are the best choice for Nvidia graphics and AMD graphics newer
+ than the 8000-series.
+ For older AMD and Nvidia hardware the 
+\series bold
+Free
+\series default
+ drivers work very well.
+ For AMD graphics older than the HD5000-series 
+\series bold
+Free
+\series default
+ drivers are the best choice.
+\begin_inset Float marginfigure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/media-boot-screen.png
+	width 100text%
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Start Manjaro Linux
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+To start Manjaro with 
+\series bold
+Free
+\series default
+ drivers, choose 
+\series bold
+Start Manjaro Linux
+\series default
+ from the boot menu.
+\end_layout
+
+\begin_layout Standard
+To start Manjaro with
+\series bold
+ non-Free
+\series default
+ drivers, choose 
+\series bold
+Start (non-free drivers)
+\series default
+ from the boot menu.
+\end_layout
+
+\begin_layout Section
+Welcome to Manjaro
+\end_layout
+
+\begin_layout Standard
+Once you select Start, Manjaro will boot up.
+ You may see a lot of scrolling text - don't worry, this shows the system
+ is working! After a little while, assuming your hardware is compatible,
+ you will be presented with a Live desktop environment and a nice friendly
+ welcome screen.
+\begin_inset Float marginfigure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/media-live-environment.png
+	lyxscale 50
+	width 100text%
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Welcome to Manjaro!
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The welcome screen gives some links to common tasks, documentation (like
+ the thing you're reading now!) and the support channels.
+ There are also links to the installation programs.
+ Don't worry if you close the welcome screen: you can load it again, and
+ all the links are also present elsewhere in the menus.
+\end_layout
+
+\begin_layout Chapter
+Using the graphical automatic installer
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Automatic installation
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+setcounter{figure}{0}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+This guide is intended for those with limited technical knowledge and experience.
+ With these steps it won't be necessary to manually partition your computer's
+ hard disc or to manually edit any configuration files.
+ However, the overall flexibility of the process is not as great as the
+ advanced installation process.
+\end_layout
+
+\begin_layout Standard
+Where possible, make sure you are connected to the internet before booting
+ from your installation media into the Live environment.
+ If you have a hard-wired connection via an Ethernet cable, then Manjaro
+ will automatically connect to the internet without you having to do anything.
+ Otherwise, once you have booted into Manjaro's desktop, you will need to
+ select and then connect to your wireless network.
+\end_layout
+
+\begin_layout Standard
+For a constantly-updated version, check out the wiki:
+\end_layout
+
+\begin_layout Description
+User
+\begin_inset space ~
+\end_inset
+
+guide: 
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+http://wiki.manjaro.org/index.php?title=Graphical_Installation_Guide_for_Beginners_
+0.8.10
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Choose your language
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/beginner-installer/language-selection.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+If you selected your preferred language before booting then it should already
+ be selected for you.
+\end_layout
+
+\begin_layout Plain Layout
+Once selected, click 
+\series bold
+Forward
+\series default
+ to proceed to the next step.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Choose your location
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/beginner-installer/location-selection.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+The locations available to choose will depend upon the language you selected
+ in the previous step.
+\end_layout
+
+\begin_layout Plain Layout
+Once selected, click 
+\series bold
+Forward
+\series default
+ to proceed to the next step.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Check the minimum requirements
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/beginner-installer/check-status.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Your computer will automatically be checked to make sure that Manjaro can
+ safely be installed.
+ This will include checking that enough storage space is available.
+\begin_inset Newline newline
+\end_inset
+
+Once satisfied that your system meets the minimum requirements necessary,
+ click 
+\series bold
+Forward
+\series default
+ to proceed to the next step.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Marginnote
+status collapsed
+
+\begin_layout Plain Layout
+Although the absolute minimum allowed is 6 Gigabytes, at least 15 Gigabytes
+ of free space is recommended.
+\end_layout
+
+\end_inset
+
+
+\begin_inset Flex Marginnote
+status collapsed
+
+\begin_layout Plain Layout
+While it's not necessary to have an active internet connection to install
+ Manjaro it's highly recommended.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Set your timezone
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/beginner-installer/set-timezone.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+To set your timezone, either click on the map or pick from the menus.
+ 
+\series bold
+Zone 
+\series default
+is the continent you live on.
+ 
+\series bold
+Region 
+\series default
+is the city closest to where you live.
+ We recommend keeping 
+\series bold
+Network Time Protocol
+\series default
+ synchronisation enabled so your clock will never be wrong! This relies
+ on an active internet connection, however.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Choose your keyboard layout
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/beginner-installer/keyboard-layout.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Just because you live in a certain location that doesn't mean you have to
+ use the keyboard layout native to it.
+ This screen allows you to choose your keyboard layout and variant such
+ as 'Dvorak' or one with 'dead keys' for extended punctuation.
+\end_layout
+
+\begin_layout Plain Layout
+To choose your desired layout simply click first on a 
+\series bold
+Layout
+\series default
+, then on a 
+\series bold
+Variant
+\series default
+.
+ Variants shown will depend on the layout chosen.
+\end_layout
+
+\begin_layout Plain Layout
+Once satisfied that these details are correct, click 
+\series bold
+Forward
+\series default
+ to proceed to the next step.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Set the installation type
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/beginner-installer/set-installation-type.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+To proceed with the 'automatic' (and very easy) installation method make
+ sure that the 
+\series bold
+Erase disc and install Manjaro (automatic)
+\series default
+ option has been selected.
+ 
+\series bold
+Be aware that this will wipe the disc you choose in the next step and erase
+ all its data.
+\end_layout
+
+\begin_layout Plain Layout
+Once complete, click 
+\series bold
+Forward
+\series default
+ to proceed to the next step.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Marginnote
+status open
+
+\begin_layout Plain Layout
+It is generally recommended that you 
+\series bold
+Set your Home in a different partition/volume
+\series default
+.
+ This keeps your documents separate from the operating system files.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Choose your disk
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/beginner-installer/set-install-disk.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+If you have more than one hard drive on your computer, then you will need
+ to decide which one to wipe so you can install Manjaro.
+\end_layout
+
+\begin_layout Plain Layout
+Once selected, click 
+\series bold
+Install Now!
+\series default
+ to proceed to the next step.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Add your user account
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/beginner-installer/add-user-account.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Now it's time to personalise your installation! Enter your real name, a
+ name for your computer (just enter 'manjaro' if you can't think of one),
+ and your username.
+ Your username will be the name of your personal account in Manjaro.
+\end_layout
+
+\begin_layout Plain Layout
+You will also need to enter your intended password twice.
+ Remember that the use of upper and lower case letters matters (e.g.
+ 'abc123' is not the same as 'ABC123').
+\end_layout
+
+\begin_layout Plain Layout
+All done! Once satisfied that these details are correct, click 
+\series bold
+Forward
+\series default
+ to view the installation process.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Installation...
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/beginner-installer/installation-in-progress.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+The automatic installation process is well underway.
+ While you wait for it to complete, useful information about Manjaro and
+ its community will be displayed.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+...complete!
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/beginner-installer/installation-finished.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Once the installation has finished you will be asked if you want to restart
+ your system.
+ Select 
+\series bold
+Yes
+\series default
+ to reboot immediately, or 
+\series bold
+No
+\series default
+ to close the installer and continue using the Manjaro Live environment.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Boot your new operating system
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/beginner-installer/boot-from-hdd.png
+	lyxscale 50
+	width 95col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+When you reboot, if you accidentally boot from the Live CD or USB drive
+ you used to install Manjaro, you can choose 
+\series bold
+Boot from Hard Disk
+\series default
+ and press 
+\series bold
+<Enter>
+\series default
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Log in
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/beginner-installer/login.png
+	lyxscale 50
+	width 95col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Once Manjaro has booted enter your username and password and enjoy your
+ fresh Manjaro system!
+\begin_inset Newline newline
+\end_inset
+
+If you like it, you might consider joining the Manjaro community on its
+ forums or IRC channel.
+ We look forward to meeting you!
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+Using the graphical installer - experienced users
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+setcounter{figure}{0}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+This guide is intended for those with sufficient technical knowledge to
+ manually create their own partitions.
+ As such, this guide focuses on providing an example of how to use the 'Advanced
+' installation
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Advanced installation
+\end_layout
+
+\end_inset
+
+ method in general, rather than outlining the entire installation process,
+ or listing all the popular partition schemes that may be used.
+\end_layout
+
+\begin_layout Standard
+This guide also assumes you have read the Automatic installation guide steps
+ 1-5 as these are exactly the same.
+\end_layout
+
+\begin_layout Standard
+Where possible, make sure you are connected to the internet before booting
+ from your installation media into the Live environment.
+ If you have a hard-wired connection via an Ethernet cable, then Manjaro
+ will automatically connect to the internet without you having to do anything.
+ Otherwise, once you have booted into Manjaro's desktop, you will need to
+ select and then connect to your wireless network.
+\end_layout
+
+\begin_layout Standard
+For a constantly-updated version of this guide, check out the wiki page:
+\end_layout
+
+\begin_layout Description
+User
+\begin_inset space ~
+\end_inset
+
+guide: 
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+http://wiki.manjaro.org/index.php?title=Graphical_Installation_Guide_for_Experience
+d_Users_0.8.10
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+For a refresher on partitioning your disk, check out the wiki pages on partition
+ing and partitioning scenarios:
+\end_layout
+
+\begin_layout Description
+Partitioning: 
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://wiki.manjaro.org/index.php?title=Partitioning_Overview_and_Existing_Partitio
+n_Tables
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+Partitioning
+\begin_inset space ~
+\end_inset
+
+scenarios: 
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+http://wiki.manjaro.org/index.php?title=Cfdisk_Basic_Partitioning_Scenarios
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Start the advanced installation method
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/advanced-installer/choose-advanced-install.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+When you reach the sixth step of the installation process, select 
+\series bold
+Manage your partitions and where to install Manjaro (advanced)
+\series default
+ and then click 
+\series bold
+Forward
+\series default
+ to proceed.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Choose your disk
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/advanced-installer/choose-disk.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+If you have more than one hard drive on your computer select the one you
+ want to partition.
+ This example already has a partition layout, but we're going to start fresh
+ by clicking 
+\series bold
+New partition table
+\series default
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Create a partition table
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/advanced-installer/choose-partition-layout.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+The partition table type you chose will normally depend on your system.
+ Non-EFI systems are normally best with MBR, whereas EFI systems should
+ use GPT.
+ Once you're happy, click 
+\series bold
+OK 
+\series default
+to create the partition table.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+GPT on a non-EFI system
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/advanced-installer/gpt-bios-warning.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+You will get a warning if you create a GPT partition table on a non-EFI
+ system.
+ You can still proceed if you want, but be aware of the extra partition.
+ Don't delete it!
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+A two-partition scenario
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/advanced-installer/empty-disk.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+In this scenario we will cover the most common partition layout.
+ Root and Boot files will be in a single partition and Home in a second
+ partition to keep documents separate from system files.
+ We'll add an optional swap partition in the remaining space.
+ As there are only three partitions total, each can be Primary partitions.
+\begin_inset Newline newline
+\end_inset
+
+With the free space highlighted, we'll click 
+\series bold
++Add
+\series default
+ to create the first partition.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Partition 1: Root and Boot
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/advanced-installer/partition-1-root.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+The first partition will contain the system and boot files (
+\series bold
+/
+\series default
+ and 
+\series bold
+/boot
+\series default
+).
+ As such, we must allocate enough space for all system programs.
+ 20GB is generally sufficient, but with the 40GB disc in this machine we've
+ reduced this to 15GB.
+ We have selected EXT4 as the file system and made sure to set the mountpoint
+ to 
+\series bold
+/
+\series default
+ (root).
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Partition 2: Home
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/advanced-installer/partition-2-home.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+We've added a second partition to hold our user documents.
+ It's set to be 25GB in size, with the EXT4 file system, and the mountpoint
+ is set to 
+\series bold
+/home
+\series default
+ (Home).
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Swap partition
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/advanced-installer/partition-3-swap.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Finally, we've added a swap partition.
+ This will act as extra (very, very slow) RAM if we run out.
+ It's not really suitable as anything other than a last resort but can sometimes
+ make the difference between losing work and quitting cleanly.
+ This is set to take the remainder of the free space, about 2GB.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Finalising the partitions
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/advanced-installer/partitions-ready.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+The partition layout is ready, but before continuing it's worth checking
+ over.
+ You can change and adapt the layout freely at this point as nothing has
+ been written to disc.
+\begin_inset Newline newline
+\end_inset
+
+Once you are happy, click 
+\series bold
+Install now!
+\series default
+ to proceed.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Verify partitioning actions
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/advanced-installer/check-partition-actions.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+As a final check, the installer will ask you to verify that you want to
+ write the partition layout to disc.
+ If you want to go back and make a change, click 
+\series bold
+Cancel
+\series default
+.
+ Otherwise to continue to install Manjaro, click 
+\series bold
+OK
+\series default
+.
+ The rest of the process is the same as for the Automatic installer, so
+ we're done here!
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+Installing on a UEFI
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+UEFI
+\end_layout
+
+\end_inset
+
+ system
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+setcounter{figure}{0}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Quote
+UEFI is the commonly agreed on name for both the EFI & UEFI standards which
+ merged.
+ It does not include the old EFI v1, or Apple's own non-standard version
+ of EFI.
+\end_layout
+
+\begin_layout Standard
+If you have a relatively new computer (e.g.
+ post-2012) it will probably have UEFI support; it certainly will if it
+ came with Microsoft Windows 8 or later installed.
+ At this point in time, installing a Linux distribution on a UEFI system
+ can be tricky.
+ Thankfully Manjaro's installer, Thus, does a good job of correctly setting
+ up everything.
+ However, there are still important considerations, especially when it comes
+ to the partitioning table.
+\end_layout
+
+\begin_layout Section
+Booting in UEFI mode
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+The most important step is to ensure that your machine does not have Secure
+ Boot
+\series default
+ 
+\series bold
+enabled
+\series default
+.
+ Only a very limited number of operating systems will boot with this enabled.
+ You must disable this in your BIOS before proceeding; if you don't know
+ how to do this please refer to your computer's user manual.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/uefi-install/boot-selection.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+In UEFI mode the Manjaro boot selection screen looks quite different.
+ However, the two main installation options are still there.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Once you have booted the system from the Live CD/USB you will be presented
+ with the Manjaro boot selection screen.
+ It has two main options for the drivers it will use (either Free or non-Free).
+ The main difference is the lack of any option for language or keyboard
+ layout.
+ However, this is actually not that important! When you run Thus and choose
+ your language and keyboard layout this will take effect within the Live
+ environment, along with setting these for the installed system.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Installing Manjaro as the only operating system
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+setcounter{figure}{0}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+With Manjaro 0.8.10, Thus does an excellent job setting up your system.
+ Once you have loaded the Live environment the installation steps are exactly
+ the same as for a non-UEFI installation.
+ The main difference is in the partition layout: this is important if you
+ wish to manually partition the drive to suit your own requirements.
+\end_layout
+
+\begin_layout Standard
+In automatic mode, Thus creates a conservative partition layout that will
+ work on all systems.
+ However, the key extra partition for compatibility with UEFI systems is
+ a fat32-formatted partition mounted at 
+\family typewriter
+/boot/efi
+\family default
+ - make sure to include this if you partition manually!
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/uefi-install/automatic-mode-layout.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+The partition layout created by Thus in automatic mode (with separate Home).
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/uefi-install/manual-partitioning.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+A manual partition layout.
+ Note the lack of a GRUB BIOS partition; this is not necessary with a GPT
+ partition layout under EFI.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Installing alongside Microsoft Windows 8
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Microsoft Windows 8
+\end_layout
+
+\end_inset
+
+ or later
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+setcounter{figure}{0}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+It is possible that you want install Manjaro but keep an existing Windows
+ 8 installation on your computer.
+ This is possible, but a little more complicated to set up.
+ It's not for the faint-of-heart, and you should make sure you have a backup
+ of any important documents or information before proceeding.
+\end_layout
+
+\begin_layout Standard
+The following instructions assume you are using a machine with UEFI enabled,
+ Secure Boot disabled, and are using drives with a GUID Partition Table
+ (GPT).
+\end_layout
+
+\begin_layout Subsection
+Download the installation media
+\end_layout
+
+\begin_layout Standard
+First, make sure you have downloaded a 64-bit version of Manjaro.
+ It doesn't matter which edition you choose, but the filename must end with
+ 
+\series bold
+x86_64.iso
+\series default
+.
+\end_layout
+
+\begin_layout Standard
+Next, create the Live media by burning the disc image to a DVD or writing
+ to a USB flash drive.
+ The process is very similar to a non-UEFI installation, but for Windows
+ users using USB media, Rufus
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://rufus.akeo.ie/
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ is highly recommended.
+ Rufus should use the following settings:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float marginfigure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/uefi-install/rufus.png
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Rufus with recommended settings
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+Device: "choose your USB" (Attention: choose correctly, the device selected
+ here will be formatted!)
+\end_layout
+
+\begin_layout Description
+Partition
+\begin_inset space ~
+\end_inset
+
+scheme: GPT partition scheme for UEFI computer
+\end_layout
+
+\begin_layout Description
+File
+\begin_inset space ~
+\end_inset
+
+system: FAT32 (Default)
+\end_layout
+
+\begin_layout Description
+Cluster
+\begin_inset space ~
+\end_inset
+
+size: 8192 bytes (Default)
+\end_layout
+
+\begin_layout Description
+Volume
+\begin_inset space ~
+\end_inset
+
+label: MJRO_089
+\end_layout
+
+\begin_layout Description
+Format
+\begin_inset space ~
+\end_inset
+
+Options: Quick format.
+ Create a bootable disk using: ISO Image (Click on the DVD icon to select
+ your downloaded disc image).
+ Create extended label and icon files.
+\end_layout
+
+\begin_layout Standard
+Click 
+\series bold
+Start
+\series default
+, and you are done! (though it takes between around two and five minutes
+ to complete).
+\end_layout
+
+\begin_layout Subsection
+Boot the Live environment
+\end_layout
+
+\begin_layout Standard
+Before booting, check your BIOS settings: UEFI must be 
+\series bold
+on
+\series default
+ and Secure Boot 
+\series bold
+off
+\series default
+.
+ Manjaro currently doesn't support Secure Boot.
+\end_layout
+
+\begin_layout Standard
+Boot with your Live media and select which set of drivers you would like
+ to use:
+\end_layout
+
+\begin_layout Description
+Boot
+\begin_inset space ~
+\end_inset
+
+Manjaro
+\begin_inset space ~
+\end_inset
+
+Linux
+\begin_inset space ~
+\end_inset
+
+...
+\begin_inset space ~
+\end_inset
+
+(default) This chooses the open-source graphics card drivers.
+\end_layout
+
+\begin_layout Description
+Boot
+\begin_inset space ~
+\end_inset
+
+Manjaro
+\begin_inset space ~
+\end_inset
+
+Linux
+\begin_inset space ~
+\end_inset
+
+...
+\begin_inset space ~
+\end_inset
+
+(nonfree) This option chooses the proprietary graphics card drivers from
+ Nvidia or AMD.
+\end_layout
+
+\begin_layout Standard
+If you're not sure which to use, refer back to the earlier section 
+\series bold
+Booting the Live environment
+\series default
+.
+\end_layout
+
+\begin_layout Subsection
+Adjust your partition sizes
+\end_layout
+
+\begin_layout Standard
+Your computer will be set up with no free space into which Manjaro can be
+ installed.
+ As such, you need to shrink the main Microsoft Windows partition to make
+ space! To do this, we will use GParted, the GNOME Partition Editor.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/uefi-install/start-gparted.png
+	lyxscale 50
+	width 95col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Start 
+\series bold
+GParted
+\series default
+ from the applications menu.
+ The 'root' password is '
+\series bold
+manjaro
+\series default
+' (without quotes).
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/uefi-install/gparted-selecting-shrink.png
+	lyxscale 50
+	width 95col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Right click on the largest NTFS partition and select 
+\series bold
+Resize/Move
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/uefi-install/gparted-selecting-shrink2.png
+	lyxscale 50
+	width 95col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Make space at the end of the partition for Manjaro.
+ Ideally this should be at least 50GB, but you can't shrink the partition
+ smaller than its used space (minimum size).
+ When you're happy with the new size, click 
+\series bold
+Resize/Move
+\series default
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Once you are happy with the new partition layout, on the menu go to 
+\series bold
+Edit
+\series default
+, 
+\series bold
+Apply all operations
+\series default
+.
+ There will be a confirmation message; to continue you must click 
+\series bold
+Apply
+\series default
+.
+\end_layout
+
+\begin_layout Standard
+The resizing process will take some time.
+ Perhaps another chance to get a cup of tea! Once it has completed, close
+ GParted and then run 
+\series bold
+Install Manjaro Linux
+\series default
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Start the advanced installation process
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/advanced-installer/choose-advanced-install.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+When you reach the sixth step of the installation process, select 
+\series bold
+Manage your partitions and where to install Manjaro (advanced)
+\series default
+ and then click 
+\series bold
+Forward
+\series default
+ to proceed.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/uefi-install/thus-partitions-begin.png
+	lyxscale 50
+	width 95col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+On the partitioning screen you can see the 52G of free space we just created.
+ Note the 100MB fat32 partition: this is the EFI boot partition needed by
+ Windows.
+ At this point you have two choices.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/uefi-install/thus-use-manjaro-efi-partition.png
+	lyxscale 50
+	width 95col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Firstly, you can create another, new, EFI partition just for Manjaro.
+ This means everything is kept separate to Windows.
+\begin_inset Newline newline
+\end_inset
+
+A partition of 100MB should be enough, but the mountpoint 
+\series bold
+must 
+\series default
+be 
+\family typewriter
+\series bold
+/boot/efi
+\family default
+\series default
+ and the partition type 
+\series bold
+fat32
+\series default
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/uefi-install/thus-use-windows-efi-partition.png
+	lyxscale 50
+	width 95col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Otherwise, you can reuse the EFI partition created by Windows.
+ This is normally quite safe to do.
+\begin_inset Newline newline
+\end_inset
+
+Select the mountpoint 
+\family typewriter
+\series bold
+/boot/efi
+\family default
+\series default
+ but make sure you 
+\series bold
+do not
+\series default
+ format the partition - or you won't be able to boot Windows!
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/uefi-install/thus-partitions-done.png
+	lyxscale 50
+	width 95col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Create the rest of partitions as normal.
+ You need at least a root partition (mountpoint 
+\family typewriter
+\series bold
+/
+\family default
+\series default
+).
+ Click 
+\series bold
+Install now!
+\series default
+, confirm the changes, and proceed with the rest of the installation process!
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Update the GRUB bootloader, or, Where did Windows go?
+\end_layout
+
+\begin_layout Standard
+Sometimes the bootloader GRUB2 doesn't detect an existing Microsoft Windows
+ installation when installing.
+ This means that only Manjaro Linux will appear in the list of options when
+ you boot the machine.
+\end_layout
+
+\begin_layout Standard
+This is easy to solve.
+ Run the command:
+\end_layout
+
+\begin_layout LyX-Code
+
+\family typewriter
+sudo update-grub
+\end_layout
+
+\begin_layout Standard
+in a terminal after booting into Manjaro and it will detect Windows and
+ add an entry to the boot menu.
+\end_layout
+
+\begin_layout Chapter
+Advanced installation methods
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Advanced installation methods
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+The text-based installer
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+setcounter{figure}{0}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The Manjaro Live environment provides two installation tools: along with
+ the graphical installer a text-based CLI installer is available.
+ This is suitable for advanced users who need extra control over the installatio
+n process, for example if they want to set up RAID or alter system configuration
+ options.
+ It's also useful for very old machines and is the only installation method
+ available for NET editions.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+The text-based installer is only recommended for advanced users, and currently
+ not for users who require EFI-compatibility.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/text-installer/text-menu.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+The installation process steps are very similar to the graphical installer.
+ However, much more control is available.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Set date and time
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/text-installer/date-time.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+The first menu item allows you to manually set your timezone and check the
+ date and time set for your system.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Hard disk(s) preparation
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/text-installer/disk-preparation.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+The second menu item allows full control over the partition layout.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Install system
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/text-installer/install.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+The third menu item starts the installation process.
+ You will get no confirmation before the installation begins: make certain
+ that your partition layout is correct otherwise the process will fail.
+ The installation can take a little bit of time, so make a cup of tea!
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Configure system
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/text-installer/configuration.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+The fourth item allows full control of your new system's configuration.
+ The options are quite extensive!
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Install bootloader
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/text-installer/install-bootloader.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Before rebooting you must make sure to install the bootloader to the correct
+ drive.
+ Without this, you won't be able to load Manjaro!
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Quit
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/text-installer/quit.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+The final step exits the installer.
+ You can continue using the Live environment or reboot now to use your freshly
+ installed Manjaro.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part
+Welcome to Manjaro
+\end_layout
+
+\begin_layout Chapter
+The Manjaro desktop
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+desktop
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+setcounter{figure}{0}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Congratulations on installing Manjaro Linux!
+\end_layout
+
+\begin_layout Standard
+Once you have logged in you will be presented with the Manjaro desktop.
+ The Welcome Screen will load automatically and this gives you some useful
+ links to documentation, ways to get help and support from the Manjaro community
+, and some ways you can get involved with the project.
+ Remember that Manjaro is free and open-source software: it relies on contributi
+ons from its user and developer community!
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/welcome-to-manjaro/welcome.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+The Manjaro Xfce Desktop with Welcome Screen.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+If you don't want the welcome screen to load each time you log in, just
+ untick the box 
+\series bold
+Show this dialog on startup
+\series default
+.
+ Don't worry: you can always find it again in the applications menu.
+\end_layout
+
+\begin_layout Standard
+The applications menu is the easiest way of starting the software programs
+ that are installed on your Manjaro system.
+ The icon for this is in the corner of the screen.
+ Go ahead and click on it now!
+\begin_inset Flex Marginnote
+status collapsed
+
+\begin_layout Plain Layout
+You can also press the 
+\begin_inset Quotes eld
+\end_inset
+
+Windows
+\begin_inset Quotes erd
+\end_inset
+
+ or 
+\begin_inset Quotes eld
+\end_inset
+
+Super
+\begin_inset Quotes erd
+\end_inset
+
+ key on your keyboard.
+ Handy!
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/welcome-to-manjaro/software-menu.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Software applications that are installed will be displayed in the applications
+ menu.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+You can see that the five main software applications have an item in the
+ 
+\begin_inset Quotes eld
+\end_inset
+
+Favourites
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Favourites
+\end_layout
+
+\end_inset
+
+
+\begin_inset Quotes erd
+\end_inset
+
+ menu.
+ This allows rapid access to software you most often use.
+ To add or remove an item from the Favourites menu, just right-click on
+ it and select the option you want.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float marginfigure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/welcome-to-manjaro/remove-from-favourites.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Remove from Favourites
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float marginfigure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/welcome-to-manjaro/add-to-favourites.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Add to Favourites
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+For now, let's look in turn at these five applications to give an idea of
+ what awaits you!
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Terminal Emulator
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Terminal Emulator
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/welcome-to-manjaro/terminal.png
+	lyxscale 50
+	width 95col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\series bold
+Terminal Emulator
+\series default
+, or terminal, allows you to perform text-based commands.
+ Although it initially seems unfriendly it is incredibly powerful and allows
+ access to commands that are difficult to accomplish with a graphical interface.
+ In this example, I have listed (
+\family typewriter
+ls
+\family default
+) the files in my home directory.
+\begin_inset Newline newline
+\end_inset
+
+Learning how to use the terminal is not needed for running Manjaro.
+ It's highly recommended, however; check out sites like 
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://linuxcommand.org/
+\end_layout
+
+\end_inset
+
+ !
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+File Manager
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+File Manager
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/welcome-to-manjaro/file-manager.png
+	lyxscale 50
+	width 95col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\series bold
+File Manager
+\series default
+ is a graphical interface for managing your documents and directories.
+ Most file managers work in a similar way; if you've used another, you can
+ probably use this one! Hint: you can find this user guide in the Manjaro
+ directory!
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Web Browser
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Web Browser
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/welcome-to-manjaro/web-browser.png
+	lyxscale 50
+	width 95col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\series bold
+Web Browser
+\series default
+ allows you to visit and view web pages so you can read news stories, check
+ the weather forecast, and all the rest.
+ The software application that is installed will depend on the Edition of
+ Manjaro you installed, but they all work in a similar way.
+ If you have a particular preference you can easily add or remove software.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Mail Reader
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Mail Reader
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/welcome-to-manjaro/mail-reader.png
+	lyxscale 50
+	width 95col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\series bold
+Mail Reader
+\series default
+ allows you to read and send email.
+ You will have to add your email account when you first run the application
+ (in a similar way to all mail readers) but once that is set up you should
+ be good to go! As with the web browser, there are a range of choices for
+ mail reader.
+ For example, if you prefer Thunderbird you can install it!
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Add/Remove Software
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Add/Remove Software
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/welcome-to-manjaro/pamac.png
+	lyxscale 50
+	width 95col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+The 
+\series bold
+Package Manager
+\series default
+ allows you to search for, install, and remove software applications.
+ In this example I have searched for the Firefox web browser, and am about
+ to install it.
+ Once I'm happy with my selections I can click on the tick to continue.
+\begin_inset Newline newline
+\end_inset
+
+There are two main software managers in Manjaro: 
+\series bold
+Pamac
+\series default
+ (installed with the Xfce edition) and 
+\series bold
+Octopi
+\series default
+ (installed with the Openbox edition).
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+Getting help
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+help
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+setcounter{figure}{0}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+There are a variety of ways of getting help and support about Manjaro, as
+ well as finding out more about the project.
+ You can just browse, or register if you want to get involved!
+\end_layout
+
+\begin_layout Standard
+Remember that Manjaro is run by its community.
+ Without a community there would be no Manjaro!
+\end_layout
+
+\begin_layout Section
+Whichever method you use, we look forward to meeting you!
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/getting-help/welcome.png
+	lyxscale 50
+	width 95col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+The welcome screen has links to some excellent resources.
+ It's well worth taking the time to have a look at each of them.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Discussion forum
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+forum
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\family typewriter
+\size larger
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://forum.manjaro.org/
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/getting-help/forums.png
+	lyxscale 50
+	width 95col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+The Manjaro discussion forum is a great place to find out more about the
+ project.
+ You can connect at any time, leave questions or replies, and come back
+ to them later.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/getting-help/forum-languages.png
+	lyxscale 50
+	width 95col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+If English isn't your preferred language you can try one of the other forums.
+ There's an up-to-date list on the Manjaro homepage.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+IRC
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+IRC
+\end_layout
+
+\end_inset
+
+ channels
+\end_layout
+
+\begin_layout Standard
+
+\family typewriter
+\size larger
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://manjaro.org/irc-channel/
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/getting-help/irc-connect.png
+	lyxscale 50
+	width 95col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+To talk on the IRC channel you will have to connect first.
+ To make sure you're human you'll have to fill in a CAPTCHA form.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/getting-help/irc-channel.png
+	lyxscale 50
+	width 95col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Once connected you'll be able to talk in real-time with people who can help.
+ They are a really friendly bunch!
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/getting-help/irc-languages.png
+	lyxscale 50
+	width 95col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+If English isn't your preferred language, don't worry.
+ There are four IRC channels dedicated to English, German, French, and Russian
+ language discussion.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Mailing list
+\end_layout
+
+\end_inset
+
+Mailing list
+\end_layout
+
+\begin_layout Standard
+
+\family typewriter
+\size larger
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://lists.manjaro.org/listinfo/manjaro-general
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/getting-help/mailing-lists.png
+	lyxscale 50
+	width 95col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+If you prefer to use email there are several mailing lists that you can
+ use to stay up-to-date with announcements and development, as well as ask
+ questions.
+ At the moment, though, most people use either the forums or IRC.
+ Maybe it will be you who gets people using the mailing lists!
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Wiki
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Wiki
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\family typewriter
+\size larger
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://wiki.manjaro.org/index.php?title=Main_Page
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/getting-help/wiki.png
+	lyxscale 50
+	width 95col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+The wiki is essentially an online user manual.
+ It has a huge range of information, hints, tips, and instructions on getting
+ the most out of your Manjaro system.
+ If you need to know how to do something, chances are it's on the wiki!
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+Maintaining your system
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Maintaining your system
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+setcounter{figure}{0}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Changing settings
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+settings
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+While the Manjaro desktop comes with a set of defaults that should work
+ well for most people, you might want to change things like the desktop
+ wallpaper and colour scheme, or perhaps how your laptop touchpad behaves.
+\end_layout
+
+\begin_layout Subsection
+Xfce settings manager
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/maintaining-your-system/xfce-settings.png
+	lyxscale 50
+	width 95col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+The Xfce desktop is highly customisable.
+ The settings for your user account can be accessed both via the applications
+ menu and the Xfce settings manager.
+ Either way, there's a lot of tweaking you can do! Don't worry: the changes
+ will only affect your user account, not any others you might have added.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Manjaro Settings Manager
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/maintaining-your-system/manjaro-settings-manager.png
+	lyxscale 50
+	width 95col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+The
+\series bold
+ Manjaro Settings Manager
+\series default
+ provides a set of tools for changing lower-level settings, such as those
+ you set during installation.
+ System-wide languages, keyboard layouts, users, and hardware drivers are
+ all taken care of from here.
+ It is available under 
+\series bold
+Settings
+\series default
+ in the applications menu.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Adding a printer
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Adding a printer
+\end_layout
+
+\end_inset
+
+
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+printer
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+setcounter{figure}{0}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Manjaro comes with excellent printing support.
+ Most printers can be installed just by plugging them in!
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/maintaining-your-system/printer-detect.png
+	lyxscale 50
+	width 95col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+When you plug in your printer, Manjaro should detect this and automatically
+ install the correct drivers and make the printer available.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/maintaining-your-system/printers.png
+	lyxscale 50
+	width 95col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+To check on the available printers, find and open 
+\series bold
+Print Settings
+\series default
+ in the applications menu.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/maintaining-your-system/printer-auto.png
+	lyxscale 50
+	width 95col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+If the printer was successfully installed it will show up here.
+ You're ready to print!
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/maintaining-your-system/printer-add.png
+	lyxscale 50
+	width 95col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Otherwise, you can add the printer manually.
+ Click 
+\series bold
+Add
+\series default
+ to begin the process.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/maintaining-your-system/printer-add-password.png
+	lyxscale 50
+	width 95col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+You will need to enter your password to allow the printer detection process.
+ Once you've typed in your password, click 
+\series bold
+OK
+\series default
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/maintaining-your-system/printer-list.png
+	lyxscale 50
+	width 95col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+All detected printers will show in the devices list.
+ Select your printer, then click 
+\series bold
+Forward
+\series default
+.
+\begin_inset Newline newline
+\end_inset
+
+If your printer does not show up it's possible that your printer isn't compatibl
+e with Manjaro.
+ Due to the vast number of printers out there you may need to install drivers
+ manually - please visit the forum or IRC channel for help!
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/maintaining-your-system/printer-details.png
+	lyxscale 50
+	width 95col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+As Manjaro installs your printer you can change some settings like its name
+ and location.
+ These provide an easy way of identifying the printer.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/maintaining-your-system/printer-properties.png
+	lyxscale 50
+	width 95col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Your printer should now show in 
+\series bold
+Printer Settings
+\series default
+, where you can view the print queue and change the printer settings.
+ Happy printing!
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Updating software
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Updating software
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+setcounter{figure}{0}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+After logging in you may notice a couple of pop-ups informing you of software
+ updates.
+ This is great! It means your internet connection is working correctly,
+ and that there is new software ready and waiting for you!
+\end_layout
+
+\begin_layout Subsection
+Pamac
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Pamac
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/maintaining-your-system/update-manager.png
+	lyxscale 50
+	width 95col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Pamac's Update Manager is available from the system tray.
+ In this screenshot it has a red icon, indicating there are software updates.
+ An update check is performed automatically; all you have to do is click
+ 
+\series bold
+Apply
+\series default
+ and any updates will proceed automatically!
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/maintaining-your-system/pamac-updater.png
+	lyxscale 50
+	width 95col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Alternatively, you can load Pamac's full interface.
+ As it's always a good idea to install updates before installing new software
+ you will be presented with the available updates.
+ To install the updates, just click 
+\series bold
+OK
+\series default
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Octopi
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Octopi
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Octopi is an alternative software manager for Manjaro.
+ It is installed with the Openbox and KDE editions as it is based on the
+ QT toolset.
+ It also has a very funky icon!
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/maintaining-your-system/octopi-upgrade-system.png
+	lyxscale 50
+	width 95col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Octopi's update notifier is available from the system tray.
+ In this screenshot it has a red icon, indicating there are software updates.
+ An update check is performed automatically; all you have to do is click
+ 
+\series bold
+Run in terminal
+\series default
+ and any updates will proceed automatically!
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/maintaining-your-system/octopi-updates.png
+	lyxscale 50
+	width 95col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Alternatively, you can load Octopi's full interface.
+ The red star indicated there are updated available, and the number shows
+ how many.
+ To show what is available, click on the red icon.
+ To install the updates, click on the arrow next to the red icon and then
+ click on 
+\series bold
+Install
+\series default
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Installing new software
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Installing new software
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+setcounter{figure}{0}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+There's a huge amount of software freely available in the Manjaro repositories.
+ If you are connected to the internet you can download and install as many
+ of this as you want at no cost! No advertising is embedded, no data gathering
+ performed - you get just the software application, unlike with some other
+ operating systems.
+\end_layout
+
+\begin_layout Subsection
+Pamac
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/maintaining-your-system/pamac-search.png
+	lyxscale 50
+	width 95col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Pamac allows easy access to the available software.
+ All software applications in the repositories are free; no need to worry
+ about purchase or licensing costs.
+ Once you've found the package you want to install, right-click and select
+ 
+\series bold
+Install
+\series default
+, then click the tick in the top-left corner to confirm.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/maintaining-your-system/pamac-install.png
+	lyxscale 50
+	width 95col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+The packages to be installed are listed so you can check this is what you
+ want to do.
+ When you are happy with the selection, click 
+\series bold
+OK 
+\series default
+and the software will be downloaded and installed.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/maintaining-your-system/pamac-auth.png
+	lyxscale 50
+	width 95col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+To stop other users removing important software from the system you will
+ have to provide an administrative password.
+ If you don't know this you can't go any further.
+ There are methods to reset this password if needed; visit the forum or
+ IRC channel to find out more.
+ Enter your administrative password and click 
+\series bold
+OK
+\series default
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/maintaining-your-system/pamac-downloading.png
+	lyxscale 50
+	width 95col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+The software packages will be downloaded and installed.
+ You don't have to do anything else!
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/maintaining-your-system/pamac-done.png
+	lyxscale 50
+	width 95col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Pamac will show a confirmation that it installed the new software.
+ You can 
+\series bold
+Close 
+\series default
+Pamac now if you want.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/maintaining-your-system/new-software-installed.png
+	lyxscale 50
+	width 95col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+The new software is available in the application menu ready for you to use.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Octopi
+\end_layout
+
+\begin_layout Standard
+The process of installing new software using Octopi is very similar to Pamac.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/maintaining-your-system/octopi-search.png
+	lyxscale 50
+	width 95col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Octopi allows easy access to the available software.
+ Do note that the search process is slightly different to Pamac as you can
+ select whether to search by package name or package description.
+ Once you've found the package you want to install, right-click and select
+ 
+\series bold
+Install
+\series default
+, then click the tick in the top-left corner to confirm.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/maintaining-your-system/octopi-install-confirm.png
+	lyxscale 50
+	width 95col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+The packages to be installed are listed so you can check this is what you
+ want to do.
+ When you are happy with the selection, click 
+\series bold
+Yes 
+\series default
+and the software will be downloaded and installed.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/maintaining-your-system/octopi-installed.png
+	lyxscale 50
+	width 95col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Octopi will show a confirmation that it installed the new software.
+ You can close Octopi now if you want.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/maintaining-your-system/octopi-new-software-installed.png
+	lyxscale 50
+	width 95col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+The new software is available in the application menu ready for you to use.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Using Pacman
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+pacman
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+setcounter{figure}{0}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Pacman is the Arch Linux 
+\series bold
+pac
+\series default
+kage 
+\series bold
+man
+\series default
+ager.
+ This underpins Pamac and Octopi but doesn't have a graphical interface.
+ Instead, it is used by typing commands on the terminal.
+ The commands allow you to install, upgrade, configure, and remove software.
+\end_layout
+
+\begin_layout Subsection
+Synchronising with the Manjaro repositories
+\end_layout
+
+\begin_layout Standard
+As new packages are added to the repositories you will need to regularly
+ synchronise the package lists.
+ This is normally taken care of automatically on a regular basis by the
+ software managers, but to perform this manually type the following into
+ the terminal:
+\end_layout
+
+\begin_layout Quote
+
+\family typewriter
+sudo pacman -Sy
+\end_layout
+
+\begin_layout Standard
+This will only download the package lists if there has been a change.
+ Occasionally you may want to force the package lists to be downloaded.
+ To do this, type:
+\end_layout
+
+\begin_layout Quote
+
+\family typewriter
+sudo pacman -Syy
+\end_layout
+
+\begin_layout Subsection
+Updating software
+\end_layout
+
+\begin_layout Standard
+Pacman will allow you to perform an update of software already installed:
+\end_layout
+
+\begin_layout Quote
+
+\family typewriter
+sudo pacman -Su
+\end_layout
+
+\begin_layout Standard
+It's a good idea to check whether the package lists are up-to-date at the
+ same time:
+\end_layout
+
+\begin_layout Quote
+
+\family typewriter
+sudo pacman -Syu
+\end_layout
+
+\begin_layout Standard
+You can also force a package list synchronisation before performing an update:
+\begin_inset Float marginfigure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/maintaining-your-system/pacman-syyu.png
+	lyxscale 50
+	width 95col%
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\family typewriter
+sudo pacman -Syyu
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Quote
+
+\family typewriter
+sudo pacman -Syyu
+\end_layout
+
+\begin_layout Subsection
+Searching for software
+\end_layout
+
+\begin_layout Standard
+Finding a package by name is really straightforward.
+ For example, to search for a text editor called Leafpad:
+\end_layout
+
+\begin_layout Quote
+
+\family typewriter
+sudo pacman -Ss leafpad
+\end_layout
+
+\begin_layout Subsection
+Installing software
+\end_layout
+
+\begin_layout Standard
+Installing a package is equally straightforward.
+ For example, to install Leafpad:
+\begin_inset Flex Marginnote
+status collapsed
+
+\begin_layout Plain Layout
+Many software applications depend on other software packages.
+ Thankfully, pacman will automatically detect and install these!
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Quote
+
+\family typewriter
+sudo pacman -S leafpad
+\end_layout
+
+\begin_layout Subsection
+Removing software
+\end_layout
+
+\begin_layout Standard
+To remove a software package you need to know its name, but the command
+ is straightforward.
+ To remove Leafpad:
+\end_layout
+
+\begin_layout Quote
+
+\family typewriter
+sudo pacman -R leafpad
+\end_layout
+
+\begin_layout Standard
+It's also possible to remove a package and any dependencies it required
+ when it was installed.
+ Assuming those other packages are not being used by another piece of software,
+ they will become 
+\series bold
+orphan
+\series default
+ packages.
+ These serve no function other than taking up space! To remove a software
+ package with its dependencies:
+\end_layout
+
+\begin_layout Quote
+
+\family typewriter
+sudo pacman -Rs leafpad
+\end_layout
+
+\begin_layout Standard
+A package may also create configuration files.
+ Normally these are left in place so your configuration is not lost, and
+ can be reused if you install the package again.
+ However, if you want to remove these configuration files too, the command
+ is:
+\end_layout
+
+\begin_layout Quote
+
+\family typewriter
+sudo pacman -Rns leafpad
+\end_layout
+
+\begin_layout Standard
+If at a later date you want to remove all orphan packages and configuration
+ files for packages that you removed some time ago, the following command
+ will do it:
+\end_layout
+
+\begin_layout Quote
+
+\family typewriter
+sudo pacman -Rns $(pacman -Qtdq)
+\end_layout
+
+\begin_layout Standard
+Be warned, though: this is an advanced command!
+\end_layout
+
+\begin_layout Subsection
+Other pacman commands
+\end_layout
+
+\begin_layout Standard
+It's a good idea to become familiar with the pacman commands.
+ It can be a very useful tool in case the other software managers refuse
+ to complete an installation, for example if an installation process is
+ interrupted.
+ The pacman man 
+\begin_inset Flex Marginnote
+status collapsed
+
+\begin_layout Plain Layout
+
+\series bold
+man 
+\series default
+is short for 
+\series bold
+man
+\series default
+ual
+\end_layout
+
+\end_inset
+
+page is very informational:
+\end_layout
+
+\begin_layout Quote
+
+\family typewriter
+man pacman
+\end_layout
+
+\begin_layout Standard
+To exit, press 
+\family typewriter
+\series bold
+q
+\family default
+\series default
+.
+\end_layout
+
+\begin_layout Section
+Updating the mirror
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+mirror
+\end_layout
+
+\end_inset
+
+ list
+\end_layout
+
+\begin_layout Standard
+Manjaro Linux packages are hosted on a number of servers across the world;
+ these servers 
+\series bold
+mirror
+\series default
+ the official Manjaro software repository.
+ When you first install Manjaro it will try to work out which server is
+ closest to you so that software downloads complete as quickly as possible.
+\end_layout
+
+\begin_layout Standard
+Sometimes, though, the list of mirrors can get old.
+ New mirrors can become available, and some mirrors are removed.
+ Updates to Manjaro will regularly trigger an update of the mirror list,
+ but sometimes it's useful to do this manually.
+\end_layout
+
+\begin_layout Standard
+To update the mirror list use the following command:
+\begin_inset Float marginfigure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/maintaining-your-system/pacman-mirrors.png
+	lyxscale 50
+	width 95col%
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\family typewriter
+sudo pacman-mirrors -g
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Quote
+
+\family typewriter
+sudo pacman-mirrors
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+pacman-mirrors
+\end_layout
+
+\end_inset
+
+ -g
+\end_layout
+
+\begin_layout Standard
+This will test the speed of all currently available mirrors and set your
+ machine to use the best for you.
+ Once this command has completed, you should force a download of the package
+ lists:
+\end_layout
+
+\begin_layout Quote
+
+\family typewriter
+sudo pacman -Syyu
+\end_layout
+
+\begin_layout Subsection
+Choosing mirrors
+\end_layout
+
+\begin_layout Standard
+If you would like more control over which mirrors to use, run the command:
+\begin_inset Float marginfigure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/maintaining-your-system/pacman-mirrors-i.png
+	lyxscale 50
+	width 95col%
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\family typewriter
+sudo pacman-mirrors -i
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Quote
+
+\family typewriter
+sudo pacman-mirrors -i
+\end_layout
+
+\begin_layout Standard
+This will allow you to select which mirror, or mirrors, to try when checking
+ for software updates and downloading new packages.
+ It's normally best to choose mirrors that are geographically close to you,
+ so if you're in Canada then Canadian and US servers are generally a good
+ bet.
+ Of course, you're free to choose whichever you want!
+\end_layout
+
+\begin_layout Standard
+To reset back to an automatic choice, run this command:
+\end_layout
+
+\begin_layout Quote
+
+\family typewriter
+sudo pacman-mirrors -g -c all
+\end_layout
+
+\begin_layout Standard
+Remember to force a download of the package lists to use the new mirrors!
+\end_layout
+
+\begin_layout Subsection
+Switching branches
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Switching branches
+\end_layout
+
+\end_inset
+
+
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+branches
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+When you install Manjaro you will be using the stable branch.
+ This set of packages has the most testing and so is the best for most users.
+ However, you may want to help test packages before they move to the stable
+ repository:
+\end_layout
+
+\begin_layout Quote
+
+\family typewriter
+sudo pacman-mirrors -g -b testing
+\end_layout
+
+\begin_layout Standard
+The testing repository has packages that have been checked by the Manjaro
+ development team to make sure they work correctly.
+ However, the amount of testing done is much smaller than for the stable
+ branch - but this is how they get tested!
+\end_layout
+
+\begin_layout Standard
+If you want to live on the bleeding edge, you can switch to the unstable
+ branch.
+ This is normally used by the Manjaro developers.
+ Packages from the unstable branch can cause problems, so this is not something
+ to do lightly:
+\end_layout
+
+\begin_layout Quote
+
+\family typewriter
+sudo pacman-mirrors -g -b unstable
+\end_layout
+
+\begin_layout Standard
+After switching branches you will need to force an update of the package
+ lists:
+\end_layout
+
+\begin_layout Quote
+
+\family typewriter
+sudo pacman -Syyu
+\end_layout
+
+\begin_layout Standard
+If you switch away from the stable branch, but want to move back, it's actually
+ pretty easy:
+\end_layout
+
+\begin_layout Quote
+
+\family typewriter
+sudo pacman-mirrors -g -b stable
+\end_layout
+
+\begin_layout Standard
+This will leave the newer packages on your system and these will be replaced
+ as the stable branch catches up.
+ However, if you want to force a downgrade of packages back to the stable
+ version, use:
+\end_layout
+
+\begin_layout Quote
+
+\family typewriter
+sudo pacman -Syyuu
+\end_layout
+
+\begin_layout Section
+More information
+\end_layout
+
+\begin_layout Standard
+Remember - there is plenty of information on the wiki 
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://wiki.manjaro.org/
+\end_layout
+
+\end_inset
+
+ and discussion forum 
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://forum.manjaro.org/
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\start_of_appendix
+\begin_inset CommandInset index_print
+LatexCommand printindex
+type "idx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+~
+\backslash
+vfill
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+thispagestyle{empty}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align right
+\begin_inset Graphics
+	filename images/manjaro-logo.png
+	lyxscale 50
+	width 75page%
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
