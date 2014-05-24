@@ -1265,7 +1265,7 @@ To verify the integrity of the disc image you have to download the appropriate
  image file.
  For example, the file 
 \series bold
-manjaro-0.8.9-sha1sum.txt 
+manjaro-0.8.10-sha1sum.txt 
 \series default
 contains checksum hashes for all the available disc image files and will
  have content similar to this:
