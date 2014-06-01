@@ -5516,7 +5516,7 @@ status collapsed
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-On the partitioning screen you can see the 52G of free space we just created.
+On the partitioning screen you can see the 100GB of free space we just created.
  Note the 100MB fat32 partition: this is the EFI boot partition needed by
  Windows.
  At this point you have two choices.
