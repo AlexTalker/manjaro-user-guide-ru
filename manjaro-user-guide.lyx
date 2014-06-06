@@ -7339,6 +7339,17 @@ Manjaro comes with excellent printing support.
 \end_layout
 
 \begin_layout Standard
+If you installed a minimal or net edition you may have to install printing
+ support first:
+\end_layout
+
+\begin_layout Quote
+
+\family typewriter
+sudo pacman -S manjaro-printer
+\end_layout
+
+\begin_layout Standard
 \begin_inset Float figure
 wide false
 sideways false
@@ -7360,7 +7371,42 @@ status collapsed
 
 \begin_layout Plain Layout
 When you plug in your printer, Manjaro should detect this and automatically
- install the correct drivers and make the printer available.
+ install the correct drivers...
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/maintaining-your-system/printer-ready.png
+	lyxscale 50
+	width 95col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+...
+ and make the printer available!
 \end_layout
 
 \end_inset
